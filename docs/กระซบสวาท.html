@@ -9,16 +9,17 @@
     <meta property="og:type" content="music.song">
     <meta property="og:title" content="กระซิบสวาท">
     <meta property="og:description" content="Artist: กาญจน์ลดา มฤคพิทักษ์">
-    <meta property="og:image" content="https://1drv.ms/i/c/19724284c9b34401/EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA?e=s9mA4Q">
+    <meta property="og:image" content="images/album_art_karnlada.jpg">
     <meta property="og:url" content="https://kacharuk.github.io/karnlada_songs/กระซบสวาท.html">
-    <meta property="og:audio" content="https://1drv.ms/u/c/19724284c9b34401/EQFEs8mEQnIggBlCYAYAAAABfVDhW3DjyPc_oTK-kEXueg?e=A9xNma">
+    <!-- point Open Graph audio to local file in docs/audio -->
+    <meta property="og:audio" content="audio/กระซิบสวาท.mp3">
     <meta property="music:musician" content="กาญจน์ลดา มฤคพิทักษ์">
 
     <!-- Twitter Card meta tags -->
     <meta name="twitter:card" content="player">
     <meta name="twitter:title" content="กระซิบสวาท">
     <meta name="twitter:description" content="Artist: กาญจน์ลดา มฤคพิทักษ์">
-    <meta name="twitter:image" content="https://1drv.ms/i/c/19724284c9b34401/EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA?e=s9mA4Q">
+    <meta name="twitter:image" content="images/album_art_karnlada.jpg">
 
     <!-- Additional meta tags -->
     <meta name="description" content="กระซิบสวาท by กาญจน์ลดา มฤคพิทักษ์">
@@ -131,15 +132,18 @@
 </head>
 <body>
     <div class="player-container">
-        <img src="https://1drv.ms/i/c/19724284c9b34401/EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA?e=s9mA4Q" alt="กระซิบสวาท album art" class="album-art" id="albumArt">
+        <!-- use local album art placed at c:\dev\karnlada_songs\docs\images\album_art_karnlada.jpg -->
+        <img src="images/album_art_karnlada.jpg" alt="กระซิบสวาท album art" class="album-art" id="albumArt">
 
         <div class="player-info">
             <h1 class="song-title">กระซิบสวาท</h1>
             <p class="artist-name">กาญจน์ลดา มฤคพิทักษ์</p>
 
             <audio id="audioPlayer" class="audio-controls" controls>
-                <source src="https://1drv.ms/u/c/19724284c9b34401/EQFEs8mEQnIggBlCYAYAAAABfVDhW3DjyPc_oTK-kEXueg?e=A9xNma" type="audio/mpeg">
-                <source src="https://1drv.ms/u/c/19724284c9b34401/EQFEs8mEQnIggBlCYAYAAAABfVDhW3DjyPc_oTK-kEXueg?e=A9xNma" type="audio/mp4">
+                <!-- use local audio file placed at c:\dev\karnlada_songs\docs\audio\กระซิบสวาท.mp3 -->
+                <source src="audio/กระซิบสวาท.mp3" type="audio/mpeg">
+                <!-- optional alternative format if available -->
+                <source src="audio/กระซิบสวาท.m4a" type="audio/mp4">
                 Your browser does not support the audio element.
             </audio>
 
