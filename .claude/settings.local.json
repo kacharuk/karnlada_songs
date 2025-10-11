@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(python:*)",
+      "Bash(dir)",
+      "WebFetch(domain:1drv.ms)",
+      "WebFetch(domain:onedrive.live.com)",
+      "Bash(pip install requests)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
