@@ -32,8 +32,8 @@ def get_onedrive_files():
         {
             "title": "กระซิบสวาท",
             "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "https://1drv.ms/u/c/19724284c9b34401/IQQBRLPJhEJyIIAZQmAGAAAAARcbHvVJiGHTnxmtDnP6qL8",
-            "album_art_url": "https://1drv.ms/i/c/19724284c9b34401/IQSkTZUrNFR_SKYM26Cmrdr2AdHBzIc38awev5p0SsMzgtQ"
+            "audio_url": "https://1drv.ms/u/c/19724284c9b34401/IQQBRLPJhEJyIIAZQmAGAAAAARcbHvVJiGHTnxmtDnP6qL8?download=1",
+            "album_art_url": "https://1drv.ms/i/c/19724284c9b34401/IQSkTZUrNFR_SKYM26Cmrdr2AdHBzIc38awev5p0SsMzgtQ?download=1"
         },
         {
             "title": "กล้วยไม้",
