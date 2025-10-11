@@ -32,62 +32,62 @@ def get_onedrive_files():
         {
             "title": "กระซิบสวาท",
             "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "https://1drv.ms/u/c/19724284c9b34401/IQQBRLPJhEJyIIAZQmAGAAAAARcbHvVJiGHTnxmtDnP6qL8?download=1",
-            "album_art_url": "https://1drv.ms/i/c/19724284c9b34401/IQSkTZUrNFR_SKYM26Cmrdr2AdHBzIc38awev5p0SsMzgtQ?download=1"
+            "audio_url": "audio/กระซิบสวาท - กาญจน์ลดา มฤคพิทักษ์.mp3",
+            "album_art_url": "images/album_art_karnlada.jpg"
         },
         {
             "title": "กล้วยไม้",
             "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "https://api.onedrive.com/v1.0/shares/u!EQFEs8mEQnIggBkvYAYAAAABWSTvdxrEBaP7pw4I5bpQMw/root/content",
-            "album_art_url": "https://api.onedrive.com/v1.0/shares/u!EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA/root/content"
+            "audio_url": "audio/กล้วยไม้ - กาญจน์ลดา มฤคพิทักษ์.mp3",
+            "album_art_url": "images/album_art_karnlada.jpg"
         },
         {
             "title": "กว่าเราจะรักกันได้",
             "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "https://api.onedrive.com/v1.0/shares/u!EQFEs8mEQnIggBk7YAYAAAAB7n73T0SdlL204sfj2icoRQ/root/content",
-            "album_art_url": "https://api.onedrive.com/v1.0/shares/u!EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA/root/content"
+            "audio_url": "audio/กว่าเราจะรักกันได้ - กาญจน์ลดา มฤคพิทักษ์.mp3",
+            "album_art_url": "images/album_art_karnlada.jpg"
         },
         {
             "title": "ขวัญเรียม",
             "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "https://api.onedrive.com/v1.0/shares/u!EQFEs8mEQnIggBk_YAYAAAABd5-PVUdIysNxk6i-P1YyLQ/root/content",
-            "album_art_url": "https://api.onedrive.com/v1.0/shares/u!EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA/root/content"
+            "audio_url": "audio/ขวัญเรียม - กาญจน์ลดา มฤคพิทักษ์.mp3",
+            "album_art_url": "images/album_art_karnlada.jpg"
         },
         {
             "title": "ขอรักคืน",
             "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "https://api.onedrive.com/v1.0/shares/u!EQFEs8mEQnIggBkmYAYAAAABUBxCQPMtHMCrpVze56EDIw/root/content",
-            "album_art_url": "https://api.onedrive.com/v1.0/shares/u!EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA/root/content"
+            "audio_url": "audio/ขอรักคืน - กาญจน์ลดา มฤคพิทักษ์.mp3",
+            "album_art_url": "images/album_art_karnlada.jpg"
         },
         {
             "title": "คนึงครวญ",
             "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "https://api.onedrive.com/v1.0/shares/u!EQFEs8mEQnIggBkuYAYAAAABHEswVdTJmUof1ADUvgw5iA/root/content",
-            "album_art_url": "https://api.onedrive.com/v1.0/shares/u!EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA/root/content"
+            "audio_url": "audio/คนึงครวญ - กาญจน์ลดา มฤคพิทักษ์.mp3",
+            "album_art_url": "images/album_art_karnlada.jpg"
         },
         {
             "title": "ดอกไม้กับเพลง",
             "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "https://api.onedrive.com/v1.0/shares/u!EQFEs8mEQnIggBk6YAYAAAABVzqQZZb2dfWGdtz0qdvemA/root/content",
-            "album_art_url": "https://api.onedrive.com/v1.0/shares/u!EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA/root/content"
+            "audio_url": "audio/ดอกไม้กับเพลง - กาญจน์ลดา มฤคพิทักษ์.mp3",
+            "album_art_url": "images/album_art_karnlada.jpg"
         },
         {
             "title": "ดอกไม้ใกล้มือ",
             "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "https://api.onedrive.com/v1.0/shares/u!EQFEs8mEQnIggBkiYAYAAAABYnKAqTeoQ4keX9ny2Uwt5w/root/content",
-            "album_art_url": "https://api.onedrive.com/v1.0/shares/u!EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA/root/content"
+            "audio_url": "audio/ดอกไม้ใกล้มือ - กาญจน์ลดา มฤคพิทักษ์.mp3",
+            "album_art_url": "images/album_art_karnlada.jpg"
         },
         {
             "title": "ถึงเธอ",
             "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "https://api.onedrive.com/v1.0/shares/u!EQFEs8mEQnIggBkrYAYAAAAB8lLYnF9l1-FC4EF_QrX7UQ/root/content",
-            "album_art_url": "https://api.onedrive.com/v1.0/shares/u!EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA/root/content"
+            "audio_url": "audio/ถึงเธอ - กาญจน์ลดา มฤคพิทักษ์.mp3",
+            "album_art_url": "images/album_art_karnlada.jpg"
         },
         {
             "title": "บัวกลางบึง",
             "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "https://api.onedrive.com/v1.0/shares/u!EQFEs8mEQnIggBlEYAYAAAABvU5S6E7GvKH5goAuz-f-gA/root/content",
-            "album_art_url": "https://api.onedrive.com/v1.0/shares/u!EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA/root/content"
+            "audio_url": "audio/บัวกลางบึง - กาญจน์ลดา มฤคพิทักษ์.mp3",
+            "album_art_url": "images/album_art_karnlada.jpg"
         },
     ]
 
