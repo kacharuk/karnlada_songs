@@ -148,7 +148,6 @@ karnlada_songs/
 │       ├── search.js              # Search functionality
 │       └── player.js              # Player with playlist support
 ├── songs_mapping.csv              # Master song database (YOU EDIT THIS)
-├── onedrive_files.json            # Generated metadata
 ├── scan_new_songs.py              # Scan for new files
 ├── generate_html.py               # Generate all HTML
 ├── rebuild.py                     # Complete rebuild

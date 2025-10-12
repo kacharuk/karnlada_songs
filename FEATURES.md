@@ -116,7 +116,7 @@
 - Creates index.html with search/share/QR
 - Creates player.html with playlist support
 - Creates individual song stub pages
-- Copies onedrive_files.json to docs/
+- Generates docs/songs.json from CSV data
 - Modular - doesn't regenerate unchanged files
 
 **rebuild.py:**
