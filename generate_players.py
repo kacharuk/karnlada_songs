@@ -252,6 +252,184 @@ def generate_html_player(file_info, base_url):
 
     return html_content
 
+# New helper: central player (single page that reads ?id=...)
+def generate_central_player(output_dir):
+    """
+    Generate docs/player.html — single central player that reads ?id=filename (or numeric index)
+    and loads docs/onedrive_files.json to populate UI. Scrapers won't execute JS, so per-song
+    stub pages provide OG tags for previews.
+    """
+    player_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Player - Karnlada Songs</title>
+<meta name="description" content="Music player">
+<style>
+/* minimal styles reused from previous players */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px}
+.player-container{background:rgba(255,255,255,.95);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.3);max-width:400px;width:100%;overflow:hidden;backdrop-filter:blur(10px)}
+.album-art{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.player-info{padding:30px;text-align:center}
+.song-title{font-size:24px;font-weight:700;color:#2d3748;margin-bottom:8px;line-height:1.3}
+.artist-name{font-size:18px;color:#718096;margin-bottom:25px}
+.audio-controls{width:100%;margin-top:20px;outline:none}
+audio{width:100%;height:40px;border-radius:20px}
+.status{margin-top:15px;font-size:14px;color:#a0aec0;font-style:italic}
+.status.loading{color:#667eea}.status.playing{color:#48bb78}.status.error{color:#f56565}
+</style>
+</head>
+<body>
+<div class="player-container" id="player">
+	<img src="" alt="album art" class="album-art" id="albumArt">
+	<div class="player-info">
+		<h1 class="song-title" id="songTitle">Loading...</h1>
+		<p class="artist-name" id="artistName"></p>
+		<audio id="audioPlayer" class="audio-controls" controls>
+			Your browser does not support the audio element.
+		</audio>
+		<div class="status" id="status">Loading...</div>
+	</div>
+</div>
+
+<script>
+async function fetchJSON(path){
+	try{
+		const r = await fetch(path);
+		if(!r.ok) throw new Error('Fetch failed');
+		return await r.json();
+	}catch(e){
+		console.error(e);
+		return null;
+	}
+}
+
+function getQueryParam(name){
+	const params = new URLSearchParams(location.search);
+	return params.get(name);
+}
+
+function setStatus(text, cls=''){
+	const s = document.getElementById('status');
+	s.textContent = text;
+	s.className = 'status' + (cls? ' ' + cls : '');
+}
+
+function selectFile(files, id){
+	if(!id) return files[0];
+	// if id is numeric index
+	if(/^\d+$/.test(id)){
+		const idx = parseInt(id,10)-1;
+		return files[idx] || files[0];
+	}
+	// try matching by filename or title
+	for(const f of files){
+		if(f.html_filename === id || f.html_filename.replace('.html','') === id) return f;
+		if(f.title === id) return f;
+	}
+	return files[0];
+}
+
+(async function(){
+	const filesData = await fetchJSON('onedrive_files.json');
+	if(!filesData || !filesData.files || filesData.files.length===0){
+		setStatus('No files found', 'error');
+		return;
+	}
+	const files = filesData.files;
+	const id = getQueryParam('id');
+	const file = selectFile(files, id);
+
+	// populate UI
+	document.getElementById('songTitle').textContent = file.title;
+	document.getElementById('artistName').textContent = file.artist;
+	const art = document.getElementById('albumArt');
+	art.src = file.album_art_url || 'images/album_art_karnlada.jpg';
+	art.alt = file.title + ' album art';
+
+	const audioEl = document.getElementById('audioPlayer');
+	// clear existing sources
+	while(audioEl.firstChild) audioEl.removeChild(audioEl.firstChild);
+	const src = document.createElement('source');
+	src.src = file.audio_url;
+	src.type = 'audio/mpeg';
+	audioEl.appendChild(src);
+	// optional mp4 source
+	const src2 = document.createElement('source');
+	src2.src = file.audio_url;
+	src2.type = 'audio/mp4';
+	audioEl.appendChild(src2);
+
+	// events
+	audioEl.addEventListener('loadstart', ()=> setStatus('Loading audio...', 'loading'));
+	audioEl.addEventListener('canplay', ()=> setStatus('Ready to play'));
+	audioEl.addEventListener('playing', ()=> setStatus('Now playing', 'playing'));
+	audioEl.addEventListener('pause', ()=> setStatus('Paused'));
+	audioEl.addEventListener('ended', ()=> setStatus('Song ended'));
+	audioEl.addEventListener('error', ()=> setStatus('Error loading audio', 'error'));
+
+	// try to autoplay if allowed
+	try{ await audioEl.play(); }catch(e){ setStatus('Click play to start'); }
+})();
+</script>
+</body>
+</html>
+"""
+    with open(os.path.join(output_dir, 'player.html'), 'w', encoding='utf-8') as f:
+        f.write(player_html)
+    print("✓ Generated: player.html")
+
+# New helper: per-song stub with OG tags + immediate redirect to player.html?id=...
+def generate_stub_page(file_info, base_url, output_dir):
+    """
+    Write a minimal HTML file containing OG meta tags (title, image, audio)
+    and a meta-refresh / link to docs/player.html?id={html_filename}.
+    This static page ensures WhatsApp/other scrapers get proper preview.
+    """
+    page_filename = file_info['html_filename']
+    page_url = f"{base_url}/{page_filename}"
+    player_target = f"player.html?id={page_filename}"
+    og_image = file_info.get('album_art_url','images/album_art_karnlada.jpg')
+    og_audio = file_info.get('audio_url','')
+    title = escape(file_info['title'])
+    artist = escape(file_info['artist'])
+
+    html = f"""<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title} - {artist}</title>
+
+<!-- Open Graph tags for scrapers (WhatsApp, Messenger) -->
+<meta property="og:type" content="music.song">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="Artist: {artist}">
+<meta property="og:image" content="{og_image}">
+<meta property="og:audio" content="{og_audio}">
+<meta property="music:musician" content="{artist}">
+<meta property="og:url" content="{page_url}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="player">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="Artist: {artist}">
+<meta name="twitter:image" content="{og_image}">
+
+<!-- Redirect immediately to central player (client-side) -->
+<meta http-equiv="refresh" content="0; url={player_target}">
+<link rel="canonical" href="{player_target}">
+</head>
+<body>
+<p>If you are not redirected, <a href="{player_target}">open player</a>.</p>
+</body>
+</html>"""
+    with open(os.path.join(output_dir, page_filename), 'w', encoding='utf-8') as f:
+        f.write(html)
+    print(f"✓ Generated stub: {page_filename}")
+
 def main():
     # Load the OneDrive files JSON
     input_file = 'onedrive_files.json'
@@ -279,15 +457,20 @@ def main():
 
     generated_files = []
 
-    print(f"Generating HTML players for {len(files)} song(s)...\n")
+    print(f"Generating stub pages + central player for {len(files)} song(s)...\n")
 
-    for file_info in files:
-        html_content = generate_html_player(file_info, base_url)
-        html_filename = file_info['html_filename']
-        output_path = os.path.join(output_dir, html_filename)
+    # Create/refresh docs/onedrive_files.json so the central player can fetch it
+    with open(os.path.join(output_dir, 'onedrive_files.json'), 'w', encoding='utf-8') as f:
+        json.dump({'files': files}, f, indent=2, ensure_ascii=False)
+    print("✓ Copied: docs/onedrive_files.json")
 
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(html_content)
+    for idx, file_info in enumerate(files, 1):
+        # ensure html_filename exists
+        html_filename = file_info.get('html_filename') or f"song_{idx}.html"
+        file_info['html_filename'] = html_filename
+
+        # generate a lightweight stub with OG tags + redirect to central player
+        generate_stub_page(file_info, base_url, output_dir)
 
         page_url = f"{base_url}/{html_filename}"
         generated_files.append({
@@ -297,18 +480,21 @@ def main():
             'url': page_url
         })
 
-        print(f"✓ Generated: {html_filename}")
-        print(f"  URL: {page_url}\n")
+        print(f"  stub created: {html_filename}")
 
-    # Generate index.html with links to all songs
+    # Copy generated_urls.json into docs/
+    with open(os.path.join(output_dir, 'generated_urls.json'), 'w', encoding='utf-8') as f:
+        json.dump(generated_files, f, indent=2, ensure_ascii=False)
+    print("✓ Copied: docs/generated_urls.json")
+
+    # generate central player
+    generate_central_player(output_dir)
+
+    # regenerate index to point to stubs
     generate_index_page(generated_files, output_dir, base_url)
 
-    # Save URL list
-    with open('generated_urls.json', 'w', encoding='utf-8') as f:
-        json.dump(generated_files, f, indent=2, ensure_ascii=False)
-
     print(f"\nAll files generated in '{output_dir}/' directory")
-    print(f"URL list saved to: generated_urls.json")
+    print(f"URL list saved to: docs/generated_urls.json")
     print(f"\nNext step: Push to GitHub to deploy on GitHub Pages")
 
 def generate_index_page(files, output_dir, base_url):

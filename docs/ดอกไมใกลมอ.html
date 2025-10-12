@@ -1,215 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ดอกไม้ใกล้มือ - กาญจน์ลดา มฤคพิทักษ์</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ดอกไม้ใกล้มือ - กาญจน์ลดา มฤคพิทักษ์</title>
 
-    <!-- Open Graph meta tags for Messenger and social media preview -->
-    <meta property="og:type" content="music.song">
-    <meta property="og:title" content="ดอกไม้ใกล้มือ">
-    <meta property="og:description" content="Artist: กาญจน์ลดา มฤคพิทักษ์">
-    <meta property="og:image" content="https://1drv.ms/i/c/19724284c9b34401/EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA?e=s9mA4Q">
-    <meta property="og:url" content="https://kacharuk.github.io/karnlada_songs/ดอกไมใกลมอ.html">
-    <meta property="og:audio" content="https://1drv.ms/u/c/19724284c9b34401/EQFEs8mEQnIggBkiYAYAAAABYnKAqTeoQ4keX9ny2Uwt5w?e=55OD0F">
-    <meta property="music:musician" content="กาญจน์ลดา มฤคพิทักษ์">
+<!-- Open Graph tags for scrapers (WhatsApp, Messenger) -->
+<meta property="og:type" content="music.song">
+<meta property="og:title" content="ดอกไม้ใกล้มือ">
+<meta property="og:description" content="Artist: กาญจน์ลดา มฤคพิทักษ์">
+<meta property="og:image" content="images/album_art_karnlada.jpg">
+<meta property="og:audio" content="audio/ดอกไม้ใกล้มือ - กาญจน์ลดา มฤคพิทักษ์.mp3">
+<meta property="music:musician" content="กาญจน์ลดา มฤคพิทักษ์">
+<meta property="og:url" content="https://kacharuk.github.io/karnlada_songs/ดอกไมใกลมอ.html">
 
-    <!-- Twitter Card meta tags -->
-    <meta name="twitter:card" content="player">
-    <meta name="twitter:title" content="ดอกไม้ใกล้มือ">
-    <meta name="twitter:description" content="Artist: กาญจน์ลดา มฤคพิทักษ์">
-    <meta name="twitter:image" content="https://1drv.ms/i/c/19724284c9b34401/EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA?e=s9mA4Q">
+<!-- Twitter -->
+<meta name="twitter:card" content="player">
+<meta name="twitter:title" content="ดอกไม้ใกล้มือ">
+<meta name="twitter:description" content="Artist: กาญจน์ลดา มฤคพิทักษ์">
+<meta name="twitter:image" content="images/album_art_karnlada.jpg">
 
-    <!-- Additional meta tags -->
-    <meta name="description" content="ดอกไม้ใกล้มือ by กาญจน์ลดา มฤคพิทักษ์">
-    <meta name="author" content="กาญจน์ลดา มฤคพิทักษ์">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .player-container {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 400px;
-            width: 100%;
-            overflow: hidden;
-            backdrop-filter: blur(10px);
-        }
-
-        .album-art {
-            width: 100%;
-            aspect-ratio: 1;
-            object-fit: cover;
-            display: block;
-        }
-
-        .player-info {
-            padding: 30px;
-            text-align: center;
-        }
-
-        .song-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #2d3748;
-            margin-bottom: 8px;
-            line-height: 1.3;
-        }
-
-        .artist-name {
-            font-size: 18px;
-            color: #718096;
-            margin-bottom: 25px;
-        }
-
-        .audio-controls {
-            width: 100%;
-            margin-top: 20px;
-            outline: none;
-        }
-
-        /* Custom audio player styling */
-        audio {
-            width: 100%;
-            height: 40px;
-            border-radius: 20px;
-        }
-
-        audio::-webkit-media-controls-panel {
-            background-color: #f7fafc;
-            border-radius: 20px;
-        }
-
-        .status {
-            margin-top: 15px;
-            font-size: 14px;
-            color: #a0aec0;
-            font-style: italic;
-        }
-
-        .loading {
-            color: #667eea;
-        }
-
-        .playing {
-            color: #48bb78;
-        }
-
-        .error {
-            color: #f56565;
-        }
-
-        @media (max-width: 480px) {
-            .song-title {
-                font-size: 20px;
-            }
-
-            .artist-name {
-                font-size: 16px;
-            }
-
-            .player-info {
-                padding: 20px;
-            }
-        }
-    </style>
+<!-- Redirect immediately to central player (client-side) -->
+<meta http-equiv="refresh" content="0; url=player.html?id=ดอกไมใกลมอ.html">
+<link rel="canonical" href="player.html?id=ดอกไมใกลมอ.html">
 </head>
 <body>
-    <div class="player-container">
-        <img src="https://1drv.ms/i/c/19724284c9b34401/EaRNlSs0VH9IpgzboKat2vYBNdVlQ9a4WWOoIvvnracDrA?e=s9mA4Q" alt="ดอกไม้ใกล้มือ album art" class="album-art" id="albumArt">
-
-        <div class="player-info">
-            <h1 class="song-title">ดอกไม้ใกล้มือ</h1>
-            <p class="artist-name">กาญจน์ลดา มฤคพิทักษ์</p>
-
-            <audio id="audioPlayer" class="audio-controls" controls>
-                <source src="https://1drv.ms/u/c/19724284c9b34401/EQFEs8mEQnIggBkiYAYAAAABYnKAqTeoQ4keX9ny2Uwt5w?e=55OD0F" type="audio/mpeg">
-                <source src="https://1drv.ms/u/c/19724284c9b34401/EQFEs8mEQnIggBkiYAYAAAABYnKAqTeoQ4keX9ny2Uwt5w?e=55OD0F" type="audio/mp4">
-                Your browser does not support the audio element.
-            </audio>
-
-            <div class="status" id="status">Loading...</div>
-        </div>
-    </div>
-
-    <script>
-        const audio = document.getElementById('audioPlayer');
-        const status = document.getElementById('status');
-        const albumArt = document.getElementById('albumArt');
-
-        // Update status based on audio events
-        audio.addEventListener('loadstart', () => {
-            status.textContent = 'Loading audio...';
-            status.className = 'status loading';
-        });
-
-        audio.addEventListener('canplay', () => {
-            status.textContent = 'Ready to play';
-            status.className = 'status';
-        });
-
-        audio.addEventListener('playing', () => {
-            status.textContent = 'Now playing';
-            status.className = 'status playing';
-        });
-
-        audio.addEventListener('pause', () => {
-            status.textContent = 'Paused';
-            status.className = 'status';
-        });
-
-        audio.addEventListener('ended', () => {
-            status.textContent = 'Song ended';
-            status.className = 'status';
-        });
-
-        audio.addEventListener('error', (e) => {
-            console.error('Audio error:', e);
-            status.textContent = 'Error loading audio. Please check the file link.';
-            status.className = 'status error';
-        });
-
-        // Handle album art loading error
-        albumArt.addEventListener('error', () => {
-            albumArt.style.display = 'none';
-            console.error('Error loading album art');
-        });
-
-        // Attempt to autoplay (may be blocked by browser policies)
-        // User interaction may be required for autoplay to work
-        window.addEventListener('load', () => {
-            // Try to play, but handle if autoplay is blocked
-            const playPromise = audio.play();
-
-            if (playPromise !== undefined) {
-                playPromise
-                    .then(() => {
-                        // Autoplay started successfully
-                        console.log('Autoplay started');
-                    })
-                    .catch(error => {
-                        // Autoplay was prevented
-                        console.log('Autoplay prevented:', error);
-                        status.textContent = 'Click play to start';
-                        status.className = 'status';
-                    });
-            }
-        });
-    </script>
+<p>If you are not redirected, <a href="player.html?id=ดอกไมใกลมอ.html">open player</a>.</p>
 </body>
 </html>
