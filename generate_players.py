@@ -516,9 +516,17 @@ def generate_index_page(files_list, output_dir, base_url):
     # Sort albums alphabetically
     sorted_albums = sorted(albums.items())
 
+    # Build album index (table of contents) at the top
+    album_index = ""
+    for album_name, songs in sorted_albums:
+        album_id = album_name.replace(' ', '-').replace('/', '-')
+        album_index += f"""
+            <a href="#{album_id}" class="album-link">📀 {escape(album_name)} ({len(songs)})</a>"""
+
     # Build HTML for each album section
     albums_html = ""
     for album_name, songs in sorted_albums:
+        album_id = album_name.replace(' ', '-').replace('/', '-')
         # Sort songs alphabetically by title
         songs_sorted = sorted(songs, key=lambda x: x['title'])
 
@@ -533,7 +541,7 @@ def generate_index_page(files_list, output_dir, base_url):
                     </div>"""
 
         albums_html += f"""
-        <div class="album-section">
+        <div class="album-section" id="{album_id}">
             <h2 class="album-title">📀 {escape(album_name)}</h2>
             <div class="songs-list">
                 {songs_html}
@@ -577,12 +585,53 @@ def generate_index_page(files_list, output_dir, base_url):
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }}
 
+        .album-index {{
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }}
+
+        .album-index h2 {{
+            color: #2d3748;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }}
+
+        .album-links {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }}
+
+        .album-link {{
+            display: inline-block;
+            padding: 10px 18px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }}
+
+        .album-link:hover {{
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }}
+
         .album-section {{
             background: rgba(255, 255, 255, 0.98);
             border-radius: 16px;
             padding: 30px;
             margin-bottom: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            scroll-margin-top: 20px;
         }}
 
         .album-title {{
@@ -672,6 +721,14 @@ def generate_index_page(files_list, output_dir, base_url):
 <body>
     <div class="container">
         <h1>🎵 Karnlada Songs</h1>
+
+        <div class="album-index">
+            <h2>Albums</h2>
+            <div class="album-links">
+                {album_index}
+            </div>
+        </div>
+
         {albums_html}
     </div>
 </body>
