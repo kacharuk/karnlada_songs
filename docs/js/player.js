@@ -246,7 +246,7 @@ function updatePlaylistUI() {
 }
 
 async function initPlayer() {
-    const filesData = await fetchJSON('onedrive_files.json');
+    const filesData = await fetchJSON('songs.json');
     if (!filesData || !filesData.files || filesData.files.length === 0) {
         setStatus('No files found', 'error');
         return;

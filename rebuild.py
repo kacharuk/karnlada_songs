@@ -62,7 +62,7 @@ def main():
     print("  - Enhanced player with playlist support (docs/player.html)")
     print("  - Enhanced index with search & sharing (docs/index.html)")
     print("  - JavaScript utilities (docs/js/*.js)")
-    print("  - Metadata files (onedrive_files.json, generated_urls.json)")
+    print("  - Songs data (docs/songs.json)")
     print()
     print("Next steps:")
     print("  1. Review the changes (optional)")

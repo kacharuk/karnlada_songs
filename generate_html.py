@@ -183,13 +183,30 @@ def generate_stub_page(file_info, base_url, output_dir):
     with open(os.path.join(songs_dir, page_filename), 'w', encoding='utf-8') as f:
         f.write(html)
 
+def load_songs_from_csv(csv_path='songs_mapping.csv'):
+    """Load songs from CSV file"""
+    import csv
+    songs = []
+    with open(csv_path, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            songs.append({
+                'song_id': row['song_id'],
+                'album': row['album'],
+                'title': row['title'],
+                'artist': row['artist'],
+                'audio_url': row['audio_file_path'],
+                'html_filename': row['html_filename'],
+                'is_external': row.get('is_external', 'false').lower() == 'true',
+                'album_art_url': ''  # Will be populated from file system
+            })
+    return songs
+
 def generate_enhanced_index(files_list, output_dir, base_url):
     """Generate enhanced index.html with search, share, QR codes, and playlist support"""
 
-    # Load full file data
-    with open('onedrive_files.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    full_files = data.get('files', [])
+    # Load full file data from CSV
+    full_files = load_songs_from_csv('songs_mapping.csv')
 
     # Group by album
     albums = {}
@@ -211,14 +228,14 @@ def generate_enhanced_index(files_list, output_dir, base_url):
     albums_html = ""
     for album_name, songs in sorted_albums:
         album_id = album_name.replace(' ', '-').replace('/', '-')
-        songs_sorted = sorted(songs, key=lambda x: x['title'])
+        # Keep songs in CSV order (no sorting)
 
         # Collect song IDs for playlist
-        song_ids = [s.get('song_id', s['html_filename'].replace('.html', '')) for s in songs_sorted]
+        song_ids = [s.get('song_id', s['html_filename'].replace('.html', '')) for s in songs]
         playlist_ids = ','.join(song_ids)
 
         songs_html = ""
-        for song in songs_sorted:
+        for song in songs:
             song_id = song.get('song_id', song['html_filename'].replace('.html', ''))
             share_url = f"{base_url}/songs/{song['html_filename']}"
 
@@ -352,20 +369,18 @@ def generate_enhanced_index(files_list, output_dir, base_url):
     print(f"  URL: {base_url}/index.html")
 
 def main():
-    input_file = 'onedrive_files.json'
+    csv_file = 'songs_mapping.csv'
 
-    if not os.path.exists(input_file):
-        print(f"Error: {input_file} not found!")
-        print("Please run scan_new_songs.py or list_onedrive_files.py first.")
+    if not os.path.exists(csv_file):
+        print(f"Error: {csv_file} not found!")
+        print("Please run scan_new_songs.py first to create the CSV file.")
         return
 
-    with open(input_file, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-
-    files = data.get('files', [])
+    # Load songs from CSV
+    files = load_songs_from_csv(csv_file)
 
     if not files:
-        print("No files found in the JSON.")
+        print("No songs found in the CSV.")
         return
 
     base_url = "https://kacharuk.github.io/karnlada_songs"
@@ -377,11 +392,6 @@ def main():
     os.makedirs(js_dir, exist_ok=True)
 
     print(f"Generating HTML pages for {len(files)} song(s)...\n")
-
-    # Copy onedrive_files.json to docs
-    with open(os.path.join(output_dir, 'onedrive_files.json'), 'w', encoding='utf-8') as f:
-        json.dump({'files': files}, f, indent=2, ensure_ascii=False)
-    print("✓ Copied: docs/onedrive_files.json")
 
     # Generate stub pages
     for idx, file_info in enumerate(files, 1):
@@ -404,10 +414,10 @@ def main():
 
     generate_enhanced_index(generated_files, output_dir, base_url)
 
-    # Save generated URLs list
-    with open(os.path.join(output_dir, 'generated_urls.json'), 'w', encoding='utf-8') as f:
-        json.dump(generated_files, f, indent=2, ensure_ascii=False)
-    print("✓ Copied: docs/generated_urls.json")
+    # Save songs data for player.js
+    with open(os.path.join(output_dir, 'songs.json'), 'w', encoding='utf-8') as f:
+        json.dump({'files': files}, f, indent=2, ensure_ascii=False)
+    print("✓ Generated: docs/songs.json")
 
     print(f"\n✅ All HTML files generated in '{output_dir}/' directory")
     print(f"\nNext step: Push to GitHub to deploy on GitHub Pages")

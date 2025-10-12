@@ -193,13 +193,12 @@ def main():
     print(f"New songs found:         {len(new_songs)}")
     print("="*60)
 
-    if not new_songs:
-        print("\n✅ No new songs to add. CSV is up to date!")
-        return
-
     # Generate IDs and metadata for new songs
-    print(f"\n📝 Adding {len(new_songs)} new song(s):\n")
     new_entries = []
+    if new_songs:
+        print(f"\n📝 Adding {len(new_songs)} new song(s):\n")
+    else:
+        print("\n✅ No new songs to add. CSV is up to date!")
     for file_info in new_songs:
         # Generate stable ID
         song_id = generate_stable_id(

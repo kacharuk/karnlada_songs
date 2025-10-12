@@ -22,7 +22,9 @@
       "Bash(ls:*)",
       "Bash(for dir in docs/audio/*/)",
       "Bash(do cp docs/images/album_art_karnlada.jpg \"$dir/album_art.jpg\")",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(for f in auto_fix_links.py deploy.py generate_players.py list_onedrive_files.py run_all.py update_songs.py)",
+      "Bash(do echo \"=== $f ===\")"
     ],
     "deny": [],
     "ask": []

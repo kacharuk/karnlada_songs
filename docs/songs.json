@@ -1,1967 +1,2194 @@
 {
   "files": [
     {
+      "song_id": "4cade656",
+      "album": "Karnlada Music",
       "title": "กระซิบสวาท",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/กระซิบสวาท - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "4cade656",
-      "html_filename": "4cade656.html"
+      "html_filename": "4cade656.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7faaf8a2",
+      "album": "Karnlada Music",
       "title": "กล้วยไม้",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/กล้วยไม้ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "7faaf8a2",
-      "html_filename": "7faaf8a2.html"
+      "html_filename": "7faaf8a2.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "1bc4e7c7",
+      "album": "Karnlada Music",
       "title": "กว่าเราจะรักกันได้",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/กว่าเราจะรักกันได้ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "1bc4e7c7",
-      "html_filename": "1bc4e7c7.html"
+      "html_filename": "1bc4e7c7.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "ca4f8c03",
+      "album": "Karnlada Music",
       "title": "ขวัญเรียม",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ขวัญเรียม - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "ca4f8c03",
-      "html_filename": "ca4f8c03.html"
+      "html_filename": "ca4f8c03.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4aaa3d23",
+      "album": "Karnlada Music",
       "title": "ขอรักคืน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ขอรักคืน - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "4aaa3d23",
-      "html_filename": "4aaa3d23.html"
+      "html_filename": "4aaa3d23.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "ef62d5f6",
+      "album": "Karnlada Music",
       "title": "คนึงครวญ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/คนึงครวญ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "ef62d5f6",
-      "html_filename": "ef62d5f6.html"
+      "html_filename": "ef62d5f6.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "50f033be",
+      "album": "Karnlada Music",
       "title": "ดอกไม้กับเพลง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ดอกไม้กับเพลง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "50f033be",
-      "html_filename": "50f033be.html"
+      "html_filename": "50f033be.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "9510ca8a",
+      "album": "Karnlada Music",
       "title": "ดอกไม้ใกล้มือ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ดอกไม้ใกล้มือ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "9510ca8a",
-      "html_filename": "9510ca8a.html"
+      "html_filename": "9510ca8a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "ea300704",
+      "album": "Karnlada Music",
       "title": "ถึงเธอ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ถึงเธอ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "ea300704",
-      "html_filename": "ea300704.html"
+      "html_filename": "ea300704.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "89e4c78a",
+      "album": "Karnlada Music",
       "title": "บัวกลางบึง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/บัวกลางบึง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "89e4c78a",
-      "html_filename": "89e4c78a.html"
+      "html_filename": "89e4c78a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "495d5e3e",
+      "album": "Karnlada Music",
       "title": "ปาหนัน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ปาหนัน - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "495d5e3e",
-      "html_filename": "495d5e3e.html"
+      "html_filename": "495d5e3e.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "d047dade",
+      "album": "Karnlada Music",
       "title": "ผู้ครองรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ผู้ครองรัก - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "d047dade",
-      "html_filename": "d047dade.html"
+      "html_filename": "d047dade.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4e2e2bf1",
+      "album": "Karnlada Music",
       "title": "ฝากดิน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ฝากดิน - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "4e2e2bf1",
-      "html_filename": "4e2e2bf1.html"
+      "html_filename": "4e2e2bf1.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "d7b3213b",
+      "album": "Karnlada Music",
       "title": "ฝากหมอน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ฝากหมอน - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "d7b3213b",
-      "html_filename": "d7b3213b.html"
+      "html_filename": "d7b3213b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "13a0d954",
+      "album": "Karnlada Music",
       "title": "มนต์ดลใจ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/มนต์ดลใจ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "13a0d954",
-      "html_filename": "13a0d954.html"
+      "html_filename": "13a0d954.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7a6e113d",
+      "album": "Karnlada Music",
       "title": "มนต์รักลูกทุ่ง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/มนต์รักลูกทุ่ง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "7a6e113d",
-      "html_filename": "7a6e113d.html"
+      "html_filename": "7a6e113d.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "868e14b0",
+      "album": "Karnlada Music",
       "title": "มั่นใจไม่รัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/มั่นใจไม่รัก - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "868e14b0",
-      "html_filename": "868e14b0.html"
+      "html_filename": "868e14b0.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "caef0d4a",
+      "album": "Karnlada Music",
       "title": "รอคำรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/รอคำรัก - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "caef0d4a",
-      "html_filename": "caef0d4a.html"
+      "html_filename": "caef0d4a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "84837a50",
+      "album": "Karnlada Music",
       "title": "รอพี่",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/รอพี่ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "84837a50",
-      "html_filename": "84837a50.html"
+      "html_filename": "84837a50.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "d5421ad1",
+      "album": "Karnlada Music",
       "title": "รักบังใบ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/รักบังใบ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "d5421ad1",
-      "html_filename": "d5421ad1.html"
+      "html_filename": "d5421ad1.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "6e30039a",
+      "album": "Karnlada Music",
       "title": "รักปักใจ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/รักปักใจ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "6e30039a",
-      "html_filename": "6e30039a.html"
+      "html_filename": "6e30039a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "0a9a578b",
+      "album": "Karnlada Music",
       "title": "รักลาฟ้าเศร้า",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/รักลาฟ้าเศร้า - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "0a9a578b",
-      "html_filename": "0a9a578b.html"
+      "html_filename": "0a9a578b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "9a49014a",
+      "album": "Karnlada Music",
       "title": "รักเธอคนเดียว",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/รักเธอคนเดียว - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "9a49014a",
-      "html_filename": "9a49014a.html"
+      "html_filename": "9a49014a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "13fb317a",
+      "album": "Karnlada Music",
       "title": "รักเอ๋ยรักข้า",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/รักเอ๋ยรักข้า - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "13fb317a",
-      "html_filename": "13fb317a.html"
+      "html_filename": "13fb317a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "722ca396",
+      "album": "Karnlada Music",
       "title": "ลุ่มเจ้าพระยา",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ลุ่มเจ้าพระยา - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "722ca396",
-      "html_filename": "722ca396.html"
+      "html_filename": "722ca396.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "a7e7539b",
+      "album": "Karnlada Music",
       "title": "วัยระวี",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/วัยระวี - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "a7e7539b",
-      "html_filename": "a7e7539b.html"
+      "html_filename": "a7e7539b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "1813b6a3",
+      "album": "Karnlada Music",
       "title": "วิมานสีชมพู",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/วิมานสีชมพู - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "1813b6a3",
-      "html_filename": "1813b6a3.html"
+      "html_filename": "1813b6a3.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7920f226",
+      "album": "Karnlada Music",
       "title": "สมมุติว่าเขารัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/สมมุติว่าเขารัก - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "7920f226",
-      "html_filename": "7920f226.html"
+      "html_filename": "7920f226.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "b07b705a",
+      "album": "Karnlada Music",
       "title": "สายทิพย์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/สายทิพย์ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "b07b705a",
-      "html_filename": "b07b705a.html"
+      "html_filename": "b07b705a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7204a4d5",
+      "album": "Karnlada Music",
       "title": "สาวสะอื้น",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/สาวสะอื้น - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "7204a4d5",
-      "html_filename": "7204a4d5.html"
+      "html_filename": "7204a4d5.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "60ba0136",
+      "album": "Karnlada Music",
       "title": "สาส์นรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/สาส์นรัก - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "60ba0136",
-      "html_filename": "60ba0136.html"
+      "html_filename": "60ba0136.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "f191b8f9",
+      "album": "Karnlada Music",
       "title": "หวานรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/หวานรัก - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "f191b8f9",
-      "html_filename": "f191b8f9.html"
+      "html_filename": "f191b8f9.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4a89b724",
+      "album": "Karnlada Music",
       "title": "ห่วงอาลัย",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ห่วงอาลัย - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "4a89b724",
-      "html_filename": "4a89b724.html"
+      "html_filename": "4a89b724.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "baec4356",
+      "album": "Karnlada Music",
       "title": "อีสา",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/อีสา - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "baec4356",
-      "html_filename": "baec4356.html"
+      "html_filename": "baec4356.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "657fa6ba",
+      "album": "Karnlada Music",
       "title": "อุทยานดอกไม้",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/อุทยานดอกไม้ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "657fa6ba",
-      "html_filename": "657fa6ba.html"
+      "html_filename": "657fa6ba.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "dc459823",
+      "album": "Karnlada Music",
       "title": "เพื่อคุณ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/เพื่อคุณ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "dc459823",
-      "html_filename": "dc459823.html"
+      "html_filename": "dc459823.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "664e11d9",
+      "album": "Karnlada Music",
       "title": "เสียงกระซิบจากเกลียงคลื่น",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/เสียงกระซิบจากเกลียงคลื่น - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "664e11d9",
-      "html_filename": "664e11d9.html"
+      "html_filename": "664e11d9.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "8bcb096a",
+      "album": "Karnlada Music",
       "title": "แรมพิศวาส",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/แรมพิศวาส - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "8bcb096a",
-      "html_filename": "8bcb096a.html"
+      "html_filename": "8bcb096a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "31dff890",
+      "album": "Karnlada Music",
       "title": "แว่วเสียงซึง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/แว่วเสียงซึง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "31dff890",
-      "html_filename": "31dff890.html"
+      "html_filename": "31dff890.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "0bb915c1",
+      "album": "Karnlada Music",
       "title": "โอ้ทูลกระหม่อม",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/โอ้ทูลกระหม่อม - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "0bb915c1",
-      "html_filename": "0bb915c1.html"
+      "html_filename": "0bb915c1.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "b5cdcb3b",
+      "album": "Karnlada Music",
       "title": "ใจรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ใจรัก - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "b5cdcb3b",
-      "html_filename": "b5cdcb3b.html"
+      "html_filename": "b5cdcb3b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "d6ea12e3",
+      "album": "Karnlada Music",
       "title": "ใจหวลครวญรำพัน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ใจหวลครวญรำพัน - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "d6ea12e3",
-      "html_filename": "d6ea12e3.html"
+      "html_filename": "d6ea12e3.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "8e370a89",
+      "album": "Karnlada Music",
       "title": "ไม่ใกล้ไม่ไกล",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music",
       "audio_url": "audio/Karnlada Music/ไม่ใกล้ไม่ไกล - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "audio/Karnlada Music/album_art.jpg",
-      "song_id": "8e370a89",
-      "html_filename": "8e370a89.html"
+      "html_filename": "8e370a89.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "e9d1d505",
+      "album": "Karnlada Music 2",
       "title": "ขอโทษ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ขอโทษ.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "e9d1d505",
-      "html_filename": "e9d1d505.html"
+      "html_filename": "e9d1d505.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "88a19a05",
+      "album": "Karnlada Music 2",
       "title": "ข้องจิต ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ข้องจิต ชรินทร์.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "88a19a05",
-      "html_filename": "88a19a05.html"
+      "html_filename": "88a19a05.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "610b7d55",
+      "album": "Karnlada Music 2",
       "title": "คนจะรักกัน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/คนจะรักกัน.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "610b7d55",
-      "html_filename": "610b7d55.html"
+      "html_filename": "610b7d55.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "e3c38fcc",
+      "album": "Karnlada Music 2",
       "title": "คลื่นละเมอฝั่ง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/คลื่นละเมอฝั่ง.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "e3c38fcc",
-      "html_filename": "e3c38fcc.html"
+      "html_filename": "e3c38fcc.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "80710348",
+      "album": "Karnlada Music 2",
       "title": "ความรักไม่รู้จบ ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ความรักไม่รู้จบ .m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "80710348",
-      "html_filename": "80710348.html"
+      "html_filename": "80710348.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "452720c4",
+      "album": "Karnlada Music 2",
       "title": "คู่กรรม",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/คู่กรรม.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "452720c4",
-      "html_filename": "452720c4.html"
+      "html_filename": "452720c4.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "06092fc2",
+      "album": "Karnlada Music 2",
       "title": "จูบเย้ยจันทร์ ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/จูบเย้ยจันทร์ ชรินทร์.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "06092fc2",
-      "html_filename": "06092fc2.html"
+      "html_filename": "06092fc2.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4ae76726",
+      "album": "Karnlada Music 2",
       "title": "ชีวิตกับความหวัง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ชีวิตกับความหวัง.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "4ae76726",
-      "html_filename": "4ae76726.html"
+      "html_filename": "4ae76726.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "0b69619d",
+      "album": "Karnlada Music 2",
       "title": "ดวงจันทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ดวงจันทร์.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "0b69619d",
-      "html_filename": "0b69619d.html"
+      "html_filename": "0b69619d.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "745e0d44",
+      "album": "Karnlada Music 2",
       "title": "ดวงใจในฝัน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ดวงใจในฝัน.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "745e0d44",
-      "html_filename": "745e0d44.html"
+      "html_filename": "745e0d44.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "ac8d86b8",
+      "album": "Karnlada Music 2",
       "title": "ต้นตระกูลไทย ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ต้นตระกูลไทย .m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "ac8d86b8",
-      "html_filename": "ac8d86b8.html"
+      "html_filename": "ac8d86b8.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "ddf96237",
+      "album": "Karnlada Music 2",
       "title": "ถึงพี่",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ถึงพี่.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "ddf96237",
-      "html_filename": "ddf96237.html"
+      "html_filename": "ddf96237.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "f7d6ec02",
+      "album": "Karnlada Music 2",
       "title": "ถ้าหัวใจฉันมีปีก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ถ้าหัวใจฉันมีปีก.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "f7d6ec02",
-      "html_filename": "f7d6ec02.html"
+      "html_filename": "f7d6ec02.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "a98e38a8",
+      "album": "Karnlada Music 2",
       "title": "ทำดีได้ดีทำชั่วได้ชั่ว",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ทำดีได้ดีทำชั่วได้ชั่ว.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "a98e38a8",
-      "html_filename": "a98e38a8.html"
+      "html_filename": "a98e38a8.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4c73b58f",
+      "album": "Karnlada Music 2",
       "title": "ที่รัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ที่รัก.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "4c73b58f",
-      "html_filename": "4c73b58f.html"
+      "html_filename": "4c73b58f.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "fc6bbc43",
+      "album": "Karnlada Music 2",
       "title": "บรเทศ สุนทราภรณ์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/บรเทศ สุนทราภรณ์.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "fc6bbc43",
-      "html_filename": "fc6bbc43.html"
+      "html_filename": "fc6bbc43.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "1a773ba1",
+      "album": "Karnlada Music 2",
       "title": "ปาริชาต สุนทราภรณ์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ปาริชาต สุนทราภรณ์.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "1a773ba1",
-      "html_filename": "1a773ba1.html"
+      "html_filename": "1a773ba1.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "bc739804",
+      "album": "Karnlada Music 2",
       "title": "ปูนาขาเก(Instrumental Version)",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ปูนาขาเก(Instrumental Version).m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "bc739804",
-      "html_filename": "bc739804.html"
+      "html_filename": "bc739804.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "86919c77",
+      "album": "Karnlada Music 2",
       "title": "ฝนตั้งเค้า",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ฝนตั้งเค้า.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "86919c77",
-      "html_filename": "86919c77.html"
+      "html_filename": "86919c77.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "bd0f6b90",
+      "album": "Karnlada Music 2",
       "title": "ฝากฟ้าสั่งดิน ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ฝากฟ้าสั่งดิน .m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "bd0f6b90",
-      "html_filename": "bd0f6b90.html"
+      "html_filename": "bd0f6b90.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "447b8b11",
+      "album": "Karnlada Music 2",
       "title": "พรปีใหม่",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/พรปีใหม่.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "447b8b11",
-      "html_filename": "447b8b11.html"
+      "html_filename": "447b8b11.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "836bb42c",
+      "album": "Karnlada Music 2",
       "title": "พระรัตนตรัย",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/พระรัตนตรัย.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "836bb42c",
-      "html_filename": "836bb42c.html"
+      "html_filename": "836bb42c.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "d1077a8e",
+      "album": "Karnlada Music 2",
       "title": "รัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/รัก ชรินทร์.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "d1077a8e",
-      "html_filename": "d1077a8e.html"
+      "html_filename": "d1077a8e.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "aec95a39",
+      "album": "Karnlada Music 2",
       "title": "รักริงโง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/รักริงโง.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "aec95a39",
-      "html_filename": "aec95a39.html"
+      "html_filename": "aec95a39.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "ce292631",
+      "album": "Karnlada Music 2",
       "title": "รักเอย",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/รักเอย.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "ce292631",
-      "html_filename": "ce292631.html"
+      "html_filename": "ce292631.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4f77cb09",
+      "album": "Karnlada Music 2",
       "title": "วนาสวาท ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/วนาสวาท ชรินทร์.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "4f77cb09",
-      "html_filename": "4f77cb09.html"
+      "html_filename": "4f77cb09.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "835e5f06",
+      "album": "Karnlada Music 2",
       "title": "วอลซ์นาวี",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/วอลซ์นาวี.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "835e5f06",
-      "html_filename": "835e5f06.html"
+      "html_filename": "835e5f06.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "c41df00b",
+      "album": "Karnlada Music 2",
       "title": "ศรัทธา",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ศรัทธา.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "c41df00b",
-      "html_filename": "c41df00b.html"
+      "html_filename": "c41df00b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7ae1668c",
+      "album": "Karnlada Music 2",
       "title": "ศาสนารัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ศาสนารัก.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "7ae1668c",
-      "html_filename": "7ae1668c.html"
+      "html_filename": "7ae1668c.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "79a37e42",
+      "album": "Karnlada Music 2",
       "title": "หนึ่งกำลังใจ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/หนึ่งกำลังใจ.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "79a37e42",
-      "html_filename": "79a37e42.html"
+      "html_filename": "79a37e42.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "0efb785b",
+      "album": "Karnlada Music 2",
       "title": "หนึ่งในร้อย",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/หนึ่งในร้อย.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "0efb785b",
-      "html_filename": "0efb785b.html"
+      "html_filename": "0efb785b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "31e13531",
+      "album": "Karnlada Music 2",
       "title": "หลักไม้เลื้อย",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/หลักไม้เลื้อย.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "31e13531",
-      "html_filename": "31e13531.html"
+      "html_filename": "31e13531.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "da4fe72b",
+      "album": "Karnlada Music 2",
       "title": "หวานรัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/หวานรัก ชรินทร์.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "da4fe72b",
-      "html_filename": "da4fe72b.html"
+      "html_filename": "da4fe72b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "14b8ddef",
+      "album": "Karnlada Music 2",
       "title": "อธิษฐานรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/อธิษฐานรัก.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "14b8ddef",
-      "html_filename": "14b8ddef.html"
+      "html_filename": "14b8ddef.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "9f0a3fee",
+      "album": "Karnlada Music 2",
       "title": "อยากฟังซ้ำ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/อยากฟังซ้ำ.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "9f0a3fee",
-      "html_filename": "9f0a3fee.html"
+      "html_filename": "9f0a3fee.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7e87ca1a",
+      "album": "Karnlada Music 2",
       "title": "อาลัยลา",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/อาลัยลา.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "7e87ca1a",
-      "html_filename": "7e87ca1a.html"
+      "html_filename": "7e87ca1a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "615f6321",
+      "album": "Karnlada Music 2",
       "title": "เก็บ..ตะวัน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/เก็บ..ตะวัน.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "615f6321",
-      "html_filename": "615f6321.html"
+      "html_filename": "615f6321.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "b13fc237",
+      "album": "Karnlada Music 2",
       "title": "เดินหน้า",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/เดินหน้า.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "b13fc237",
-      "html_filename": "b13fc237.html"
+      "html_filename": "b13fc237.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "b95cec90",
+      "album": "Karnlada Music 2",
       "title": "เราจะยิ้มให้กัน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/เราจะยิ้มให้กัน.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "b95cec90",
-      "html_filename": "b95cec90.html"
+      "html_filename": "b95cec90.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "41d110ab",
+      "album": "Karnlada Music 2",
       "title": "เรามีเรา",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/เรามีเรา.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "41d110ab",
-      "html_filename": "41d110ab.html"
+      "html_filename": "41d110ab.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4b5b1950",
+      "album": "Karnlada Music 2",
       "title": "เรือมนุษย์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/เรือมนุษย์.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "4b5b1950",
-      "html_filename": "4b5b1950.html"
+      "html_filename": "4b5b1950.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "de2e4904",
+      "album": "Karnlada Music 2",
       "title": "เหมือนคนละฟากฟ้า",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/เหมือนคนละฟากฟ้า.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "de2e4904",
-      "html_filename": "de2e4904.html"
+      "html_filename": "de2e4904.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "ef10e6f7",
+      "album": "Karnlada Music 2",
       "title": "แม่จ๋า",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/แม่จ๋า.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "ef10e6f7",
-      "html_filename": "ef10e6f7.html"
+      "html_filename": "ef10e6f7.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "81a21d39",
+      "album": "Karnlada Music 2",
       "title": "แรงรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/แรงรัก.m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "81a21d39",
-      "html_filename": "81a21d39.html"
+      "html_filename": "81a21d39.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "578433d0",
+      "album": "Karnlada Music 2",
       "title": "ใจหวนครวญรำพัน(ร้องคู่)",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ใจหวนครวญรำพัน(ร้องคู่).m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "578433d0",
-      "html_filename": "578433d0.html"
+      "html_filename": "578433d0.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4eea1d17",
+      "album": "Karnlada Music 2",
       "title": "ให้เธอ (อคูสติก)",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "Karnlada Music 2",
       "audio_url": "audio/Karnlada Music 2/ให้เธอ (อคูสติก).m4a",
-      "album_art_url": "audio/Karnlada Music 2/album_art.jpg",
-      "song_id": "4eea1d17",
-      "html_filename": "4eea1d17.html"
+      "html_filename": "4eea1d17.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4swc5x18",
+      "album": "Karnlada Music 2",
+      "title": "ขอคมากรรม",
+      "artist": "รฎา ณัฎฐ์ธยาน์",
+      "audio_url": "https://youtu.be/NLod0yNREHI?si=AmxKER4KGYSU66N",
+      "html_filename": "4swc5x18.html",
+      "is_external": true,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "24980990",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "ไม่ใกล้ไม่ไกล",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/01. ไม่ใกล้ไม่ไกล.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "24980990",
-      "html_filename": "24980990.html"
+      "html_filename": "24980990.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "424504f2",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "กล้วยไม้",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/02. กล้วยไม้.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "424504f2",
-      "html_filename": "424504f2.html"
+      "html_filename": "424504f2.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "a5c26fa4",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "โอ้ทูลกระหม่อม",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/03. โอ้ทูลกระหม่อม.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "a5c26fa4",
-      "html_filename": "a5c26fa4.html"
+      "html_filename": "a5c26fa4.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "562fbc57",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "กว่าเราจะรักกันได้",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/04. กว่าเราจะรักกันได้.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "562fbc57",
-      "html_filename": "562fbc57.html"
+      "html_filename": "562fbc57.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "def3de36",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "มนต์รักลูกทุ่ง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/05. มนต์รักลูกทุ่ง.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "def3de36",
-      "html_filename": "def3de36.html"
+      "html_filename": "def3de36.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "6d329543",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "ปาหนัน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/06. ปาหนัน.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "6d329543",
-      "html_filename": "6d329543.html"
+      "html_filename": "6d329543.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "2ad09274",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "ฝากหมอน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/07. ฝากหมอน.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "2ad09274",
-      "html_filename": "2ad09274.html"
+      "html_filename": "2ad09274.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "5be1a45a",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "สมมุติว่าเขารัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/08. สมมุติว่าเขารัก.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "5be1a45a",
-      "html_filename": "5be1a45a.html"
+      "html_filename": "5be1a45a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "930853eb",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "รักเธอคนเดียว",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/09. รักเธอคนเดียว.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "930853eb",
-      "html_filename": "930853eb.html"
+      "html_filename": "930853eb.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "fe934ad8",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "รักเอ๋ยรักข้า",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/10. รักเอ๋ยรักข้า.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "fe934ad8",
-      "html_filename": "fe934ad8.html"
+      "html_filename": "fe934ad8.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "62c62dcc",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "ดอกไม้ใกล้มือ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/11. ดอกไม้ใกล้มือ.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "62c62dcc",
-      "html_filename": "62c62dcc.html"
+      "html_filename": "62c62dcc.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "ba7ce75a",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "ลุ่มเจ้าพระยา",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/12. ลุ่มเจ้าพระยา.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "ba7ce75a",
-      "html_filename": "ba7ce75a.html"
+      "html_filename": "ba7ce75a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "2ef1036f",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "ขอรักคืน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/13. ขอรักคืน.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "2ef1036f",
-      "html_filename": "2ef1036f.html"
+      "html_filename": "2ef1036f.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "f1301a0f",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "เสียงกระซิบจากเกลียวคลื่น",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/14. เสียงกระซิบจากเกลียวคลื่น.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "f1301a0f",
-      "html_filename": "f1301a0f.html"
+      "html_filename": "f1301a0f.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "1618b998",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "วิมานสีชมพู",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/15. วิมานสีชมพู.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "1618b998",
-      "html_filename": "1618b998.html"
+      "html_filename": "1618b998.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7cef0a99",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "แรมพิศวาส",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/16. แรมพิศวาส.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "7cef0a99",
-      "html_filename": "7cef0a99.html"
+      "html_filename": "7cef0a99.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "34a530fc",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "รอพี่",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/17. รอพี่.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1/album_art.jpg",
-      "song_id": "34a530fc",
-      "html_filename": "34a530fc.html"
+      "html_filename": "34a530fc.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "6e6ba8f8",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "เพื่อคุณ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/01. เพื่อคุณ.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "6e6ba8f8",
-      "html_filename": "6e6ba8f8.html"
+      "html_filename": "6e6ba8f8.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "ee406a9b",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "ถึงเธอ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/02. ถึงเธอ.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "ee406a9b",
-      "html_filename": "ee406a9b.html"
+      "html_filename": "ee406a9b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "80d38b70",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "มนต์ดลใจ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/03. มนต์ดลใจ.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "80d38b70",
-      "html_filename": "80d38b70.html"
+      "html_filename": "80d38b70.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "6afd66e2",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "ใจรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/04. ใจรัก.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "6afd66e2",
-      "html_filename": "6afd66e2.html"
+      "html_filename": "6afd66e2.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "f3ac4f6b",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "หวานรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/05. หวานรัก.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "f3ac4f6b",
-      "html_filename": "f3ac4f6b.html"
+      "html_filename": "f3ac4f6b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "f179793b",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "ฝากดิน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/06. ฝากดิน.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "f179793b",
-      "html_filename": "f179793b.html"
+      "html_filename": "f179793b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "545b5597",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "ผู้ครองรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/07. ผู้ครองรัก.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "545b5597",
-      "html_filename": "545b5597.html"
+      "html_filename": "545b5597.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "227e6321",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "รอพี่",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/08. รอพี่.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "227e6321",
-      "html_filename": "227e6321.html"
+      "html_filename": "227e6321.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "c1e2d246",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "สาวสะอื้น",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/09. สาวสะอื้น.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "c1e2d246",
-      "html_filename": "c1e2d246.html"
+      "html_filename": "c1e2d246.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "5f9d2480",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "รักลาฟ้าเศร้า",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/10. รักลาฟ้าเศร้า.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "5f9d2480",
-      "html_filename": "5f9d2480.html"
+      "html_filename": "5f9d2480.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "01ebca97",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "ขวัญเรียม",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/11. ขวัญเรียม.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "01ebca97",
-      "html_filename": "01ebca97.html"
+      "html_filename": "01ebca97.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "8a6b5554",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "ดอกไม้กับเพลง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/12. ดอกไม้กับเพลง.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "8a6b5554",
-      "html_filename": "8a6b5554.html"
+      "html_filename": "8a6b5554.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "effc6ae8",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "ใจหวลครวญรำพัน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/13. ใจหวลครวญรำพัน.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "effc6ae8",
-      "html_filename": "effc6ae8.html"
+      "html_filename": "effc6ae8.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "45d3d88a",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "เสียงกระซิบจากเกลียงคลื่น",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/14. เสียงกระซิบจากเกลียงคลื่น.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "45d3d88a",
-      "html_filename": "45d3d88a.html"
+      "html_filename": "45d3d88a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "3f3aabb2",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "วิมานสีชมพู",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/15. วิมานสีชมพู.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "3f3aabb2",
-      "html_filename": "3f3aabb2.html"
+      "html_filename": "3f3aabb2.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "f1fa6175",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "title": "กล้วยไม้",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/16. กล้วยไม้.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2/album_art.jpg",
-      "song_id": "f1fa6175",
-      "html_filename": "f1fa6175.html"
+      "html_filename": "f1fa6175.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "a31e9f94",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "คนึงครวญ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/01. คนึงครวญ.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "a31e9f94",
-      "html_filename": "a31e9f94.html"
+      "html_filename": "a31e9f94.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "a2c15e93",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "ห่วงอาลัย",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/02. ห่วงอาลัย.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "a2c15e93",
-      "html_filename": "a2c15e93.html"
+      "html_filename": "a2c15e93.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "8a93db01",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "อุทยานดอกไม้",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/03. อุทยานดอกไม้.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "8a93db01",
-      "html_filename": "8a93db01.html"
+      "html_filename": "8a93db01.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "314851a0",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "สาส์นรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/04. สาส์นรัก.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "314851a0",
-      "html_filename": "314851a0.html"
+      "html_filename": "314851a0.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7237bf9f",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "มั่นใจไม่รัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/05. มั่นใจไม่รัก.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "7237bf9f",
-      "html_filename": "7237bf9f.html"
+      "html_filename": "7237bf9f.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "3691a0eb",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "กระซิบสวาท",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/06. กระซิบสวาท.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "3691a0eb",
-      "html_filename": "3691a0eb.html"
+      "html_filename": "3691a0eb.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "a29ccd89",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "รอคำรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/07. รอคำรัก.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "a29ccd89",
-      "html_filename": "a29ccd89.html"
+      "html_filename": "a29ccd89.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "3da5828b",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "สายทิพย์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/08. สายทิพย์.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "3da5828b",
-      "html_filename": "3da5828b.html"
+      "html_filename": "3da5828b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "37df8b15",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "บัวกลางบึง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/09. บัวกลางบึง.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "37df8b15",
-      "html_filename": "37df8b15.html"
+      "html_filename": "37df8b15.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "1708d342",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "อีสา",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/10. อีสา.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "1708d342",
-      "html_filename": "1708d342.html"
+      "html_filename": "1708d342.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "5891260f",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "แว่วเสียงซึง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/11. แว่วเสียงซึง.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "5891260f",
-      "html_filename": "5891260f.html"
+      "html_filename": "5891260f.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "6ef60a39",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "รักปักใจ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/12. รักปักใจ.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "6ef60a39",
-      "html_filename": "6ef60a39.html"
+      "html_filename": "6ef60a39.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "5108c0b8",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "รักบังใบ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/13. รักบังใบ.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "5108c0b8",
-      "html_filename": "5108c0b8.html"
+      "html_filename": "5108c0b8.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "b1ff6b12",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "หวานรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/14. หวานรัก.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "b1ff6b12",
-      "html_filename": "b1ff6b12.html"
+      "html_filename": "b1ff6b12.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "5999c55b",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "รักเธอคนเดียว",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/15. รักเธอคนเดียว.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "5999c55b",
-      "html_filename": "5999c55b.html"
+      "html_filename": "5999c55b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "453dcbb2",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "รักเอ๋ยรักข้า",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/16. รักเอ๋ยรักข้า.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "453dcbb2",
-      "html_filename": "453dcbb2.html"
+      "html_filename": "453dcbb2.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "d5efdd59",
+      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "title": "วัยระวี",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3",
       "audio_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/17. วัยระวี.mp3",
-      "album_art_url": "audio/กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3/album_art.jpg",
-      "song_id": "d5efdd59",
-      "html_filename": "d5efdd59.html"
+      "html_filename": "d5efdd59.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "8d9c8286",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "ข้องจิต ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/ข้องจิต ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "8d9c8286",
-      "html_filename": "8d9c8286.html"
+      "html_filename": "8d9c8286.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "c6a9d3ca",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "คืนหนึ่ง ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/คืนหนึ่ง ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "c6a9d3ca",
-      "html_filename": "c6a9d3ca.html"
+      "html_filename": "c6a9d3ca.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "f9694f96",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "ง้อรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/ง้อรัก.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "f9694f96",
-      "html_filename": "f9694f96.html"
+      "html_filename": "f9694f96.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "1f174ec5",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "จนจริงไม่จนรัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/จนจริงไม่จนรัก ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "1f174ec5",
-      "html_filename": "1f174ec5.html"
+      "html_filename": "1f174ec5.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "62c9e01d",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "ฉอเลาะรัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/ฉอเลาะรัก ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "62c9e01d",
-      "html_filename": "62c9e01d.html"
+      "html_filename": "62c9e01d.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "b522948b",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "ธารน้ำรัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/ธารน้ำรัก ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "b522948b",
-      "html_filename": "b522948b.html"
+      "html_filename": "b522948b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "09d86f70",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "นกเขาคูรัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/นกเขาคูรัก ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "09d86f70",
-      "html_filename": "09d86f70.html"
+      "html_filename": "09d86f70.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "3d78a424",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "ฝนนี้ ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/ฝนนี้ ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "3d78a424",
-      "html_filename": "3d78a424.html"
+      "html_filename": "3d78a424.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "3271365a",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "พรพรหม ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/พรพรหม ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "3271365a",
-      "html_filename": "3271365a.html"
+      "html_filename": "3271365a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "c3f83ccd",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "พระจันทร์วันเพ็ญ ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/พระจันทร์วันเพ็ญ ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "c3f83ccd",
-      "html_filename": "c3f83ccd.html"
+      "html_filename": "c3f83ccd.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7dc5675e",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "มั่นใจรัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/มั่นใจรัก ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "7dc5675e",
-      "html_filename": "7dc5675e.html"
+      "html_filename": "7dc5675e.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "18a31f65",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "วิมานรักห้วยแก้ว ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/วิมานรักห้วยแก้ว ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "18a31f65",
-      "html_filename": "18a31f65.html"
+      "html_filename": "18a31f65.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "e0822021",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "สักขีแม่ปิง ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/สักขีแม่ปิง ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "e0822021",
-      "html_filename": "e0822021.html"
+      "html_filename": "e0822021.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "e6747d63",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "สัญญารัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/สัญญารัก ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "e6747d63",
-      "html_filename": "e6747d63.html"
+      "html_filename": "e6747d63.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "3124ea73",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "เชื่อรัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/เชื่อรัก ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "3124ea73",
-      "html_filename": "3124ea73.html"
+      "html_filename": "3124ea73.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "d1ce7b1e",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "เธออยู่ไหน ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/เธออยู่ไหน ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "d1ce7b1e",
-      "html_filename": "d1ce7b1e.html"
+      "html_filename": "d1ce7b1e.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "dbf3ef3f",
+      "album": "ชรินทร์ ชุดที่ 1",
       "title": "แต่ปางก่อน ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 1",
       "audio_url": "audio/ชรินทร์ ชุดที่ 1/แต่ปางก่อน ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 1/album_art.jpg",
-      "song_id": "dbf3ef3f",
-      "html_filename": "dbf3ef3f.html"
+      "html_filename": "dbf3ef3f.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "fc566fa0",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "ขอเป็นจันทร์ ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/ขอเป็นจันทร์ ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "fc566fa0",
-      "html_filename": "fc566fa0.html"
+      "html_filename": "fc566fa0.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "ef0627bf",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "จูบเย้ยจันทร์ ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/จูบเย้ยจันทร์ ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "ef0627bf",
-      "html_filename": "ef0627bf.html"
+      "html_filename": "ef0627bf.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "f10aeb46",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "ดำเนินทราย ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/ดำเนินทราย ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "f10aeb46",
-      "html_filename": "f10aeb46.html"
+      "html_filename": "f10aeb46.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "2c8f1678",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "ถนอมรัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/ถนอมรัก ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "2c8f1678",
-      "html_filename": "2c8f1678.html"
+      "html_filename": "2c8f1678.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "17abf7bc",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "ทุยจ๋าทุย ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/ทุยจ๋าทุย ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "17abf7bc",
-      "html_filename": "17abf7bc.html"
+      "html_filename": "17abf7bc.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "df963b28",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "ปองใจรัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/ปองใจรัก ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "df963b28",
-      "html_filename": "df963b28.html"
+      "html_filename": "df963b28.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "05c57178",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "พ่อแง่แม่งอน ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/พ่อแง่แม่งอน ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "05c57178",
-      "html_filename": "05c57178.html"
+      "html_filename": "05c57178.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "99557898",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "มนต์รักดอกคำใต้ ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/มนต์รักดอกคำใต้ ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "99557898",
-      "html_filename": "99557898.html"
+      "html_filename": "99557898.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "1102fdea",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "รัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/รัก ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "1102fdea",
-      "html_filename": "1102fdea.html"
+      "html_filename": "1102fdea.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "9213321c",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "รักฉันนานๆ ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/รักฉันนานๆ ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "9213321c",
-      "html_filename": "9213321c.html"
+      "html_filename": "9213321c.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "f83b9f6a",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "รักใต้ร่มไทร ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/รักใต้ร่มไทร ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "f83b9f6a",
-      "html_filename": "f83b9f6a.html"
+      "html_filename": "f83b9f6a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "a81f4bbc",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "วนาสวาท ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/วนาสวาท ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "a81f4bbc",
-      "html_filename": "a81f4bbc.html"
+      "html_filename": "a81f4bbc.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "299b3b67",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "หวานรัก ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/หวานรัก ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "299b3b67",
-      "html_filename": "299b3b67.html"
+      "html_filename": "299b3b67.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "87c822ba",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "อ้อยใจ ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/อ้อยใจ ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "87c822ba",
-      "html_filename": "87c822ba.html"
+      "html_filename": "87c822ba.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "40353302",
+      "album": "ชรินทร์ ชุดที่ 2",
       "title": "ใต้ร่มมลุลี ชรินทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "ชรินทร์ ชุดที่ 2",
       "audio_url": "audio/ชรินทร์ ชุดที่ 2/ใต้ร่มมลุลี ชรินทร์.mp3",
-      "album_art_url": "audio/ชรินทร์ ชุดที่ 2/album_art.jpg",
-      "song_id": "40353302",
-      "html_filename": "40353302.html"
+      "html_filename": "40353302.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "dea6d193",
+      "album": "แลหลังฟังเพลง",
       "title": "ขอโทษ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ขอโทษ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "dea6d193",
-      "html_filename": "dea6d193.html"
+      "html_filename": "dea6d193.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "b6ce137b",
+      "album": "แลหลังฟังเพลง",
       "title": "คน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/คน - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "b6ce137b",
-      "html_filename": "b6ce137b.html"
+      "html_filename": "b6ce137b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "34f9d2b3",
+      "album": "แลหลังฟังเพลง",
       "title": "คนทำทาง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/คนทำทาง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "34f9d2b3",
-      "html_filename": "34f9d2b3.html"
+      "html_filename": "34f9d2b3.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "5ac301ec",
+      "album": "แลหลังฟังเพลง",
       "title": "คลื่นละเมอฝั่ง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/คลื่นละเมอฝั่ง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "5ac301ec",
-      "html_filename": "5ac301ec.html"
+      "html_filename": "5ac301ec.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "c7d6c581",
+      "album": "แลหลังฟังเพลง",
       "title": "ความทรงจำ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ความทรงจำ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "c7d6c581",
-      "html_filename": "c7d6c581.html"
+      "html_filename": "c7d6c581.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "19462534",
+      "album": "แลหลังฟังเพลง",
       "title": "ความรักเจ้าขา",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ความรักเจ้าขา - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "19462534",
-      "html_filename": "19462534.html"
+      "html_filename": "19462534.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "493f2058",
+      "album": "แลหลังฟังเพลง",
       "title": "จากรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/จากรัก - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "493f2058",
-      "html_filename": "493f2058.html"
+      "html_filename": "493f2058.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7faca5a6",
+      "album": "แลหลังฟังเพลง",
       "title": "ฉันจะฝันถึงเธอ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ฉันจะฝันถึงเธอ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "7faca5a6",
-      "html_filename": "7faca5a6.html"
+      "html_filename": "7faca5a6.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "75f874a6",
+      "album": "แลหลังฟังเพลง",
       "title": "ดอกฟ้ารามัญ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ดอกฟ้ารามัญ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "75f874a6",
-      "html_filename": "75f874a6.html"
+      "html_filename": "75f874a6.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "b1cea6a7",
+      "album": "แลหลังฟังเพลง",
       "title": "ดอกไม้จะบาน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ดอกไม้จะบาน - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "b1cea6a7",
-      "html_filename": "b1cea6a7.html"
+      "html_filename": "b1cea6a7.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "a86ddcab",
+      "album": "แลหลังฟังเพลง",
       "title": "ดอกไม้ใกล้มือ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ดอกไม้ใกล้มือ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "a86ddcab",
-      "html_filename": "a86ddcab.html"
+      "html_filename": "a86ddcab.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "daed625d",
+      "album": "แลหลังฟังเพลง",
       "title": "น้อยไปอีกหรือ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/น้อยไปอีกหรือ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "daed625d",
-      "html_filename": "daed625d.html"
+      "html_filename": "daed625d.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "0a294569",
+      "album": "แลหลังฟังเพลง",
       "title": "น้ำตาลาไทร",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/น้ำตาลาไทร - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "0a294569",
-      "html_filename": "0a294569.html"
+      "html_filename": "0a294569.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "9ef4f117",
+      "album": "แลหลังฟังเพลง",
       "title": "บัวเรียงบัวโรย",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/บัวเรียงบัวโรย - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "9ef4f117",
-      "html_filename": "9ef4f117.html"
+      "html_filename": "9ef4f117.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "8fe40e6e",
+      "album": "แลหลังฟังเพลง",
       "title": "บ้านนาราตรี",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/บ้านนาราตรี - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "8fe40e6e",
-      "html_filename": "8fe40e6e.html"
+      "html_filename": "8fe40e6e.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "05954bc2",
+      "album": "แลหลังฟังเพลง",
       "title": "ปาหนัน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ปาหนัน - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "05954bc2",
-      "html_filename": "05954bc2.html"
+      "html_filename": "05954bc2.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "b818c987",
+      "album": "แลหลังฟังเพลง",
       "title": "ปิ่นทอง สวลี",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ปิ่นทอง สวลี - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "b818c987",
-      "html_filename": "b818c987.html"
+      "html_filename": "b818c987.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7b173066",
+      "album": "แลหลังฟังเพลง",
       "title": "ฝนหนาวสาวครวญ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ฝนหนาวสาวครวญ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "7b173066",
-      "html_filename": "7b173066.html"
+      "html_filename": "7b173066.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "865f6fed",
+      "album": "แลหลังฟังเพลง",
       "title": "ฝากเพลงถึงเธอ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ฝากเพลงถึงเธอ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "865f6fed",
-      "html_filename": "865f6fed.html"
+      "html_filename": "865f6fed.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "e83d4c18",
+      "album": "แลหลังฟังเพลง",
       "title": "มะเทิ่ง  เม้ยเจิง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/มะเทิ่ง  เม้ยเจิง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "e83d4c18",
-      "html_filename": "e83d4c18.html"
+      "html_filename": "e83d4c18.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4789c757",
+      "album": "แลหลังฟังเพลง",
       "title": "มิตรแห่งความดี",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/มิตรแห่งความดี - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "4789c757",
-      "html_filename": "4789c757.html"
+      "html_filename": "4789c757.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "c93996ad",
+      "album": "แลหลังฟังเพลง",
       "title": "ยิ่งบ่อยยิ่งดี",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ยิ่งบ่อยยิ่งดี - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "c93996ad",
-      "html_filename": "c93996ad.html"
+      "html_filename": "c93996ad.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "efb70dc0",
+      "album": "แลหลังฟังเพลง",
       "title": "รักคนที่เขารักเราดีกว่า",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/รักคนที่เขารักเราดีกว่า - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "efb70dc0",
-      "html_filename": "efb70dc0.html"
+      "html_filename": "efb70dc0.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "9211a8af",
+      "album": "แลหลังฟังเพลง",
       "title": "รักสลาย   กาญจน์ลดา มฤคพิทักษ์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/รักสลาย   กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "9211a8af",
-      "html_filename": "9211a8af.html"
+      "html_filename": "9211a8af.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "f59e3d55",
+      "album": "แลหลังฟังเพลง",
       "title": "ราชาเป็นสง่าแห่งแคว้น",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ราชาเป็นสง่าแห่งแคว้น - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "f59e3d55",
-      "html_filename": "f59e3d55.html"
+      "html_filename": "f59e3d55.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "cd90274b",
+      "album": "แลหลังฟังเพลง",
       "title": "รุ้งทองฟ่องฟ้า",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/รุ้งทองฟ่องฟ้า - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "cd90274b",
-      "html_filename": "cd90274b.html"
+      "html_filename": "cd90274b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4e65e7ca",
+      "album": "แลหลังฟังเพลง",
       "title": "ลม",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ลม - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "4e65e7ca",
-      "html_filename": "4e65e7ca.html"
+      "html_filename": "4e65e7ca.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "c80e16f8",
+      "album": "แลหลังฟังเพลง",
       "title": "ลาวครวญ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ลาวครวญ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "c80e16f8",
-      "html_filename": "c80e16f8.html"
+      "html_filename": "c80e16f8.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "01855384",
+      "album": "แลหลังฟังเพลง",
       "title": "ลาวสมเด็จ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ลาวสมเด็จ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "01855384",
-      "html_filename": "01855384.html"
+      "html_filename": "01855384.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "a8a19207",
+      "album": "แลหลังฟังเพลง",
       "title": "ลืมเสียเถิดอย่าคิดถึง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ลืมเสียเถิดอย่าคิดถึง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "a8a19207",
-      "html_filename": "a8a19207.html"
+      "html_filename": "a8a19207.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "b6fdba3d",
+      "album": "แลหลังฟังเพลง",
       "title": "วอนลมฝากรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/วอนลมฝากรัก - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "b6fdba3d",
-      "html_filename": "b6fdba3d.html"
+      "html_filename": "b6fdba3d.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "671df6a3",
+      "album": "แลหลังฟังเพลง",
       "title": "วิญญาณในภาพถ่าย",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/วิญญาณในภาพถ่าย - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "671df6a3",
-      "html_filename": "671df6a3.html"
+      "html_filename": "671df6a3.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "84ac9bb4",
+      "album": "แลหลังฟังเพลง",
       "title": "ศรรัก",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ศรรัก - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "84ac9bb4",
-      "html_filename": "84ac9bb4.html"
+      "html_filename": "84ac9bb4.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "2f09bee8",
+      "album": "แลหลังฟังเพลง",
       "title": "สยามเมืองยิ้ม",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/สยามเมืองยิ้ม - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "2f09bee8",
-      "html_filename": "2f09bee8.html"
+      "html_filename": "2f09bee8.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "949b29ea",
+      "album": "แลหลังฟังเพลง",
       "title": "สร้อยแสงแดง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/สร้อยแสงแดง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "949b29ea",
-      "html_filename": "949b29ea.html"
+      "html_filename": "949b29ea.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "0a501de6",
+      "album": "แลหลังฟังเพลง",
       "title": "สายน้ำไม่ไหลกลับ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/สายน้ำไม่ไหลกลับ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "0a501de6",
-      "html_filename": "0a501de6.html"
+      "html_filename": "0a501de6.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "304e7eb2",
+      "album": "แลหลังฟังเพลง",
       "title": "อาลัยโดม",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/อาลัยโดม - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "304e7eb2",
-      "html_filename": "304e7eb2.html"
+      "html_filename": "304e7eb2.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "b228ddc5",
+      "album": "แลหลังฟังเพลง",
       "title": "อำนาจเงิน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/อำนาจเงิน - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "b228ddc5",
-      "html_filename": "b228ddc5.html"
+      "html_filename": "b228ddc5.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "6b275298",
+      "album": "แลหลังฟังเพลง",
       "title": "เจ้าพระยา ท่าพระจันทร์",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/เจ้าพระยา ท่าพระจันทร์ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "6b275298",
-      "html_filename": "6b275298.html"
+      "html_filename": "6b275298.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "25342870",
+      "album": "แลหลังฟังเพลง",
       "title": "เดียวดาย",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/เดียวดาย - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "25342870",
-      "html_filename": "25342870.html"
+      "html_filename": "25342870.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "614590d9",
+      "album": "แลหลังฟังเพลง",
       "title": "เธออยู่ไหน",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/เธออยู่ไหน - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "614590d9",
-      "html_filename": "614590d9.html"
+      "html_filename": "614590d9.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "582f8302",
+      "album": "แลหลังฟังเพลง",
       "title": "เพียงคำเดียว",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/เพียงคำเดียว - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "582f8302",
-      "html_filename": "582f8302.html"
+      "html_filename": "582f8302.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "9d75212b",
+      "album": "แลหลังฟังเพลง",
       "title": "แม่พิมพ์ของชาติ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/แม่พิมพ์ของชาติ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "9d75212b",
-      "html_filename": "9d75212b.html"
+      "html_filename": "9d75212b.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "4e9fa474",
+      "album": "แลหลังฟังเพลง",
       "title": "แม่สาย",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/แม่สาย - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "4e9fa474",
-      "html_filename": "4e9fa474.html"
+      "html_filename": "4e9fa474.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "142b49e9",
+      "album": "แลหลังฟังเพลง",
       "title": "แววตา",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/แววตา - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "142b49e9",
-      "html_filename": "142b49e9.html"
+      "html_filename": "142b49e9.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "7e4af53a",
+      "album": "แลหลังฟังเพลง",
       "title": "โดมร่มใจ",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/โดมร่มใจ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "7e4af53a",
-      "html_filename": "7e4af53a.html"
+      "html_filename": "7e4af53a.html",
+      "is_external": false,
+      "album_art_url": ""
     },
     {
+      "song_id": "e9331b0d",
+      "album": "แลหลังฟังเพลง",
       "title": "ไฟรักในทรวง",
       "artist": "กาญจน์ลดา มฤคพิทักษ์",
-      "album": "แลหลังฟังเพลง",
       "audio_url": "audio/แลหลังฟังเพลง/ไฟรักในทรวง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-      "album_art_url": "images/album_art_karnlada.jpg",
-      "song_id": "e9331b0d",
-      "html_filename": "e9331b0d.html"
+      "html_filename": "e9331b0d.html",
+      "is_external": false,
+      "album_art_url": ""
     }
-  ],
-  "count": 218
+  ]
 }

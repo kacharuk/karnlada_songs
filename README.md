@@ -1,223 +1,251 @@
-# Karnlada Songs - Music Player Generator
+# Karnlada Songs - Music Library
 
-A complete solution to create shareable HTML music players from OneDrive-hosted audio files, deployed to GitHub Pages.
+A simple music library website with search, sharing, QR codes, and playlist support. All songs are organized by album with local audio files.
 
-## Features
+## ✨ Features
 
-- Generate beautiful HTML music players with album art
-- Auto-play functionality
-- Open Graph metadata for rich previews on Messenger and social media
-- Responsive design that works on all devices
-- GitHub Pages hosting for easy sharing
-- Batch processing of multiple songs
+- 🔍 **Live search** - Find songs instantly as you type
+- 📤 **Share buttons** - Share songs via Web Share API or clipboard
+- 🔳 **QR codes** - Generate QR codes for easy mobile sharing
+- ▶️ **Playlist mode** - Play entire albums with auto-advance
+- 🎵 **Smart player** - Preloads next song, skips external links
+- 📱 **Mobile-friendly** - Responsive design works on all devices
+- 🔗 **External links** - Support for YouTube, SoundCloud, etc.
+- 🎯 **Stable URLs** - Song links never change even if files are renamed
 
-## Prerequisites
+## 🚀 Quick Start
 
-- Python 3.x installed
-- Git installed
-- GitHub account
-- OneDrive account with public sharing enabled
+### Prerequisites
 
-## Quick Start
-
-### 1. Get Your OneDrive Public Links
-
-For each music file and album art image:
-
-1. Upload files to OneDrive
-2. Right-click the file > Share
-3. Click "Copy link"
-4. Ensure "Anyone with the link can view" is selected
-5. For direct streaming, you need the download/embed URL format
-
-**Converting OneDrive Links:**
-
-OneDrive share links look like:
-```
-https://onedrive.live.com/?id=ABC123...
-```
-
-For direct playback, you need download URLs. Options:
-- Use OneDrive's "Embed" option to get direct URLs
-- Modify the URL to use `/download` endpoint
-- Use the link as-is and test if it streams directly
-
-### 2. Configure Your Music Files
-
-Edit `list_onedrive_files.py` and add your songs to the `files` list:
-
-```python
-files = [
-    {
-        "title": "Beautiful Song",
-        "artist": "Amazing Artist",
-        "audio_url": "https://onedrive.live.com/download?...",
-        "album_art_url": "https://onedrive.live.com/download?..."
-    },
-    {
-        "title": "Another Great Track",
-        "artist": "Cool Singer",
-        "audio_url": "https://onedrive.live.com/download?...",
-        "album_art_url": "https://onedrive.live.com/download?..."
-    },
-]
-```
-
-### 3. Run the Complete Workflow
-
-```bash
-python run_all.py
-```
-
-This will:
-1. Process your OneDrive file list
-2. Generate HTML music players
-3. Optionally deploy to GitHub Pages
-4. Show you the public URLs to share
-
-### 4. Enable GitHub Pages
-
-After first push, enable GitHub Pages:
-
-1. Go to: https://github.com/kacharuk/karnlada_songs/settings/pages
-2. Under "Source", select **main** branch
-3. Select **/docs** folder
-4. Click "Save"
-
-Wait a few minutes for deployment, then your site will be live at:
-```
-https://kacharuk.github.io/karnlada_songs/
-```
-
-## Individual Scripts
-
-You can also run scripts separately:
-
-### List OneDrive Files
-```bash
-python list_onedrive_files.py
-```
-Creates `onedrive_files.json` with your music file information.
-
-### Generate HTML Players
-```bash
-python generate_players.py
-```
-Reads `onedrive_files.json` and creates HTML files in the `docs/` directory.
-
-### Deploy to GitHub
-```bash
-python deploy.py
-```
-Commits and pushes HTML files to GitHub.
-
-Optional: Add custom commit message:
-```bash
-python deploy.py "Added new songs"
-```
-
-## File Structure
-
-```
-karnlada_songs/
-├── list_onedrive_files.py    # Configure your music files here
-├── generate_players.py        # Generates HTML players
-├── deploy.py                  # Deploys to GitHub
-├── run_all.py                 # Runs complete workflow
-├── README.md                  # This file
-├── onedrive_files.json        # Generated file list
-├── generated_urls.json        # Generated public URLs
-└── docs/                      # Generated HTML files
-    ├── index.html             # Landing page with all songs
-    ├── song_title_1.html      # Individual player pages
-    └── song_title_2.html
-```
-
-## Sharing on Messenger
-
-When you share a link on Messenger, it will automatically display:
-- Song title
-- Artist name
-- Album art image
-- Play button
-
-The HTML includes Open Graph meta tags for rich social media previews.
-
-## Troubleshooting
-
-### Audio won't play
-- Verify OneDrive link is a direct download URL
-- Check browser console for CORS errors
-- Some browsers block autoplay - users may need to click play
-- Test the OneDrive URL directly in browser
-
-### Album art not showing
-- Verify the image URL is accessible
-- Check image format (JPEG, PNG work best)
-- Ensure OneDrive sharing is set to public
-
-### GitHub Pages not updating
-- Wait 5-10 minutes after pushing
-- Check GitHub Pages settings are correct
-- Verify files are in `/docs` folder
-- Check GitHub Actions tab for build status
-
-### Git authentication fails
-- Use GitHub CLI: `gh auth login`
-- Or create a Personal Access Token
-- Or set up SSH keys
-
-### No changes to commit
-- Make sure you edited `list_onedrive_files.py`
-- Check that `onedrive_files.json` was created
-- Verify `docs/` folder contains HTML files
-
-## Updating Songs
-
-To add or update songs:
-
-1. Edit `list_onedrive_files.py`
-2. Run `python run_all.py`
-3. Confirm deployment when prompted
-
-## Advanced Configuration
-
-### Custom GitHub Pages URL
-
-Edit `base_url` in `generate_players.py`:
-```python
-base_url = "https://your-username.github.io/your-repo"
-```
-
-### Custom Styling
-
-Edit the CSS in `generate_players.py` in the `generate_html_player()` function.
-
-### Different Branch or Folder
-
-To use a different branch or folder for GitHub Pages:
-1. Modify the deployment script
-2. Update GitHub Pages settings to match
-
-## Requirements
-
-- Python 3.6 or higher
+- Python 3.x
 - Git
-- Internet connection
-- GitHub account with push access to the repository
+- Audio files (mp3/m4a)
 
-## Support
+### Initial Setup
 
-For issues or questions:
-- Check the Troubleshooting section above
-- Review error messages carefully
-- Ensure all prerequisites are met
-- Verify OneDrive links are publicly accessible
+1. Clone this repository
+2. Copy audio files to `docs/audio/{album}/`
+3. Run: `python rebuild.py`
+4. Push to GitHub
+5. Enable GitHub Pages (Settings → Pages → main branch → /docs folder)
 
-## License
-
-Free to use and modify for personal projects.
+Your site will be live at: `https://kacharuk.github.io/karnlada_songs/`
 
 ---
 
-**Note:** This solution runs locally on your machine. You control all the data and deployment.
+## 📝 How to Add/Remove Songs
+
+### Adding New Audio Files
+
+1. **Copy files** to `docs/audio/{album}/`
+   ```bash
+   # Example:
+   cp "new_song.mp3" "docs/audio/Karnlada Music/"
+   ```
+
+2. **Add album art** (optional)
+   - Place `album_art.jpg` in the album folder
+   - If not present, uses default album art
+
+3. **Run rebuild**
+   ```bash
+   python rebuild.py
+   ```
+   This will:
+   - Scan for new files
+   - Generate stable IDs automatically
+   - Update `songs_mapping.csv`
+   - Create HTML pages
+
+4. **Review** `songs_mapping.csv` (optional)
+   - Reorder rows to change song order
+   - Edit titles if needed
+   - Run `python rebuild.py` again if you made changes
+
+5. **Deploy**
+   ```bash
+   git add -A
+   git commit -m "Add new songs"
+   git push
+   ```
+
+### Adding External Links (YouTube, SoundCloud, etc.)
+
+1. **Edit** `songs_mapping.csv` manually
+2. **Add a new row** with these values:
+   ```csv
+   song_id,album,title,artist,audio_file_path,html_filename,is_external
+   youtube01,YouTube,Song Title,Artist Name,https://youtube.com/watch?v=xxx,youtube01.html,true
+   ```
+   - `song_id`: Unique 8-char ID (your choice, e.g., `youtube01`)
+   - `album`: Album name (e.g., "YouTube" or "External")
+   - `title`: Song title
+   - `artist`: Artist name
+   - `audio_file_path`: **Full external URL**
+   - `html_filename`: `{song_id}.html`
+   - `is_external`: **true**
+
+3. **Run rebuild**
+   ```bash
+   python rebuild.py
+   ```
+
+4. **Deploy**
+   ```bash
+   git add -A
+   git commit -m "Add external link: Song Title"
+   git push
+   ```
+
+### Removing Songs
+
+#### Remove Audio File:
+1. Delete the audio file from `docs/audio/{album}/`
+2. Delete the corresponding row from `songs_mapping.csv`
+3. Run `python rebuild.py`
+4. Deploy changes
+
+#### Remove External Link:
+1. Delete the row from `songs_mapping.csv`
+2. Run `python rebuild.py`
+3. Deploy changes
+
+### Reordering Songs
+
+Songs appear in the **same order as in the CSV file**.
+
+To change the order:
+1. Open `songs_mapping.csv`
+2. Cut and paste rows to reorder
+3. Save the file
+4. Run `python rebuild.py`
+5. Deploy changes
+
+---
+
+## 📂 File Structure
+
+```
+karnlada_songs/
+├── songs_mapping.csv          # Master database (EDIT THIS!)
+├── scan_new_songs.py          # Scans for new audio files
+├── generate_html.py           # Generates HTML from CSV
+├── rebuild.py                 # Main workflow script
+├── WORKFLOW.md                # Detailed workflow guide
+├── FEATURES.md                # Complete feature list
+└── docs/                      # GitHub Pages root
+    ├── index.html             # Main page (generated)
+    ├── player.html            # Music player (generated)
+    ├── songs/                 # Individual song pages (generated)
+    │   └── *.html
+    ├── audio/                 # Your audio files
+    │   ├── Album 1/
+    │   │   ├── album_art.jpg
+    │   │   └── *.mp3
+    │   └── Album 2/
+    │       └── *.m4a
+    └── js/                    # JavaScript modules (generated)
+        ├── utils.js
+        ├── search.js
+        └── player.js
+```
+
+## 🛠️ Commands
+
+### Main Command (Use This!)
+```bash
+python rebuild.py
+```
+Scans for new files, updates CSV, generates all HTML.
+
+### Individual Steps
+```bash
+# Step 1: Scan for new files
+python scan_new_songs.py
+
+# Step 2: Generate HTML
+python generate_html.py
+```
+
+### Deploy to GitHub
+```bash
+git add -A
+git commit -m "Your message here"
+git push
+```
+
+## 🎯 Common Tasks
+
+### Change Song Order in Album
+1. Open `songs_mapping.csv`
+2. Reorder rows (cut/paste)
+3. `python rebuild.py`
+4. Deploy
+
+### Fix Song Title
+1. Edit `title` column in `songs_mapping.csv`
+2. `python rebuild.py`
+3. Deploy
+
+### Change Artist Name
+1. Edit `artist` column in `songs_mapping.csv`
+2. `python rebuild.py`
+3. Deploy
+
+### Add Album Art
+1. Place `album_art.jpg` in `docs/audio/{album}/`
+2. `python rebuild.py` (detects it automatically)
+3. Deploy
+
+## 🔧 Troubleshooting
+
+### New songs not appearing?
+- Make sure files are in `docs/audio/{album}/`
+- Run `python rebuild.py`
+- Check that `songs_mapping.csv` has the new entries
+
+### External link not working?
+- Verify `is_external` is set to `true` (lowercase)
+- Check the URL is correct
+- Run `python rebuild.py` after editing CSV
+
+### Song order is wrong?
+- Check the order in `songs_mapping.csv`
+- Songs appear in CSV order (not alphabetical)
+- Run `python rebuild.py` after reordering
+
+### Changes not showing on website?
+- Wait 2-3 minutes after `git push`
+- Clear browser cache
+- Check GitHub Actions for deployment status
+
+## 📚 Additional Documentation
+
+- **WORKFLOW.md** - Complete maintenance workflow
+- **FEATURES.md** - All features and technical details
+- **EXTERNAL_LINKS.md** - How to add external links
+
+## 🎵 Song ID System
+
+Each song gets a **stable 8-character ID** based on:
+- Album name
+- Song title
+- File path
+
+**Benefits:**
+- URLs never change
+- Safe to share and bookmark
+- Files can be renamed without breaking links
+
+**Example:**
+- File: `docs/audio/Album/Song.mp3`
+- ID: `abc12345`
+- URL: `https://kacharuk.github.io/karnlada_songs/songs/abc12345.html`
+
+---
+
+## 📄 License
+
+Free to use and modify for personal projects.
+
+**Built for:** กาญจน์ลดา มฤคพิทักษ์'s music collection 🎵
