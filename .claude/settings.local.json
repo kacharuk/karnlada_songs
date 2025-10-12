@@ -19,7 +19,9 @@
       "Bash(done)",
       "Bash(for dir in */)",
       "Bash(do echo \"=== $dir ===\")",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(for dir in docs/audio/*/)",
+      "Bash(do cp docs/images/album_art_karnlada.jpg \"$dir/album_art.jpg\")"
     ],
     "deny": [],
     "ask": []

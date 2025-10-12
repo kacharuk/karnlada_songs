@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karnlada Songs</title>
+    <title>Karnlada Songs - Music Collection</title>
     <meta property="og:title" content="Karnlada Songs">
-    <meta property="og:description" content="Music collection">
+    <meta property="og:description" content="Complete music collection organized by albums">
     <meta property="og:type" content="website">
 
     <style>
@@ -23,7 +23,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
@@ -31,1257 +31,1174 @@
             color: white;
             text-align: center;
             margin-bottom: 40px;
-            font-size: 36px;
+            font-size: 42px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .album-section {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .album-title {
+            color: #2d3748;
+            font-size: 28px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .songs-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .song-item {
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #f7fafc;
+            border-radius: 10px;
+            transition: all 0.2s;
         }
 
-        .song-item h3 {
+        .song-item:hover {
+            background: #edf2f7;
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .song-title {
             color: #2d3748;
-            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: 500;
         }
 
-        .artist {
-            color: #718096;
-            margin-bottom: 15px;
-        }
-
-        .play-button, .share-button {
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-right: 10px;
-            margin-top: 5px;
+        .song-actions {
+            display: flex;
+            gap: 10px;
         }
 
         .play-button {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
             background: #667eea;
             color: white;
-        }
-
-        .share-button {
-            background: #48bb78;
-            color: white;
+            transition: all 0.2s;
+            font-size: 14px;
         }
 
         .play-button:hover {
             background: #5568d3;
+            transform: scale(1.05);
         }
 
-        .share-button:hover {
-            background: #38a169;
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .album-title {
+                font-size: 24px;
+            }
+
+            .song-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .song-actions {
+                width: 100%;
+            }
+
+            .play-button {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Karnlada Songs</h1>
-        
-        <div class="song-item">
-            <h3>กระซิบสวาท</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="กระซบสวาท.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/กระซบสวาท.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>กล้วยไม้</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="กลวยไม.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/กลวยไม.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>กว่าเราจะรักกันได้</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="กวาเราจะรกกนได.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/กวาเราจะรกกนได.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ขวัญเรียม</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ขวญเรยม.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ขวญเรยม.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ขอรักคืน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ขอรกคน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ขอรกคน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>คนึงครวญ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="คนงครวญ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/คนงครวญ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ดอกไม้กับเพลง</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ดอกไมกบเพลง.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ดอกไมกบเพลง.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ดอกไม้ใกล้มือ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ดอกไมใกลมอ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ดอกไมใกลมอ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ถึงเธอ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ถงเธอ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ถงเธอ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>บัวกลางบึง</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="บวกลางบง.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/บวกลางบง.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ปาหนัน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ปาหนน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ปาหนน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ผู้ครองรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ผครองรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ผครองรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ฝากดิน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ฝากดน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ฝากดน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ฝากหมอน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ฝากหมอน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ฝากหมอน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>มนต์ดลใจ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="มนตดลใจ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/มนตดลใจ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>มนต์รักลูกทุ่ง</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="มนตรกลกทง.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/มนตรกลกทง.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>มั่นใจไม่รัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="มนใจไมรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/มนใจไมรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รอคำรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รอคำรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รอคำรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รอพี่</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รอพ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รอพ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รักบังใบ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รกบงใบ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รกบงใบ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รักปักใจ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รกปกใจ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รกปกใจ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รักลาฟ้าเศร้า</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รกลาฟาเศรา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รกลาฟาเศรา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รักเธอคนเดียว</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รกเธอคนเดยว.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รกเธอคนเดยว.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รักเอ๋ยรักข้า</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รกเอยรกขา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รกเอยรกขา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ลุ่มเจ้าพระยา</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ลมเจาพระยา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ลมเจาพระยา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>วัยระวี</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="วยระว.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/วยระว.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>วิมานสีชมพู</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="วมานสชมพ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/วมานสชมพ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>สมมุติว่าเขารัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="สมมตวาเขารก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/สมมตวาเขารก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>สายทิพย์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="สายทพย.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/สายทพย.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>สาวสะอื้น</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="สาวสะอน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/สาวสะอน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>สาส์นรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="สาสนรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/สาสนรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>หวานรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="หวานรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/หวานรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ห่วงอาลัย</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="หวงอาลย.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/หวงอาลย.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>อีสา</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="อสา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/อสา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>อุทยานดอกไม้</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="อทยานดอกไม.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/อทยานดอกไม.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>เพื่อคุณ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="เพอคณ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/เพอคณ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>เสียงกระซิบจากเกลียงคลื่น</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="เสยงกระซบจากเกลยงคลน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/เสยงกระซบจากเกลยงคลน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>แรมพิศวาส</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="แรมพศวาส.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/แรมพศวาส.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>แว่วเสียงซึง</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="แววเสยงซง.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/แววเสยงซง.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>โอ้ทูลกระหม่อม</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="โอทลกระหมอม.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/โอทลกระหมอม.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ใจรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ใจรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ใจรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ใจหวลครวญรำพัน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ใจหวลครวญรำพน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ใจหวลครวญรำพน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ไม่ใกล้ไม่ไกล</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ไมใกลไมไกล.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ไมใกลไมไกล.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ขอโทษ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ขอโทษ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ขอโทษ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ข้องจิต ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ของจตชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ของจตชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>คนจะรักกัน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="คนจะรกกน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/คนจะรกกน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>คลื่นละเมอฝั่ง</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="คลนละเมอฝง.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/คลนละเมอฝง.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ความรักไม่รู้จบ </h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ความรกไมรจบ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ความรกไมรจบ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>คู่กรรม</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="คกรรม.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/คกรรม.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>จูบเย้ยจันทร์ ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="จบเยยจนทรชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/จบเยยจนทรชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ชีวิตกับความหวัง</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ชวตกบความหวง.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ชวตกบความหวง.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ดวงจันทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ดวงจนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ดวงจนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ดวงใจในฝัน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ดวงใจในฝน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ดวงใจในฝน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ต้นตระกูลไทย </h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ตนตระกลไทย.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ตนตระกลไทย.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ถึงพี่</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ถงพ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ถงพ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ถ้าหัวใจฉันมีปีก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ถาหวใจฉนมปก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ถาหวใจฉนมปก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ทำดีได้ดีทำชั่วได้ชั่ว</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ทำดไดดทำชวไดชว.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ทำดไดดทำชวไดชว.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ที่รัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ทรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ทรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>บรเทศ สุนทราภรณ์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="บรเทศสนทราภรณ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/บรเทศสนทราภรณ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ปาริชาต สุนทราภรณ์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ปารชาตสนทราภรณ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ปารชาตสนทราภรณ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ปูนาขาเก(Instrumental Version)</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ปนาขาเกInstrumentalVersion.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ปนาขาเกInstrumentalVersion.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ฝนตั้งเค้า</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ฝนตงเคา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ฝนตงเคา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ฝากฟ้าสั่งดิน </h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ฝากฟาสงดน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ฝากฟาสงดน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>พรปีใหม่</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="พรปใหม.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/พรปใหม.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>พระรัตนตรัย</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="พระรตนตรย.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/พระรตนตรย.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รักริงโง</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รกรงโง.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รกรงโง.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รักเอย</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รกเอย.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รกเอย.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>วนาสวาท ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="วนาสวาทชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/วนาสวาทชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>วอลซ์นาวี</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="วอลซนาว.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/วอลซนาว.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ศรัทธา</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ศรทธา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ศรทธา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ศาสนารัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ศาสนารก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ศาสนารก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>หนึ่งกำลังใจ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="หนงกำลงใจ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/หนงกำลงใจ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>หนึ่งในร้อย</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="หนงในรอย.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/หนงในรอย.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>หลักไม้เลื้อย</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="หลกไมเลอย.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/หลกไมเลอย.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>หวานรัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="หวานรกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/หวานรกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>อธิษฐานรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="อธษฐานรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/อธษฐานรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>อยากฟังซ้ำ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="อยากฟงซำ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/อยากฟงซำ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>อาลัยลา</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="อาลยลา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/อาลยลา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>เก็บ..ตะวัน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="เกบตะวน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/เกบตะวน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>เดินหน้า</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="เดนหนา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/เดนหนา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>เราจะยิ้มให้กัน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="เราจะยมใหกน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/เราจะยมใหกน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>เรามีเรา</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="เรามเรา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/เรามเรา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>เรือมนุษย์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="เรอมนษย.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/เรอมนษย.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>เหมือนคนละฟากฟ้า</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="เหมอนคนละฟากฟา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/เหมอนคนละฟากฟา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>แม่จ๋า</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="แมจา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/แมจา.html" class="share-button">Share Link</a>
+        <h1>🎵 Karnlada Songs</h1>
+        
+        <div class="album-section">
+            <h2 class="album-title">📀 Karnlada Music</h2>
+            <div class="songs-list">
+                
+                    <div class="song-item">
+                        <span class="song-title">กระซิบสวาท</span>
+                        <div class="song-actions">
+                            <a href="กระซบสวาท.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">กล้วยไม้</span>
+                        <div class="song-actions">
+                            <a href="กลวยไม.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">กว่าเราจะรักกันได้</span>
+                        <div class="song-actions">
+                            <a href="กวาเราจะรกกนได.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ขวัญเรียม</span>
+                        <div class="song-actions">
+                            <a href="ขวญเรยม.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ขอรักคืน</span>
+                        <div class="song-actions">
+                            <a href="ขอรกคน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">คนึงครวญ</span>
+                        <div class="song-actions">
+                            <a href="คนงครวญ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ดอกไม้กับเพลง</span>
+                        <div class="song-actions">
+                            <a href="ดอกไมกบเพลง.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ดอกไม้ใกล้มือ</span>
+                        <div class="song-actions">
+                            <a href="ดอกไมใกลมอ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ถึงเธอ</span>
+                        <div class="song-actions">
+                            <a href="ถงเธอ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">บัวกลางบึง</span>
+                        <div class="song-actions">
+                            <a href="บวกลางบง.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ปาหนัน</span>
+                        <div class="song-actions">
+                            <a href="ปาหนน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ผู้ครองรัก</span>
+                        <div class="song-actions">
+                            <a href="ผครองรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ฝากดิน</span>
+                        <div class="song-actions">
+                            <a href="ฝากดน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ฝากหมอน</span>
+                        <div class="song-actions">
+                            <a href="ฝากหมอน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">มนต์ดลใจ</span>
+                        <div class="song-actions">
+                            <a href="มนตดลใจ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">มนต์รักลูกทุ่ง</span>
+                        <div class="song-actions">
+                            <a href="มนตรกลกทง.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">มั่นใจไม่รัก</span>
+                        <div class="song-actions">
+                            <a href="มนใจไมรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รอคำรัก</span>
+                        <div class="song-actions">
+                            <a href="รอคำรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รอพี่</span>
+                        <div class="song-actions">
+                            <a href="รอพ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักบังใบ</span>
+                        <div class="song-actions">
+                            <a href="รกบงใบ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักปักใจ</span>
+                        <div class="song-actions">
+                            <a href="รกปกใจ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักลาฟ้าเศร้า</span>
+                        <div class="song-actions">
+                            <a href="รกลาฟาเศรา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักเธอคนเดียว</span>
+                        <div class="song-actions">
+                            <a href="รกเธอคนเดยว.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักเอ๋ยรักข้า</span>
+                        <div class="song-actions">
+                            <a href="รกเอยรกขา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ลุ่มเจ้าพระยา</span>
+                        <div class="song-actions">
+                            <a href="ลมเจาพระยา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">วัยระวี</span>
+                        <div class="song-actions">
+                            <a href="วยระว.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">วิมานสีชมพู</span>
+                        <div class="song-actions">
+                            <a href="วมานสชมพ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">สมมุติว่าเขารัก</span>
+                        <div class="song-actions">
+                            <a href="สมมตวาเขารก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">สายทิพย์</span>
+                        <div class="song-actions">
+                            <a href="สายทพย.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">สาวสะอื้น</span>
+                        <div class="song-actions">
+                            <a href="สาวสะอน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">สาส์นรัก</span>
+                        <div class="song-actions">
+                            <a href="สาสนรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">หวานรัก</span>
+                        <div class="song-actions">
+                            <a href="หวานรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ห่วงอาลัย</span>
+                        <div class="song-actions">
+                            <a href="หวงอาลย.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">อีสา</span>
+                        <div class="song-actions">
+                            <a href="อสา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">อุทยานดอกไม้</span>
+                        <div class="song-actions">
+                            <a href="อทยานดอกไม.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เพื่อคุณ</span>
+                        <div class="song-actions">
+                            <a href="เพอคณ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เสียงกระซิบจากเกลียงคลื่น</span>
+                        <div class="song-actions">
+                            <a href="เสยงกระซบจากเกลยงคลน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">แรมพิศวาส</span>
+                        <div class="song-actions">
+                            <a href="แรมพศวาส.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">แว่วเสียงซึง</span>
+                        <div class="song-actions">
+                            <a href="แววเสยงซง.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">โอ้ทูลกระหม่อม</span>
+                        <div class="song-actions">
+                            <a href="โอทลกระหมอม.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ใจรัก</span>
+                        <div class="song-actions">
+                            <a href="ใจรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ใจหวลครวญรำพัน</span>
+                        <div class="song-actions">
+                            <a href="ใจหวลครวญรำพน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ไม่ใกล้ไม่ไกล</span>
+                        <div class="song-actions">
+                            <a href="ไมใกลไมไกล.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="album-section">
+            <h2 class="album-title">📀 Karnlada Music 2</h2>
+            <div class="songs-list">
+                
+                    <div class="song-item">
+                        <span class="song-title">ขอโทษ</span>
+                        <div class="song-actions">
+                            <a href="ขอโทษ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ข้องจิต ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ของจตชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">คนจะรักกัน</span>
+                        <div class="song-actions">
+                            <a href="คนจะรกกน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">คลื่นละเมอฝั่ง</span>
+                        <div class="song-actions">
+                            <a href="คลนละเมอฝง.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ความรักไม่รู้จบ </span>
+                        <div class="song-actions">
+                            <a href="ความรกไมรจบ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">คู่กรรม</span>
+                        <div class="song-actions">
+                            <a href="คกรรม.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">จูบเย้ยจันทร์ ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="จบเยยจนทรชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ชีวิตกับความหวัง</span>
+                        <div class="song-actions">
+                            <a href="ชวตกบความหวง.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ดวงจันทร์</span>
+                        <div class="song-actions">
+                            <a href="ดวงจนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ดวงใจในฝัน</span>
+                        <div class="song-actions">
+                            <a href="ดวงใจในฝน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ต้นตระกูลไทย </span>
+                        <div class="song-actions">
+                            <a href="ตนตระกลไทย.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ถึงพี่</span>
+                        <div class="song-actions">
+                            <a href="ถงพ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ถ้าหัวใจฉันมีปีก</span>
+                        <div class="song-actions">
+                            <a href="ถาหวใจฉนมปก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ทำดีได้ดีทำชั่วได้ชั่ว</span>
+                        <div class="song-actions">
+                            <a href="ทำดไดดทำชวไดชว.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ที่รัก</span>
+                        <div class="song-actions">
+                            <a href="ทรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">บรเทศ สุนทราภรณ์</span>
+                        <div class="song-actions">
+                            <a href="บรเทศสนทราภรณ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ปาริชาต สุนทราภรณ์</span>
+                        <div class="song-actions">
+                            <a href="ปารชาตสนทราภรณ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ปูนาขาเก(Instrumental Version)</span>
+                        <div class="song-actions">
+                            <a href="ปนาขาเกInstrumentalVersion.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ฝนตั้งเค้า</span>
+                        <div class="song-actions">
+                            <a href="ฝนตงเคา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ฝากฟ้าสั่งดิน </span>
+                        <div class="song-actions">
+                            <a href="ฝากฟาสงดน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">พรปีใหม่</span>
+                        <div class="song-actions">
+                            <a href="พรปใหม.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">พระรัตนตรัย</span>
+                        <div class="song-actions">
+                            <a href="พระรตนตรย.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="รกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักริงโง</span>
+                        <div class="song-actions">
+                            <a href="รกรงโง.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักเอย</span>
+                        <div class="song-actions">
+                            <a href="รกเอย.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">วนาสวาท ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="วนาสวาทชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">วอลซ์นาวี</span>
+                        <div class="song-actions">
+                            <a href="วอลซนาว.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ศรัทธา</span>
+                        <div class="song-actions">
+                            <a href="ศรทธา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ศาสนารัก</span>
+                        <div class="song-actions">
+                            <a href="ศาสนารก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">หนึ่งกำลังใจ</span>
+                        <div class="song-actions">
+                            <a href="หนงกำลงใจ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">หนึ่งในร้อย</span>
+                        <div class="song-actions">
+                            <a href="หนงในรอย.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">หลักไม้เลื้อย</span>
+                        <div class="song-actions">
+                            <a href="หลกไมเลอย.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">หวานรัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="หวานรกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">อธิษฐานรัก</span>
+                        <div class="song-actions">
+                            <a href="อธษฐานรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">อยากฟังซ้ำ</span>
+                        <div class="song-actions">
+                            <a href="อยากฟงซำ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">อาลัยลา</span>
+                        <div class="song-actions">
+                            <a href="อาลยลา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เก็บ..ตะวัน</span>
+                        <div class="song-actions">
+                            <a href="เกบตะวน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เดินหน้า</span>
+                        <div class="song-actions">
+                            <a href="เดนหนา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เราจะยิ้มให้กัน</span>
+                        <div class="song-actions">
+                            <a href="เราจะยมใหกน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เรามีเรา</span>
+                        <div class="song-actions">
+                            <a href="เรามเรา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เรือมนุษย์</span>
+                        <div class="song-actions">
+                            <a href="เรอมนษย.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เหมือนคนละฟากฟ้า</span>
+                        <div class="song-actions">
+                            <a href="เหมอนคนละฟากฟา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">แม่จ๋า</span>
+                        <div class="song-actions">
+                            <a href="แมจา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">แรงรัก</span>
+                        <div class="song-actions">
+                            <a href="แรงรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ใจหวนครวญรำพัน(ร้องคู่)</span>
+                        <div class="song-actions">
+                            <a href="ใจหวนครวญรำพนรองค.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ให้เธอ (อคูสติก)</span>
+                        <div class="song-actions">
+                            <a href="ใหเธออคสตก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="album-section">
+            <h2 class="album-title">📀 กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1</h2>
+            <div class="songs-list">
+                
+                    <div class="song-item">
+                        <span class="song-title">กล้วยไม้</span>
+                        <div class="song-actions">
+                            <a href="กลวยไม.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">กว่าเราจะรักกันได้</span>
+                        <div class="song-actions">
+                            <a href="กวาเราจะรกกนได.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ขอรักคืน</span>
+                        <div class="song-actions">
+                            <a href="ขอรกคน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ดอกไม้ใกล้มือ</span>
+                        <div class="song-actions">
+                            <a href="ดอกไมใกลมอ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ปาหนัน</span>
+                        <div class="song-actions">
+                            <a href="ปาหนน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ฝากหมอน</span>
+                        <div class="song-actions">
+                            <a href="ฝากหมอน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">มนต์รักลูกทุ่ง</span>
+                        <div class="song-actions">
+                            <a href="มนตรกลกทง.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รอพี่</span>
+                        <div class="song-actions">
+                            <a href="รอพ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักเธอคนเดียว</span>
+                        <div class="song-actions">
+                            <a href="รกเธอคนเดยว.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักเอ๋ยรักข้า</span>
+                        <div class="song-actions">
+                            <a href="รกเอยรกขา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ลุ่มเจ้าพระยา</span>
+                        <div class="song-actions">
+                            <a href="ลมเจาพระยา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">วิมานสีชมพู</span>
+                        <div class="song-actions">
+                            <a href="วมานสชมพ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">สมมุติว่าเขารัก</span>
+                        <div class="song-actions">
+                            <a href="สมมตวาเขารก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เสียงกระซิบจากเกลียวคลื่น</span>
+                        <div class="song-actions">
+                            <a href="เสยงกระซบจากเกลยวคลน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">แรมพิศวาส</span>
+                        <div class="song-actions">
+                            <a href="แรมพศวาส.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">โอ้ทูลกระหม่อม</span>
+                        <div class="song-actions">
+                            <a href="โอทลกระหมอม.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ไม่ใกล้ไม่ไกล</span>
+                        <div class="song-actions">
+                            <a href="ไมใกลไมไกล.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="album-section">
+            <h2 class="album-title">📀 กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 2</h2>
+            <div class="songs-list">
+                
+                    <div class="song-item">
+                        <span class="song-title">กล้วยไม้</span>
+                        <div class="song-actions">
+                            <a href="กลวยไม.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ขวัญเรียม</span>
+                        <div class="song-actions">
+                            <a href="ขวญเรยม.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ดอกไม้กับเพลง</span>
+                        <div class="song-actions">
+                            <a href="ดอกไมกบเพลง.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ถึงเธอ</span>
+                        <div class="song-actions">
+                            <a href="ถงเธอ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ผู้ครองรัก</span>
+                        <div class="song-actions">
+                            <a href="ผครองรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ฝากดิน</span>
+                        <div class="song-actions">
+                            <a href="ฝากดน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">มนต์ดลใจ</span>
+                        <div class="song-actions">
+                            <a href="มนตดลใจ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รอพี่</span>
+                        <div class="song-actions">
+                            <a href="รอพ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักลาฟ้าเศร้า</span>
+                        <div class="song-actions">
+                            <a href="รกลาฟาเศรา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">วิมานสีชมพู</span>
+                        <div class="song-actions">
+                            <a href="วมานสชมพ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">สาวสะอื้น</span>
+                        <div class="song-actions">
+                            <a href="สาวสะอน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">หวานรัก</span>
+                        <div class="song-actions">
+                            <a href="หวานรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เพื่อคุณ</span>
+                        <div class="song-actions">
+                            <a href="เพอคณ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เสียงกระซิบจากเกลียงคลื่น</span>
+                        <div class="song-actions">
+                            <a href="เสยงกระซบจากเกลยงคลน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ใจรัก</span>
+                        <div class="song-actions">
+                            <a href="ใจรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ใจหวลครวญรำพัน</span>
+                        <div class="song-actions">
+                            <a href="ใจหวลครวญรำพน.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="album-section">
+            <h2 class="album-title">📀 กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 3</h2>
+            <div class="songs-list">
+                
+                    <div class="song-item">
+                        <span class="song-title">กระซิบสวาท</span>
+                        <div class="song-actions">
+                            <a href="กระซบสวาท.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">คนึงครวญ</span>
+                        <div class="song-actions">
+                            <a href="คนงครวญ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">บัวกลางบึง</span>
+                        <div class="song-actions">
+                            <a href="บวกลางบง.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">มั่นใจไม่รัก</span>
+                        <div class="song-actions">
+                            <a href="มนใจไมรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รอคำรัก</span>
+                        <div class="song-actions">
+                            <a href="รอคำรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักบังใบ</span>
+                        <div class="song-actions">
+                            <a href="รกบงใบ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักปักใจ</span>
+                        <div class="song-actions">
+                            <a href="รกปกใจ.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักเธอคนเดียว</span>
+                        <div class="song-actions">
+                            <a href="รกเธอคนเดยว.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักเอ๋ยรักข้า</span>
+                        <div class="song-actions">
+                            <a href="รกเอยรกขา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">วัยระวี</span>
+                        <div class="song-actions">
+                            <a href="วยระว.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">สายทิพย์</span>
+                        <div class="song-actions">
+                            <a href="สายทพย.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">สาส์นรัก</span>
+                        <div class="song-actions">
+                            <a href="สาสนรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">หวานรัก</span>
+                        <div class="song-actions">
+                            <a href="หวานรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ห่วงอาลัย</span>
+                        <div class="song-actions">
+                            <a href="หวงอาลย.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">อีสา</span>
+                        <div class="song-actions">
+                            <a href="อสา.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">อุทยานดอกไม้</span>
+                        <div class="song-actions">
+                            <a href="อทยานดอกไม.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">แว่วเสียงซึง</span>
+                        <div class="song-actions">
+                            <a href="แววเสยงซง.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="album-section">
+            <h2 class="album-title">📀 ชรินทร์ ชุดที่ 1</h2>
+            <div class="songs-list">
+                
+                    <div class="song-item">
+                        <span class="song-title">ข้องจิต ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ของจตชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">คืนหนึ่ง ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="คนหนงชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ง้อรัก</span>
+                        <div class="song-actions">
+                            <a href="งอรก.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">จนจริงไม่จนรัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="จนจรงไมจนรกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ฉอเลาะรัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ฉอเลาะรกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ธารน้ำรัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ธารนำรกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">นกเขาคูรัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="นกเขาครกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ฝนนี้ ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ฝนนชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">พรพรหม ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="พรพรหมชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">พระจันทร์วันเพ็ญ ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="พระจนทรวนเพญชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">มั่นใจรัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="มนใจรกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">วิมานรักห้วยแก้ว ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="วมานรกหวยแกวชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">สักขีแม่ปิง ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="สกขแมปงชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">สัญญารัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="สญญารกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เชื่อรัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="เชอรกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">เธออยู่ไหน ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="เธออยไหนชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">แต่ปางก่อน ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="แตปางกอนชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="album-section">
+            <h2 class="album-title">📀 ชรินทร์ ชุดที่ 2</h2>
+            <div class="songs-list">
+                
+                    <div class="song-item">
+                        <span class="song-title">ขอเป็นจันทร์ ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ขอเปนจนทรชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">จูบเย้ยจันทร์ ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="จบเยยจนทรชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ดำเนินทราย ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ดำเนนทรายชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ถนอมรัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ถนอมรกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ทุยจ๋าทุย ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ทยจาทยชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ปองใจรัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ปองใจรกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">พ่อแง่แม่งอน ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="พอแงแมงอนชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">มนต์รักดอกคำใต้ ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="มนตรกดอกคำใตชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="รกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักฉันนานๆ ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="รกฉนนานๆชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">รักใต้ร่มไทร ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="รกใตรมไทรชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">วนาสวาท ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="วนาสวาทชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">หวานรัก ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="หวานรกชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">อ้อยใจ ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ออยใจชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-title">ใต้ร่มมลุลี ชรินทร์</span>
+                        <div class="song-actions">
+                            <a href="ใตรมมลลชรนทร.html" class="play-button">▶ Play</a>
+                        </div>
+                    </div>
+            </div>
         </div>
-        
-        <div class="song-item">
-            <h3>แรงรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="แรงรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/แรงรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ใจหวนครวญรำพัน(ร้องคู่)</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ใจหวนครวญรำพนรองค.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ใจหวนครวญรำพนรองค.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ให้เธอ (อคูสติก)</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ใหเธออคสตก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ใหเธออคสตก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>01. ไม่ใกล้ไม่ไกล</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="01ไมใกลไมไกล.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/01ไมใกลไมไกล.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>02. กล้วยไม้</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="02กลวยไม.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/02กลวยไม.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>03. โอ้ทูลกระหม่อม</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="03โอทลกระหมอม.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/03โอทลกระหมอม.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>04. กว่าเราจะรักกันได้</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="04กวาเราจะรกกนได.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/04กวาเราจะรกกนได.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>05. มนต์รักลูกทุ่ง</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="05มนตรกลกทง.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/05มนตรกลกทง.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>06. ปาหนัน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="06ปาหนน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/06ปาหนน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>07. ฝากหมอน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="07ฝากหมอน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/07ฝากหมอน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>08. สมมุติว่าเขารัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="08สมมตวาเขารก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/08สมมตวาเขารก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>09. รักเธอคนเดียว</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="09รกเธอคนเดยว.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/09รกเธอคนเดยว.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>10. รักเอ๋ยรักข้า</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="10รกเอยรกขา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/10รกเอยรกขา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>11. ดอกไม้ใกล้มือ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="11ดอกไมใกลมอ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/11ดอกไมใกลมอ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>12. ลุ่มเจ้าพระยา</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="12ลมเจาพระยา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/12ลมเจาพระยา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>13. ขอรักคืน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="13ขอรกคน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/13ขอรกคน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>14. เสียงกระซิบจากเกลียวคลื่น</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="14เสยงกระซบจากเกลยวคลน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/14เสยงกระซบจากเกลยวคลน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>15. วิมานสีชมพู</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="15วมานสชมพ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/15วมานสชมพ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>16. แรมพิศวาส</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="16แรมพศวาส.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/16แรมพศวาส.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>17. รอพี่</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="17รอพ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/17รอพ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>01. เพื่อคุณ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="01เพอคณ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/01เพอคณ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>02. ถึงเธอ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="02ถงเธอ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/02ถงเธอ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>03. มนต์ดลใจ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="03มนตดลใจ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/03มนตดลใจ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>04. ใจรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="04ใจรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/04ใจรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>05. หวานรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="05หวานรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/05หวานรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>06. ฝากดิน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="06ฝากดน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/06ฝากดน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>07. ผู้ครองรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="07ผครองรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/07ผครองรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>08. รอพี่</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="08รอพ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/08รอพ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>09. สาวสะอื้น</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="09สาวสะอน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/09สาวสะอน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>10. รักลาฟ้าเศร้า</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="10รกลาฟาเศรา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/10รกลาฟาเศรา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>11. ขวัญเรียม</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="11ขวญเรยม.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/11ขวญเรยม.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>12. ดอกไม้กับเพลง</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="12ดอกไมกบเพลง.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/12ดอกไมกบเพลง.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>13. ใจหวลครวญรำพัน</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="13ใจหวลครวญรำพน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/13ใจหวลครวญรำพน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>14. เสียงกระซิบจากเกลียงคลื่น</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="14เสยงกระซบจากเกลยงคลน.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/14เสยงกระซบจากเกลยงคลน.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>15. วิมานสีชมพู</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="15วมานสชมพ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/15วมานสชมพ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>16. กล้วยไม้</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="16กลวยไม.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/16กลวยไม.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>01. คนึงครวญ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="01คนงครวญ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/01คนงครวญ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>02. ห่วงอาลัย</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="02หวงอาลย.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/02หวงอาลย.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>03. อุทยานดอกไม้</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="03อทยานดอกไม.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/03อทยานดอกไม.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>04. สาส์นรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="04สาสนรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/04สาสนรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>05. มั่นใจไม่รัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="05มนใจไมรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/05มนใจไมรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>06. กระซิบสวาท</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="06กระซบสวาท.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/06กระซบสวาท.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>07. รอคำรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="07รอคำรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/07รอคำรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>08. สายทิพย์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="08สายทพย.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/08สายทพย.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>09. บัวกลางบึง</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="09บวกลางบง.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/09บวกลางบง.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>10. อีสา</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="10อสา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/10อสา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>11. แว่วเสียงซึง</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="11แววเสยงซง.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/11แววเสยงซง.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>12. รักปักใจ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="12รกปกใจ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/12รกปกใจ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>13. รักบังใบ</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="13รกบงใบ.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/13รกบงใบ.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>14. หวานรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="14หวานรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/14หวานรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>15. รักเธอคนเดียว</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="15รกเธอคนเดยว.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/15รกเธอคนเดยว.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>16. รักเอ๋ยรักข้า</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="16รกเอยรกขา.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/16รกเอยรกขา.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>17. วัยระวี</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="17วยระว.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/17วยระว.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ข้องจิต ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ของจตชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ของจตชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>คืนหนึ่ง ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="คนหนงชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/คนหนงชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ง้อรัก</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="งอรก.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/งอรก.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>จนจริงไม่จนรัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="จนจรงไมจนรกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/จนจรงไมจนรกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ฉอเลาะรัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ฉอเลาะรกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ฉอเลาะรกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ธารน้ำรัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ธารนำรกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ธารนำรกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>นกเขาคูรัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="นกเขาครกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/นกเขาครกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ฝนนี้ ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ฝนนชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ฝนนชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>พรพรหม ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="พรพรหมชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/พรพรหมชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>พระจันทร์วันเพ็ญ ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="พระจนทรวนเพญชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/พระจนทรวนเพญชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>มั่นใจรัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="มนใจรกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/มนใจรกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>วิมานรักห้วยแก้ว ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="วมานรกหวยแกวชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/วมานรกหวยแกวชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>สักขีแม่ปิง ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="สกขแมปงชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/สกขแมปงชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>สัญญารัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="สญญารกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/สญญารกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>เชื่อรัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="เชอรกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/เชอรกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>เธออยู่ไหน ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="เธออยไหนชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/เธออยไหนชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>แต่ปางก่อน ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="แตปางกอนชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/แตปางกอนชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ขอเป็นจันทร์ ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ขอเปนจนทรชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ขอเปนจนทรชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>จูบเย้ยจันทร์ ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="จบเยยจนทรชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/จบเยยจนทรชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ดำเนินทราย ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ดำเนนทรายชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ดำเนนทรายชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ถนอมรัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ถนอมรกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ถนอมรกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ทุยจ๋าทุย ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ทยจาทยชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ทยจาทยชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ปองใจรัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ปองใจรกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ปองใจรกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>พ่อแง่แม่งอน ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="พอแงแมงอนชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/พอแงแมงอนชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>มนต์รักดอกคำใต้ ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="มนตรกดอกคำใตชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/มนตรกดอกคำใตชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รักฉันนานๆ ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รกฉนนานๆชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รกฉนนานๆชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>รักใต้ร่มไทร ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="รกใตรมไทรชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/รกใตรมไทรชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>วนาสวาท ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="วนาสวาทชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/วนาสวาทชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>หวานรัก ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="หวานรกชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/หวานรกชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>อ้อยใจ ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ออยใจชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ออยใจชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
-        <div class="song-item">
-            <h3>ใต้ร่มมลุลี ชรินทร์</h3>
-            <p class="artist">กาญจน์ลดา มฤคพิทักษ์</p>
-            <a href="ใตรมมลลชรนทร.html" class="play-button">Play</a>
-            <a href="https://kacharuk.github.io/karnlada_songs/ใตรมมลลชรนทร.html" class="share-button">Share Link</a>
-        </div>
-        
     </div>
 </body>
 </html>

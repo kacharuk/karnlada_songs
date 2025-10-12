@@ -497,28 +497,57 @@ def main():
     print(f"URL list saved to: docs/generated_urls.json")
     print(f"\nNext step: Push to GitHub to deploy on GitHub Pages")
 
-def generate_index_page(files, output_dir, base_url):
-    """Generate an index page with links to all songs"""
+def generate_index_page(files_list, output_dir, base_url):
+    """Generate an index page organized by albums"""
 
-    songs_list = ""
-    for file in files:
-        songs_list += f"""
-        <div class="song-item">
-            <h3>{escape(file['title'])}</h3>
-            <p class="artist">{escape(file['artist'])}</p>
-            <a href="{file['filename']}" class="play-button">Play</a>
-            <a href="{file['url']}" class="share-button">Share Link</a>
-        </div>
-        """
+    # Load full file data from onedrive_files.json to get album info
+    with open('onedrive_files.json', 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    full_files = data.get('files', [])
+
+    # Group files by album
+    albums = {}
+    for file_info in full_files:
+        album = file_info.get('album', 'Unknown Album')
+        if album not in albums:
+            albums[album] = []
+        albums[album].append(file_info)
+
+    # Sort albums alphabetically
+    sorted_albums = sorted(albums.items())
+
+    # Build HTML for each album section
+    albums_html = ""
+    for album_name, songs in sorted_albums:
+        # Sort songs alphabetically by title
+        songs_sorted = sorted(songs, key=lambda x: x['title'])
+
+        songs_html = ""
+        for song in songs_sorted:
+            songs_html += f"""
+                    <div class="song-item">
+                        <span class="song-title">{escape(song['title'])}</span>
+                        <div class="song-actions">
+                            <a href="{song['html_filename']}" class="play-button">▶ Play</a>
+                        </div>
+                    </div>"""
+
+        albums_html += f"""
+        <div class="album-section">
+            <h2 class="album-title">📀 {escape(album_name)}</h2>
+            <div class="songs-list">
+                {songs_html}
+            </div>
+        </div>"""
 
     html_content = f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karnlada Songs</title>
+    <title>Karnlada Songs - Music Collection</title>
     <meta property="og:title" content="Karnlada Songs">
-    <meta property="og:description" content="Music collection">
+    <meta property="og:description" content="Complete music collection organized by albums">
     <meta property="og:type" content="website">
 
     <style>
@@ -536,7 +565,7 @@ def generate_index_page(files, output_dir, base_url):
         }}
 
         .container {{
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }}
 
@@ -544,60 +573,106 @@ def generate_index_page(files, output_dir, base_url):
             color: white;
             text-align: center;
             margin-bottom: 40px;
-            font-size: 36px;
+            font-size: 42px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }}
+
+        .album-section {{
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }}
+
+        .album-title {{
+            color: #2d3748;
+            font-size: 28px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }}
+
+        .songs-list {{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }}
 
         .song-item {{
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #f7fafc;
+            border-radius: 10px;
+            transition: all 0.2s;
         }}
 
-        .song-item h3 {{
+        .song-item:hover {{
+            background: #edf2f7;
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }}
+
+        .song-title {{
             color: #2d3748;
-            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: 500;
         }}
 
-        .artist {{
-            color: #718096;
-            margin-bottom: 15px;
-        }}
-
-        .play-button, .share-button {{
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-right: 10px;
-            margin-top: 5px;
+        .song-actions {{
+            display: flex;
+            gap: 10px;
         }}
 
         .play-button {{
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
             background: #667eea;
             color: white;
-        }}
-
-        .share-button {{
-            background: #48bb78;
-            color: white;
+            transition: all 0.2s;
+            font-size: 14px;
         }}
 
         .play-button:hover {{
             background: #5568d3;
+            transform: scale(1.05);
         }}
 
-        .share-button:hover {{
-            background: #38a169;
+        @media (max-width: 768px) {{
+            h1 {{
+                font-size: 32px;
+            }}
+
+            .album-title {{
+                font-size: 24px;
+            }}
+
+            .song-item {{
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }}
+
+            .song-actions {{
+                width: 100%;
+            }}
+
+            .play-button {{
+                width: 100%;
+                text-align: center;
+            }}
         }}
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Karnlada Songs</h1>
-        {songs_list}
+        <h1>🎵 Karnlada Songs</h1>
+        {albums_html}
     </div>
 </body>
 </html>"""

@@ -20,9 +20,15 @@ def extract_song_info(filename, album_folder):
     """
     Extract song title and artist from filename.
     Expected format: "Song Title - Artist Name.mp3"
+    Removes numbering prefix like "01", "02กล้วยไม้" etc.
     """
     # Remove extension
     name = os.path.splitext(filename)[0]
+
+    # Remove numbering prefix (e.g., "01", "02. ", "03 กล้วยไม้" at the start
+    import re
+    # Match patterns like "01", "02.", "03. ", "04 " at the beginning
+    name = re.sub(r'^\d+\.?\s*', '', name)
 
     # Try to split by ' - '
     if ' - ' in name:
@@ -70,6 +76,14 @@ def scan_audio_folders(audio_base_path='docs/audio'):
 
         print(f"📁 {album_folder}: {len(audio_files)} songs")
 
+        # Check for album art in this folder
+        album_art_path = os.path.join(album_path, 'album_art.jpg')
+        if os.path.exists(album_art_path):
+            album_art_url = f"audio/{album_folder}/album_art.jpg"
+        else:
+            # Fall back to default album art
+            album_art_url = "images/album_art_karnlada.jpg"
+
         for filename in audio_files:
             title, artist = extract_song_info(filename, album_folder)
 
@@ -82,7 +96,7 @@ def scan_audio_folders(audio_base_path='docs/audio'):
                 "artist": artist,
                 "album": album_folder,
                 "audio_url": audio_url,
-                "album_art_url": "images/album_art_karnlada.jpg"
+                "album_art_url": album_art_url
             })
 
     print(f"\nTotal songs scanned: {len(files)}\n")
