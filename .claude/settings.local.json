@@ -24,7 +24,9 @@
       "Bash(do cp docs/images/album_art_karnlada.jpg \"$dir/album_art.jpg\")",
       "Bash(find:*)",
       "Bash(for f in auto_fix_links.py deploy.py generate_players.py list_onedrive_files.py run_all.py update_songs.py)",
-      "Bash(do echo \"=== $f ===\")"
+      "Bash(do echo \"=== $f ===\")",
+      "Bash(for f in HOW_TO_USE.md QUICKSTART.md REBUILD_INSTRUCTIONS.md SETUP_COMPLETE.md)",
+      "Bash(head:*)"
     ],
     "deny": [],
     "ask": []
