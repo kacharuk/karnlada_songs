@@ -267,8 +267,14 @@ def generate_enhanced_index(files_list, output_dir, base_url):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karnlada Songs - Music Collection</title>
     <meta property="og:title" content="Karnlada Songs">
-    <meta property="og:description" content="Complete music collection organized by albums">
+    <meta property="og:description" content="Karnlada's Music Collection">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kacharuk.github.io/karnlada_songs/images/album_art_karnlada.jpg">
+    <meta property="og:image:secure_url" content="https://kacharuk.github.io/karnlada_songs/images/album_art_karnlada.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:alt" content="Karnlada Songs Album Art">
     <style>
         * {{margin:0;padding:0;box-sizing:border-box}}
         body {{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;padding:40px 20px}}
