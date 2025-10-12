@@ -49,26 +49,36 @@ function selectFile(files, id) {
     return files[0];
 }
 
-function togglePlayPause() {
-    const audioEl = document.getElementById('audioPlayer');
-    if (audioEl.paused) {
-        audioEl.play();
-    } else {
-        audioEl.pause();
+function togglePlayPause(e) {
+    // If event exists, prevent any default behavior
+    if (e) {
+        e.preventDefault();
+        e.stopPropagation();
     }
-}
 
-function updatePlayPauseButton() {
     const audioEl = document.getElementById('audioPlayer');
     const playPauseBtn = document.getElementById('playPauseBtn');
+    const playIcon = document.getElementById('playIcon');
+    const pauseIcon = document.getElementById('pauseIcon');
     const playBtn = document.getElementById('playBtn');
 
+    if (!audioEl || !playPauseBtn || !playIcon || !pauseIcon) {
+        console.error('Missing required elements for play/pause');
+        return;
+    }
+
     if (audioEl.paused) {
-        playPauseBtn.classList.remove('playing');
-        playBtn.textContent = '▶ Play';
-    } else {
+        audioEl.play();
         playPauseBtn.classList.add('playing');
-        playBtn.textContent = '⏸ Pause';
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'block';
+        if (playBtn) playBtn.textContent = '⏸ Pause';
+    } else {
+        audioEl.pause();
+        playPauseBtn.classList.remove('playing');
+        playIcon.style.display = 'block';
+        pauseIcon.style.display = 'none';
+        if (playBtn) playBtn.textContent = '▶ Play';
     }
 }
 
@@ -290,20 +300,36 @@ async function initPlayer() {
     // Setup audio element event listeners
     const audioEl = document.getElementById('audioPlayer');
 
+    // Setup event listeners
     audioEl.addEventListener('loadstart', () => setStatus('Loading audio...', 'loading'));
     audioEl.addEventListener('canplay', () => setStatus('Ready to play'));
     audioEl.addEventListener('playing', () => {
         setStatus('Now playing', 'playing');
-        updatePlayPauseButton();
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const playIcon = document.getElementById('playIcon');
+        const pauseIcon = document.getElementById('pauseIcon');
+        const playBtn = document.getElementById('playBtn');
+
+        playPauseBtn?.classList.add('playing');
+        if (playIcon) playIcon.style.display = 'none';
+        if (pauseIcon) pauseIcon.style.display = 'block';
+        if (playBtn) playBtn.textContent = '⏸ Pause';
     });
     audioEl.addEventListener('pause', () => {
         setStatus('Paused');
-        updatePlayPauseButton();
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const playIcon = document.getElementById('playIcon');
+        const pauseIcon = document.getElementById('pauseIcon');
+        const playBtn = document.getElementById('playBtn');
+
+        playPauseBtn?.classList.remove('playing');
+        if (playIcon) playIcon.style.display = 'block';
+        if (pauseIcon) pauseIcon.style.display = 'none';
+        if (playBtn) playBtn.textContent = '▶ Play';
     });
     audioEl.addEventListener('ended', () => {
         console.log('[AUDIO] Song ended');
         setStatus('Song ended');
-        updatePlayPauseButton();
         
         // For single song, just stop at the end
         if (playlist.length <= 1) {
@@ -344,33 +370,47 @@ async function initPlayer() {
         }
     });
 
-    // Setup control bindings
+    // Setup control bindings using single event handler
     const playPauseBtn = document.getElementById('playPauseBtn');
     const playBtn = document.getElementById('playBtn');
-    const shareBtn = document.getElementById('shareBtn');
     const albumWrapper = document.getElementById('albumWrapper');
-    const timeSlider = document.getElementById('timeSlider');
+
+    // Single click handler function
+    const handlePlayPauseClick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (audioEl.paused) {
+            audioEl.play();
+        } else {
+            audioEl.pause();
+        }
+    };
 
     if (playPauseBtn) {
-        playPauseBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            togglePlayPause();
-        });
+        playPauseBtn.onclick = handlePlayPauseClick;
     }
 
     if (playBtn) {
-        playBtn.addEventListener('click', togglePlayPause);
+        playBtn.onclick = handlePlayPauseClick;
     }
 
     if (albumWrapper) {
-        albumWrapper.addEventListener('click', togglePlayPause);
+        albumWrapper.onclick = (e) => {
+            if (e.target === albumWrapper || e.target.id === 'albumArt') {
+                handlePlayPauseClick(e);
+            }
+        };
     }
 
+    // Share button
+    const shareBtn = document.getElementById('shareBtn');
     if (shareBtn) {
         shareBtn.addEventListener('click', shareCurrentSong);
     }
 
     // Time slider
+    const timeSlider = document.getElementById('timeSlider');
     if (timeSlider) {
         timeSlider.addEventListener('input', () => {
             timeSlider.dataset.seeking = 'true';
