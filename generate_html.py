@@ -29,6 +29,14 @@ def generate_enhanced_player(output_dir):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Player - Karnlada Songs</title>
 <meta name="description" content="Music player">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N35GFR9ZDS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N35GFR9ZDS');
+</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px}
@@ -169,6 +177,14 @@ def generate_stub_page(file_info, base_url, output_dir):
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="Artist: {artist}">
 <meta name="twitter:image" content="../{og_image}">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N35GFR9ZDS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', 'G-N35GFR9ZDS');
+</script>
 <meta http-equiv="refresh" content="0; url={player_target}">
 <link rel="canonical" href="{player_target}">
 </head>
@@ -275,6 +291,14 @@ def generate_enhanced_index(files_list, output_dir, base_url):
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="1200">
     <meta property="og:image:alt" content="Karnlada Songs Album Art">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N35GFR9ZDS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', 'G-N35GFR9ZDS');
+    </script>
     <style>
         * {{margin:0;padding:0;box-sizing:border-box}}
         body {{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;padding:40px 20px}}
