@@ -16,7 +16,10 @@
       "Read(//c/Users/kacha/OneDrive/_Old_Backup/Karnlada Songs/**)",
       "Bash(while read file)",
       "Bash(do cp \"$file\" \"C:/dev/karnlada_songs/docs/audio/\")",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(for dir in */)",
+      "Bash(do echo \"=== $dir ===\")",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []

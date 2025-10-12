@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Script to list OneDrive files and their public access links.
-Creates a JSON file with all the music file information.
+Script to scan local audio files and generate metadata.
+Scans docs/audio/ folder structure organized by albums.
 """
 
 import json
@@ -16,151 +16,135 @@ if sys.platform == 'win32':
     sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'strict')
     sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, 'strict')
 
-def get_onedrive_files():
+def extract_song_info(filename, album_folder):
     """
-    This function needs to be customized with your OneDrive shared links.
-
-    For each music file, you need to provide:
-    - title: Song title
-    - artist: Artist/singer name
-    - audio_url: OneDrive public share link for the audio file (mp3 or m4a)
-    - album_art_url: OneDrive public share link for the album art image
+    Extract song title and artist from filename.
+    Expected format: "Song Title - Artist Name.mp3"
     """
+    # Remove extension
+    name = os.path.splitext(filename)[0]
 
-    # Template for adding your files
-    files = [
-        {
-            "title": "กระซิบสวาท",
-            "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "audio/กระซิบสวาท - กาญจน์ลดา มฤคพิทักษ์.mp3",
-            "album_art_url": "images/album_art_karnlada.jpg"
-        },
-        {
-            "title": "กล้วยไม้",
-            "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "audio/กล้วยไม้ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-            "album_art_url": "images/album_art_karnlada.jpg"
-        },
-        {
-            "title": "กว่าเราจะรักกันได้",
-            "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "audio/กว่าเราจะรักกันได้ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-            "album_art_url": "images/album_art_karnlada.jpg"
-        },
-        {
-            "title": "ขวัญเรียม",
-            "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "audio/ขวัญเรียม - กาญจน์ลดา มฤคพิทักษ์.mp3",
-            "album_art_url": "images/album_art_karnlada.jpg"
-        },
-        {
-            "title": "ขอรักคืน",
-            "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "audio/ขอรักคืน - กาญจน์ลดา มฤคพิทักษ์.mp3",
-            "album_art_url": "images/album_art_karnlada.jpg"
-        },
-        {
-            "title": "คนึงครวญ",
-            "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "audio/คนึงครวญ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-            "album_art_url": "images/album_art_karnlada.jpg"
-        },
-        {
-            "title": "ดอกไม้กับเพลง",
-            "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "audio/ดอกไม้กับเพลง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-            "album_art_url": "images/album_art_karnlada.jpg"
-        },
-        {
-            "title": "ดอกไม้ใกล้มือ",
-            "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "audio/ดอกไม้ใกล้มือ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-            "album_art_url": "images/album_art_karnlada.jpg"
-        },
-        {
-            "title": "ถึงเธอ",
-            "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "audio/ถึงเธอ - กาญจน์ลดา มฤคพิทักษ์.mp3",
-            "album_art_url": "images/album_art_karnlada.jpg"
-        },
-        {
-            "title": "บัวกลางบึง",
-            "artist": "กาญจน์ลดา มฤคพิทักษ์",
-            "audio_url": "audio/บัวกลางบึง - กาญจน์ลดา มฤคพิทักษ์.mp3",
-            "album_art_url": "images/album_art_karnlada.jpg"
-        },
-    ]
+    # Try to split by ' - '
+    if ' - ' in name:
+        parts = name.split(' - ', 1)
+        title = parts[0].strip()
+        artist = parts[1].strip() if len(parts) > 1 else "กาญจน์ลดา มฤคพิทักษ์"
+    else:
+        title = name
+        artist = "กาญจน์ลดา มฤคพิทักษ์"
 
+    return title, artist
+
+def scan_audio_folders(audio_base_path='docs/audio'):
+    """
+    Scan all album folders in docs/audio/ and collect song information.
+    Returns a list of song dictionaries.
+    """
+    files = []
+
+    if not os.path.exists(audio_base_path):
+        print(f"Warning: {audio_base_path} does not exist!")
+        return files
+
+    # Scan each album folder
+    album_folders = []
+    for item in os.listdir(audio_base_path):
+        item_path = os.path.join(audio_base_path, item)
+        if os.path.isdir(item_path):
+            album_folders.append(item)
+
+    album_folders.sort()  # Sort alphabetically
+
+    print(f"Found {len(album_folders)} album folder(s):\n")
+
+    for album_folder in album_folders:
+        album_path = os.path.join(audio_base_path, album_folder)
+
+        # Find all audio files in this album
+        audio_files = []
+        for filename in os.listdir(album_path):
+            if filename.lower().endswith(('.mp3', '.m4a')):
+                audio_files.append(filename)
+
+        audio_files.sort()  # Sort songs alphabetically
+
+        print(f"📁 {album_folder}: {len(audio_files)} songs")
+
+        for filename in audio_files:
+            title, artist = extract_song_info(filename, album_folder)
+
+            # Build relative path from docs/ folder
+            # e.g., "audio/Karnlada Music/song.mp3"
+            audio_url = f"audio/{album_folder}/{filename}"
+
+            files.append({
+                "title": title,
+                "artist": artist,
+                "album": album_folder,
+                "audio_url": audio_url,
+                "album_art_url": "images/album_art_karnlada.jpg"
+            })
+
+    print(f"\nTotal songs scanned: {len(files)}\n")
     return files
 
-def convert_onedrive_link(share_link):
+def generate_html_filename(title):
     """
-    Convert OneDrive sharing link to direct download link.
-
-    If you have a OneDrive share link like:
-    https://onedrive.live.com/?id=ABC123...
-
-    You need to convert it to a direct download link.
+    Generate a safe HTML filename from song title.
+    Keeps Thai characters but removes special chars.
     """
-    if 'download?' in share_link:
-        return share_link
+    # Remove characters that could cause issues in URLs
+    safe_chars = []
+    for char in title:
+        if char.isalnum() or char in (' ', '-', '_'):
+            safe_chars.append(char)
 
-    # If it's a view link, try to convert to download
-    if 'onedrive.live.com' in share_link:
-        print(f"Note: Link might need manual conversion: {share_link}")
-        print("To get direct download links:")
-        print("1. Right-click file in OneDrive > Share")
-        print("2. Click 'Copy link' and ensure 'Anyone with the link can view' is set")
-        print("3. Use the embed option or modify the link to use /download endpoint")
+    safe_title = ''.join(safe_chars).strip()
 
-    return share_link
+    # Replace spaces with nothing (or could use '-')
+    safe_title = safe_title.replace(' ', '')
+
+    return f"{safe_title}.html"
 
 def main():
-    print("Fetching OneDrive file information...")
+    print("Scanning local audio files from docs/audio/...\n")
 
-    files = get_onedrive_files()
+    files = scan_audio_folders('docs/audio')
 
     if not files:
         print("\n" + "="*60)
-        print("No files configured yet!")
+        print("No audio files found!")
         print("="*60)
-        print("\nPlease edit list_onedrive_files.py and add your music files.")
-        print("\nFor each file, you need:")
-        print("  1. Song title")
-        print("  2. Artist name")
-        print("  3. OneDrive public link for audio file (mp3/m4a)")
-        print("  4. OneDrive public link for album art image")
-        print("\nHow to get OneDrive public links:")
-        print("  1. Right-click file in OneDrive")
-        print("  2. Click 'Share' > 'Copy link'")
-        print("  3. Make sure 'Anyone with the link can view' is selected")
-        print("  4. For direct playback, use the embed/download URL format")
-        print("="*60)
-
-        # Create empty output file
+        print("\nPlease ensure audio files are in docs/audio/ organized by album folders.")
         output = {
             "files": [],
             "count": 0
         }
     else:
-        # Validate and process links
+        # Add html_filename to each file
         for file_info in files:
-            file_info['audio_url'] = convert_onedrive_link(file_info['audio_url'])
-            file_info['album_art_url'] = convert_onedrive_link(file_info['album_art_url'])
-
-            # Generate a safe filename for the HTML file
-            safe_title = "".join(c for c in file_info['title'] if c.isalnum() or c in (' ', '-', '_')).strip()
-            safe_title = safe_title.replace(' ', '_').lower()
-            file_info['html_filename'] = f"{safe_title}.html"
+            file_info['html_filename'] = generate_html_filename(file_info['title'])
 
         output = {
             "files": files,
             "count": len(files)
         }
 
-        print(f"\nFound {len(files)} music file(s)")
-        for idx, file in enumerate(files, 1):
-            print(f"{idx}. {file['title']} - {file['artist']}")
+        print("="*60)
+        print(f"Successfully scanned {len(files)} song(s) from {len(set(f['album'] for f in files))} album(s)")
+        print("="*60)
+
+        # Show summary by album
+        albums = {}
+        for file in files:
+            album = file['album']
+            if album not in albums:
+                albums[album] = []
+            albums[album].append(file['title'])
+
+        print("\nAlbum summary:")
+        for album, songs in sorted(albums.items()):
+            print(f"  {album}: {len(songs)} songs")
 
     # Save to JSON file
     output_file = 'onedrive_files.json'
