@@ -9,6 +9,7 @@ import json
 import os
 import sys
 from html import escape
+import hashlib
 
 # Set UTF-8 encoding for Windows console
 if sys.platform == 'win32':
@@ -255,11 +256,12 @@ def generate_html_player(file_info, base_url):
 # New helper: central player (single page that reads ?id=...)
 def generate_central_player(output_dir):
     """
-    Generate docs/player.html — single central player that reads ?id=filename (or numeric index)
+    Generate docs/player.html — single central player that reads ?id=song_id
     and loads docs/onedrive_files.json to populate UI. Scrapers won't execute JS, so per-song
     stub pages provide OG tags for previews.
+    Features: Custom controls without download button, Share button, time slider in separate row.
     """
-    player_html = """<!DOCTYPE html>
+    player_html = r"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -271,23 +273,71 @@ def generate_central_player(output_dir):
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px}
 .player-container{background:rgba(255,255,255,.95);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.3);max-width:400px;width:100%;overflow:hidden;backdrop-filter:blur(10px)}
-.album-art{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.album-art-wrapper{position:relative;width:100%;aspect-ratio:1;overflow:hidden;cursor:pointer}
+.album-art{width:100%;height:100%;object-fit:cover;display:block}
+.play-pause-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,0.95);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 15px rgba(0,0,0,0.3);transition:all 0.2s;z-index:10}
+.play-pause-btn:hover{transform:translate(-50%,-50%) scale(1.1);background:rgba(255,255,255,1)}
+.play-pause-btn.playing{opacity:0;pointer-events:none}
+.play-pause-btn svg{width:35px;height:35px;fill:#667eea}
 .player-info{padding:30px;text-align:center}
 .song-title{font-size:24px;font-weight:700;color:#2d3748;margin-bottom:8px;line-height:1.3}
-.artist-name{font-size:18px;color:#718096;margin-bottom:25px}
-.audio-controls{width:100%;margin-top:20px;outline:none}
-audio{width:100%;height:40px;border-radius:20px}
+.artist-name{font-size:18px;color:#718096;margin-bottom:20px}
+.controls-section{margin-top:20px}
+.time-slider-row{margin-bottom:15px}
+.time-slider{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:3px;background:#e2e8f0;outline:none;cursor:pointer}
+.time-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:#667eea;cursor:pointer}
+.time-slider::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#667eea;cursor:pointer;border:none}
+.time-display{display:flex;justify-content:space-between;font-size:12px;color:#718096;margin-top:5px}
+.button-row{display:flex;gap:10px;align-items:center;justify-content:center}
+.ctrl-btn{background:#667eea;color:white;border:none;border-radius:8px;padding:10px 20px;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.2s;flex:1;max-width:120px}
+.ctrl-btn:hover{background:#5568d3;transform:translateY(-1px)}
+.ctrl-btn:active{transform:translateY(0)}
+.share-btn{background:#48bb78}
+.share-btn:hover{background:#38a169}
 .status{margin-top:15px;font-size:14px;color:#a0aec0;font-style:italic}
 .status.loading{color:#667eea}.status.playing{color:#48bb78}.status.error{color:#f56565}
+audio{display:none}
+@media (max-width:480px){
+.song-title{font-size:20px}
+.artist-name{font-size:16px}
+.player-info{padding:20px}
+.play-pause-btn{width:70px;height:70px}
+.play-pause-btn svg{width:30px;height:30px}
+}
 </style>
 </head>
 <body>
 <div class="player-container" id="player">
-	<img src="" alt="album art" class="album-art" id="albumArt">
+	<div class="album-art-wrapper" id="albumWrapper">
+		<img src="" alt="album art" class="album-art" id="albumArt">
+		<button class="play-pause-btn" id="playPauseBtn">
+			<svg viewBox="0 0 24 24" id="playIcon">
+				<path d="M8 5v14l11-7z"/>
+			</svg>
+			<svg viewBox="0 0 24 24" id="pauseIcon" style="display:none">
+				<path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+			</svg>
+		</button>
+	</div>
 	<div class="player-info">
 		<h1 class="song-title" id="songTitle">Loading...</h1>
 		<p class="artist-name" id="artistName"></p>
-		<audio id="audioPlayer" class="audio-controls" controls>
+
+		<div class="controls-section">
+			<div class="time-slider-row">
+				<input type="range" class="time-slider" id="timeSlider" min="0" max="100" value="0">
+				<div class="time-display">
+					<span id="currentTime">0:00</span>
+					<span id="duration">0:00</span>
+				</div>
+			</div>
+			<div class="button-row">
+				<button class="ctrl-btn" id="playBtn">▶ Play</button>
+				<button class="ctrl-btn share-btn" id="shareBtn">📤 Share</button>
+			</div>
+		</div>
+
+		<audio id="audioPlayer">
 			Your browser does not support the audio element.
 		</audio>
 		<div class="status" id="status">Loading...</div>
@@ -295,6 +345,8 @@ audio{width:100%;height:40px;border-radius:20px}
 </div>
 
 <script>
+let currentFile = null;
+
 async function fetchJSON(path){
 	try{
 		const r = await fetch(path);
@@ -319,17 +371,90 @@ function setStatus(text, cls=''){
 
 function selectFile(files, id){
 	if(!id) return files[0];
+	// First try matching by song_id (stable ID)
+	for(const f of files){
+		if(f.song_id === id) return f;
+	}
 	// if id is numeric index
 	if(/^\d+$/.test(id)){
 		const idx = parseInt(id,10)-1;
 		return files[idx] || files[0];
 	}
-	// try matching by filename or title
+	// try matching by filename or title (backward compatibility)
 	for(const f of files){
 		if(f.html_filename === id || f.html_filename.replace('.html','') === id) return f;
 		if(f.title === id) return f;
 	}
 	return files[0];
+}
+
+function formatTime(seconds){
+	if(isNaN(seconds)) return '0:00';
+	const mins = Math.floor(seconds / 60);
+	const secs = Math.floor(seconds % 60);
+	return `${mins}:${secs.toString().padStart(2,'0')}`;
+}
+
+function togglePlayPause(){
+	const audioEl = document.getElementById('audioPlayer');
+	if(audioEl.paused){
+		audioEl.play();
+	}else{
+		audioEl.pause();
+	}
+}
+
+function updatePlayPauseButton(){
+	const audioEl = document.getElementById('audioPlayer');
+	const playPauseBtn = document.getElementById('playPauseBtn');
+	const playBtn = document.getElementById('playBtn');
+
+	if(audioEl.paused){
+		playPauseBtn.classList.remove('playing');
+		playBtn.textContent = '▶ Play';
+	}else{
+		playPauseBtn.classList.add('playing');
+		playBtn.textContent = '⏸ Pause';
+	}
+}
+
+async function shareCurrentSong(){
+	if(!currentFile) return;
+
+	const shareData = {
+		title: currentFile.title,
+		text: `Listen to "${currentFile.title}" by ${currentFile.artist}`,
+		url: window.location.href
+	};
+
+	// Check if Web Share API is supported
+	if(navigator.share){
+		try{
+			await navigator.share(shareData);
+			setStatus('Shared successfully!', 'playing');
+		}catch(err){
+			if(err.name !== 'AbortError'){
+				console.error('Share failed:', err);
+				fallbackShare();
+			}
+		}
+	}else{
+		fallbackShare();
+	}
+}
+
+function fallbackShare(){
+	// Fallback: copy URL to clipboard
+	const url = window.location.href;
+	if(navigator.clipboard){
+		navigator.clipboard.writeText(url).then(()=>{
+			setStatus('Link copied to clipboard!', 'playing');
+		}).catch(()=>{
+			setStatus('Could not copy link', 'error');
+		});
+	}else{
+		setStatus('Sharing not supported', 'error');
+	}
 }
 
 (async function(){
@@ -341,6 +466,7 @@ function selectFile(files, id){
 	const files = filesData.files;
 	const id = getQueryParam('id');
 	const file = selectFile(files, id);
+	currentFile = file;
 
 	// populate UI
 	document.getElementById('songTitle').textContent = file.title;
@@ -362,13 +488,66 @@ function selectFile(files, id){
 	src2.type = 'audio/mp4';
 	audioEl.appendChild(src2);
 
-	// events
+	// Control bindings
+	const playPauseBtn = document.getElementById('playPauseBtn');
+	const playBtn = document.getElementById('playBtn');
+	const shareBtn = document.getElementById('shareBtn');
+	const albumWrapper = document.getElementById('albumWrapper');
+	const timeSlider = document.getElementById('timeSlider');
+	const currentTimeEl = document.getElementById('currentTime');
+	const durationEl = document.getElementById('duration');
+
+	playPauseBtn.addEventListener('click', (e)=>{
+		e.stopPropagation();
+		togglePlayPause();
+	});
+
+	playBtn.addEventListener('click', togglePlayPause);
+	albumWrapper.addEventListener('click', togglePlayPause);
+	shareBtn.addEventListener('click', shareCurrentSong);
+
+	// Time slider
+	let isSeeking = false;
+	timeSlider.addEventListener('input', ()=>{
+		isSeeking = true;
+		const time = (timeSlider.value / 100) * audioEl.duration;
+		currentTimeEl.textContent = formatTime(time);
+	});
+
+	timeSlider.addEventListener('change', ()=>{
+		const time = (timeSlider.value / 100) * audioEl.duration;
+		audioEl.currentTime = time;
+		isSeeking = false;
+	});
+
+	// Audio events
 	audioEl.addEventListener('loadstart', ()=> setStatus('Loading audio...', 'loading'));
 	audioEl.addEventListener('canplay', ()=> setStatus('Ready to play'));
-	audioEl.addEventListener('playing', ()=> setStatus('Now playing', 'playing'));
-	audioEl.addEventListener('pause', ()=> setStatus('Paused'));
-	audioEl.addEventListener('ended', ()=> setStatus('Song ended'));
+	audioEl.addEventListener('playing', ()=>{
+		setStatus('Now playing', 'playing');
+		updatePlayPauseButton();
+	});
+	audioEl.addEventListener('pause', ()=>{
+		setStatus('Paused');
+		updatePlayPauseButton();
+	});
+	audioEl.addEventListener('ended', ()=>{
+		setStatus('Song ended');
+		updatePlayPauseButton();
+	});
 	audioEl.addEventListener('error', ()=> setStatus('Error loading audio', 'error'));
+
+	audioEl.addEventListener('loadedmetadata', ()=>{
+		durationEl.textContent = formatTime(audioEl.duration);
+	});
+
+	audioEl.addEventListener('timeupdate', ()=>{
+		if(!isSeeking){
+			const percent = (audioEl.currentTime / audioEl.duration) * 100;
+			timeSlider.value = percent || 0;
+			currentTimeEl.textContent = formatTime(audioEl.currentTime);
+		}
+	});
 
 	// try to autoplay if allowed
 	try{ await audioEl.play(); }catch(e){ setStatus('Click play to start'); }
@@ -384,19 +563,21 @@ function selectFile(files, id){
 # New helper: per-song stub with OG tags + immediate redirect to player.html?id=...
 def generate_stub_page(file_info, base_url, output_dir):
     """
-    Write a minimal HTML file containing OG meta tags (title, image, audio)
-    and a meta-refresh / link to docs/player.html?id={html_filename}.
-    This static page ensures WhatsApp/other scrapers get proper preview.
+    Generate a stub page with Open Graph tags and a redirect to the central player.
     """
-    page_filename = file_info['html_filename']
-    page_url = f"{base_url}/{page_filename}"
-    player_target = f"player.html?id={page_filename}"
-    og_image = file_info.get('album_art_url','images/album_art_karnlada.jpg')
-    og_audio = file_info.get('audio_url','')
     title = escape(file_info['title'])
     artist = escape(file_info['artist'])
+    audio_url = escape(file_info['audio_url'])
+    album_art_url = escape(file_info['album_art_url'])
+    html_filename = file_info['html_filename']
 
-    html = f"""<!DOCTYPE html>
+    # Generate a unique ID for the song based on its title and artist
+    unique_id = hashlib.md5(f"{title}-{artist}".encode('utf-8')).hexdigest()[:8]
+
+    page_url = f"{base_url}/{html_filename}"
+    player_target = f"player.html?id={unique_id}"
+
+    html_content = f"""<!DOCTYPE html>
 <html lang="th">
 <head>
 <meta charset="utf-8">
@@ -407,8 +588,8 @@ def generate_stub_page(file_info, base_url, output_dir):
 <meta property="og:type" content="music.song">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="Artist: {artist}">
-<meta property="og:image" content="{og_image}">
-<meta property="og:audio" content="{og_audio}">
+<meta property="og:image" content="{album_art_url}">
+<meta property="og:audio" content="{audio_url}">
 <meta property="music:musician" content="{artist}">
 <meta property="og:url" content="{page_url}">
 
@@ -416,7 +597,7 @@ def generate_stub_page(file_info, base_url, output_dir):
 <meta name="twitter:card" content="player">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="Artist: {artist}">
-<meta name="twitter:image" content="{og_image}">
+<meta name="twitter:image" content="{album_art_url}">
 
 <!-- Redirect immediately to central player (client-side) -->
 <meta http-equiv="refresh" content="0; url={player_target}">
@@ -426,12 +607,13 @@ def generate_stub_page(file_info, base_url, output_dir):
 <p>If you are not redirected, <a href="{player_target}">open player</a>.</p>
 </body>
 </html>"""
-    with open(os.path.join(output_dir, page_filename), 'w', encoding='utf-8') as f:
-        f.write(html)
-    print(f"✓ Generated stub: {page_filename}")
+
+    with open(os.path.join(output_dir, html_filename), 'w', encoding='utf-8') as f:
+        f.write(html_content)
+    print(f"✓ Generated stub: {html_filename}")
 
 def main():
-    # Load the OneDrive files JSON
+    # Load the song data from onedrive_files.json
     input_file = 'onedrive_files.json'
 
     if not os.path.exists(input_file):
@@ -455,291 +637,19 @@ def main():
     output_dir = 'docs'  # GitHub Pages can serve from /docs folder
     os.makedirs(output_dir, exist_ok=True)
 
-    generated_files = []
+    print(f"Generating stub pages for {len(files)} song(s)...\n")
 
-    print(f"Generating stub pages + central player for {len(files)} song(s)...\n")
+    for file_info in files:
+        # Ensure html_filename exists
+        if not file_info.get('html_filename'):
+            safe_title = "".join(c for c in file_info['title'] if c.isalnum() or c in (' ', '-', '_')).strip()
+            safe_title = safe_title.replace(' ', '_').lower()
+            file_info['html_filename'] = f"{safe_title}.html"
 
-    # Create/refresh docs/onedrive_files.json so the central player can fetch it
-    with open(os.path.join(output_dir, 'onedrive_files.json'), 'w', encoding='utf-8') as f:
-        json.dump({'files': files}, f, indent=2, ensure_ascii=False)
-    print("✓ Copied: docs/onedrive_files.json")
-
-    for idx, file_info in enumerate(files, 1):
-        # ensure html_filename exists
-        html_filename = file_info.get('html_filename') or f"song_{idx}.html"
-        file_info['html_filename'] = html_filename
-
-        # generate a lightweight stub with OG tags + redirect to central player
+        # Generate a stub page for each song
         generate_stub_page(file_info, base_url, output_dir)
 
-        page_url = f"{base_url}/{html_filename}"
-        generated_files.append({
-            'title': file_info['title'],
-            'artist': file_info['artist'],
-            'filename': html_filename,
-            'url': page_url
-        })
-
-        print(f"  stub created: {html_filename}")
-
-    # Copy generated_urls.json into docs/
-    with open(os.path.join(output_dir, 'generated_urls.json'), 'w', encoding='utf-8') as f:
-        json.dump(generated_files, f, indent=2, ensure_ascii=False)
-    print("✓ Copied: docs/generated_urls.json")
-
-    # generate central player
-    generate_central_player(output_dir)
-
-    # regenerate index to point to stubs
-    generate_index_page(generated_files, output_dir, base_url)
-
-    print(f"\nAll files generated in '{output_dir}/' directory")
-    print(f"URL list saved to: docs/generated_urls.json")
-    print(f"\nNext step: Push to GitHub to deploy on GitHub Pages")
-
-def generate_index_page(files_list, output_dir, base_url):
-    """Generate an index page organized by albums"""
-
-    # Load full file data from onedrive_files.json to get album info
-    with open('onedrive_files.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    full_files = data.get('files', [])
-
-    # Group files by album
-    albums = {}
-    for file_info in full_files:
-        album = file_info.get('album', 'Unknown Album')
-        if album not in albums:
-            albums[album] = []
-        albums[album].append(file_info)
-
-    # Sort albums alphabetically
-    sorted_albums = sorted(albums.items())
-
-    # Build album index (table of contents) at the top
-    album_index = ""
-    for album_name, songs in sorted_albums:
-        album_id = album_name.replace(' ', '-').replace('/', '-')
-        album_index += f"""
-            <a href="#{album_id}" class="album-link">📀 {escape(album_name)} ({len(songs)})</a>"""
-
-    # Build HTML for each album section
-    albums_html = ""
-    for album_name, songs in sorted_albums:
-        album_id = album_name.replace(' ', '-').replace('/', '-')
-        # Sort songs alphabetically by title
-        songs_sorted = sorted(songs, key=lambda x: x['title'])
-
-        songs_html = ""
-        for song in songs_sorted:
-            songs_html += f"""
-                    <div class="song-item">
-                        <span class="song-title">{escape(song['title'])}</span>
-                        <div class="song-actions">
-                            <a href="{song['html_filename']}" class="play-button">▶ Play</a>
-                        </div>
-                    </div>"""
-
-        albums_html += f"""
-        <div class="album-section" id="{album_id}">
-            <h2 class="album-title">📀 {escape(album_name)}</h2>
-            <div class="songs-list">
-                {songs_html}
-            </div>
-        </div>"""
-
-    html_content = f"""<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karnlada Songs - Music Collection</title>
-    <meta property="og:title" content="Karnlada Songs">
-    <meta property="og:description" content="Complete music collection organized by albums">
-    <meta property="og:type" content="website">
-
-    <style>
-        * {{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }}
-
-        body {{
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 40px 20px;
-        }}
-
-        .container {{
-            max-width: 900px;
-            margin: 0 auto;
-        }}
-
-        h1 {{
-            color: white;
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 42px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }}
-
-        .album-index {{
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 16px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }}
-
-        .album-index h2 {{
-            color: #2d3748;
-            font-size: 24px;
-            margin-bottom: 20px;
-            text-align: center;
-        }}
-
-        .album-links {{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-        }}
-
-        .album-link {{
-            display: inline-block;
-            padding: 10px 18px;
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            font-size: 15px;
-            font-weight: 500;
-            transition: all 0.2s;
-        }}
-
-        .album-link:hover {{
-            background: #5568d3;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-        }}
-
-        .album-section {{
-            background: rgba(255, 255, 255, 0.98);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            scroll-margin-top: 20px;
-        }}
-
-        .album-title {{
-            color: #2d3748;
-            font-size: 28px;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #667eea;
-        }}
-
-        .songs-list {{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }}
-
-        .song-item {{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            background: #f7fafc;
-            border-radius: 10px;
-            transition: all 0.2s;
-        }}
-
-        .song-item:hover {{
-            background: #edf2f7;
-            transform: translateX(5px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }}
-
-        .song-title {{
-            color: #2d3748;
-            font-size: 18px;
-            font-weight: 500;
-        }}
-
-        .song-actions {{
-            display: flex;
-            gap: 10px;
-        }}
-
-        .play-button {{
-            display: inline-block;
-            padding: 8px 20px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-weight: 600;
-            background: #667eea;
-            color: white;
-            transition: all 0.2s;
-            font-size: 14px;
-        }}
-
-        .play-button:hover {{
-            background: #5568d3;
-            transform: scale(1.05);
-        }}
-
-        @media (max-width: 768px) {{
-            h1 {{
-                font-size: 32px;
-            }}
-
-            .album-title {{
-                font-size: 24px;
-            }}
-
-            .song-item {{
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-            }}
-
-            .song-actions {{
-                width: 100%;
-            }}
-
-            .play-button {{
-                width: 100%;
-                text-align: center;
-            }}
-        }}
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>🎵 Karnlada Songs</h1>
-
-        <div class="album-index">
-            <h2>Albums</h2>
-            <div class="album-links">
-                {album_index}
-            </div>
-        </div>
-
-        {albums_html}
-    </div>
-</body>
-</html>"""
-
-    index_path = os.path.join(output_dir, 'index.html')
-    with open(index_path, 'w', encoding='utf-8') as f:
-        f.write(html_content)
-
-    print(f"✓ Generated: index.html")
-    print(f"  URL: {base_url}/index.html")
+    print(f"\nAll stub pages generated in '{output_dir}/' directory")
 
 if __name__ == "__main__":
     main()

@@ -8,6 +8,8 @@ Scans docs/audio/ folder structure organized by albums.
 import json
 import os
 import sys
+import csv
+import hashlib
 from urllib.parse import quote
 
 # Set UTF-8 encoding for Windows console
@@ -120,8 +122,80 @@ def generate_html_filename(title):
 
     return f"{safe_title}.html"
 
+def generate_stable_id(album, title, audio_file_path):
+    """
+    Generate a stable ID for a song based on album + title + path.
+    Uses a hash to create a short, stable identifier.
+    """
+    # Create a unique string from album, title, and original path
+    unique_string = f"{album}:{title}:{audio_file_path}"
+    # Generate a short hash (first 8 characters of MD5)
+    hash_object = hashlib.md5(unique_string.encode('utf-8'))
+    return hash_object.hexdigest()[:8]
+
+def load_existing_mappings(csv_path='songs_mapping.csv'):
+    """
+    Load existing song mappings from CSV.
+    Returns a tuple: (id_mappings, external_songs)
+    - id_mappings: dict mapping (album, title, audio_path) -> song_id
+    - external_songs: list of song dicts for external links
+    """
+    id_mappings = {}
+    external_songs = []
+
+    if os.path.exists(csv_path):
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                key = (row['album'], row['title'], row['audio_file_path'])
+                id_mappings[key] = row['song_id']
+
+                # If this is an external link, save it to preserve in output
+                is_ext = row.get('is_external', 'false').strip().lower()
+                if is_ext == 'true' or is_ext == '1' or is_ext == 'yes':
+                    external_songs.append({
+                        'song_id': row['song_id'],
+                        'album': row['album'],
+                        'title': row['title'],
+                        'artist': row['artist'],
+                        'audio_url': row['audio_file_path'],
+                        'html_filename': row['html_filename'],
+                        'is_external': True,
+                        'album_art_url': 'images/album_art_karnlada.jpg'  # default for external
+                    })
+
+    return id_mappings, external_songs
+
+def save_mappings_to_csv(files, csv_path='songs_mapping.csv'):
+    """
+    Save song mappings to CSV file.
+    Each song gets a stable ID that won't change even if filename changes.
+    """
+    with open(csv_path, 'w', encoding='utf-8', newline='') as f:
+        fieldnames = ['song_id', 'album', 'title', 'artist', 'audio_file_path', 'html_filename', 'is_external']
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for file_info in files:
+            writer.writerow({
+                'song_id': file_info['song_id'],
+                'album': file_info['album'],
+                'title': file_info['title'],
+                'artist': file_info['artist'],
+                'audio_file_path': file_info['audio_url'],
+                'html_filename': file_info['html_filename'],
+                'is_external': file_info.get('is_external', 'false')
+            })
+
+    print(f"✓ Saved mappings to: {csv_path}")
+
 def main():
     print("Scanning local audio files from docs/audio/...\n")
+
+    # Load existing song ID mappings and external songs
+    existing_mappings, external_songs = load_existing_mappings('songs_mapping.csv')
+    print(f"Loaded {len(existing_mappings)} existing song ID(s) from CSV")
+    print(f"Found {len(external_songs)} external link(s) in CSV\n")
 
     files = scan_audio_folders('docs/audio')
 
@@ -135,13 +209,34 @@ def main():
             "count": 0
         }
     else:
-        # Add html_filename to each file
+        # Add html_filename and stable song_id to each file
         for file_info in files:
-            file_info['html_filename'] = generate_html_filename(file_info['title'])
+            # Check if this song already has an ID in the CSV
+            key = (file_info['album'], file_info['title'], file_info['audio_url'])
+            if key in existing_mappings:
+                # Reuse existing ID
+                file_info['song_id'] = existing_mappings[key]
+            else:
+                # Generate new stable ID
+                file_info['song_id'] = generate_stable_id(
+                    file_info['album'],
+                    file_info['title'],
+                    file_info['audio_url']
+                )
+
+            # Use song_id as the HTML filename for clean, stable URLs
+            file_info['html_filename'] = f"{file_info['song_id']}.html"
+
+        # Merge external songs with local files
+        all_songs = files + external_songs
+        print(f"\n✓ Total songs (local + external): {len(all_songs)}")
+
+        # Save mappings to CSV
+        save_mappings_to_csv(all_songs, 'songs_mapping.csv')
 
         output = {
-            "files": files,
-            "count": len(files)
+            "files": all_songs,
+            "count": len(all_songs)
         }
 
         print("="*60)

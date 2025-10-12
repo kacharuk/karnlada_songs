@@ -34,19 +34,19 @@ def main():
     print("="*60)
     print()
 
-    # Step 1: Scan audio files and generate metadata
-    print("📁 Step 1: Scanning audio files...")
-    result = subprocess.run([sys.executable, 'list_onedrive_files.py'],
+    # Step 1: Scan for new songs and update CSV
+    print("📁 Step 1: Scanning for new songs...")
+    result = subprocess.run([sys.executable, 'scan_new_songs.py'],
                           capture_output=False, text=True)
     if result.returncode != 0:
-        print("❌ Error scanning audio files")
+        print("❌ Error scanning for new songs")
         return 1
 
     print()
 
-    # Step 2: Generate HTML pages
+    # Step 2: Generate HTML pages with enhanced features
     print("📄 Step 2: Generating HTML pages...")
-    result = subprocess.run([sys.executable, 'generate_players.py'],
+    result = subprocess.run([sys.executable, 'generate_html.py'],
                           capture_output=False, text=True)
     if result.returncode != 0:
         print("❌ Error generating HTML pages")
@@ -58,16 +58,18 @@ def main():
     print("="*60)
     print()
     print("Generated files:")
-    print("  - 171+ song stub pages (docs/*.html)")
-    print("  - Central player (docs/player.html)")
-    print("  - Album-organized index (docs/index.html)")
+    print("  - Song stub pages (docs/songs/*.html)")
+    print("  - Enhanced player with playlist support (docs/player.html)")
+    print("  - Enhanced index with search & sharing (docs/index.html)")
+    print("  - JavaScript utilities (docs/js/*.js)")
     print("  - Metadata files (onedrive_files.json, generated_urls.json)")
     print()
     print("Next steps:")
     print("  1. Review the changes (optional)")
-    print("  2. Deploy to GitHub:")
+    print("  2. Test locally by opening docs/index.html")
+    print("  3. Deploy to GitHub:")
     print("     git add -A")
-    print("     git commit -m \"Update songs\"")
+    print("     git commit -m \"Update songs and enhance features\"")
     print("     git push")
     print()
 
