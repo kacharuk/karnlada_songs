@@ -116,8 +116,9 @@ function loadSong(index) {
     art.src = file.album_art_url || 'images/album_art_karnlada.jpg';
     art.alt = file.title + ' album art';
 
-    // Load audio
+    // Load audio with loop disabled
     const audioEl = document.getElementById('audioPlayer');
+    audioEl.loop = false; // Explicitly disable looping
     // Clear existing sources
     while (audioEl.firstChild) audioEl.removeChild(audioEl.firstChild);
     const src = document.createElement('source');
@@ -245,6 +246,14 @@ function updatePlaylistUI() {
     });
 }
 
+// Expose playlist globally
+window.playerPlaylist = [];
+
+// Initialize playlist with song data
+function initializePlaylist(songs) {
+    window.playerPlaylist = songs;
+}
+
 async function initPlayer() {
     const filesData = await fetchJSON('songs.json');
     if (!filesData || !filesData.files || filesData.files.length === 0) {
@@ -292,8 +301,19 @@ async function initPlayer() {
         updatePlayPauseButton();
     });
     audioEl.addEventListener('ended', () => {
+        console.log('[AUDIO] Song ended');
         setStatus('Song ended');
         updatePlayPauseButton();
+        
+        // For single song, just stop at the end
+        if (playlist.length <= 1) {
+            console.log('[AUDIO] Single song - stopping playback');
+            audioEl.pause();
+            audioEl.currentTime = 0;
+            return;
+        }
+        
+        // For playlist, continue to next song
         playNextSong();
     });
     audioEl.addEventListener('error', () => setStatus('Error loading audio', 'error'));
