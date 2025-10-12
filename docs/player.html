@@ -10,7 +10,17 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px}
 .player-container{background:rgba(255,255,255,.95);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.3);max-width:400px;width:100%;overflow:hidden;backdrop-filter:blur(10px)}
-.album-art{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.album-art-wrapper{position:relative;width:100%;aspect-ratio:1;overflow:hidden;cursor:pointer}
+.album-art{width:100%;height:100%;object-fit:cover;display:block}
+.play-pause-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:80px;height:80px;background:rgba(255,255,255,0.95);border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.3);transition:all 0.3s ease;opacity:0.9}
+.play-pause-btn:hover{opacity:1;transform:translate(-50%,-50%) scale(1.1);box-shadow:0 6px 30px rgba(0,0,0,0.4)}
+.play-pause-btn:active{transform:translate(-50%,-50%) scale(0.95)}
+.play-pause-btn.playing{opacity:0.7}
+.play-pause-btn.playing:hover{opacity:1}
+.play-icon,.pause-icon{width:32px;height:32px;fill:#667eea}
+.pause-icon{display:none}
+.playing .play-icon{display:none}
+.playing .pause-icon{display:block}
 .player-info{padding:30px;text-align:center}
 .song-title{font-size:24px;font-weight:700;color:#2d3748;margin-bottom:8px;line-height:1.3}
 .artist-name{font-size:18px;color:#718096;margin-bottom:25px}
@@ -22,7 +32,13 @@ audio{width:100%;height:40px;border-radius:20px}
 </head>
 <body>
 <div class="player-container" id="player">
-	<img src="" alt="album art" class="album-art" id="albumArt">
+	<div class="album-art-wrapper" id="albumWrapper">
+		<img src="" alt="album art" class="album-art" id="albumArt">
+		<button class="play-pause-btn" id="playPauseBtn">
+			<svg class="play-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+			<svg class="pause-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+		</button>
+	</div>
 	<div class="player-info">
 		<h1 class="song-title" id="songTitle">Loading...</h1>
 		<p class="artist-name" id="artistName"></p>
@@ -101,16 +117,53 @@ function selectFile(files, id){
 	src2.type = 'audio/mp4';
 	audioEl.appendChild(src2);
 
+	// play/pause button functionality
+	const playPauseBtn = document.getElementById('playPauseBtn');
+	const albumWrapper = document.getElementById('albumWrapper');
+
+	function updatePlayPauseButton(){
+		if(audioEl.paused){
+			playPauseBtn.classList.remove('playing');
+		}else{
+			playPauseBtn.classList.add('playing');
+		}
+	}
+
+	function togglePlayPause(){
+		if(audioEl.paused){
+			audioEl.play();
+		}else{
+			audioEl.pause();
+		}
+	}
+
+	playPauseBtn.addEventListener('click', (e)=>{
+		e.stopPropagation();
+		togglePlayPause();
+	});
+
+	albumWrapper.addEventListener('click', togglePlayPause);
+
 	// events
 	audioEl.addEventListener('loadstart', ()=> setStatus('Loading audio...', 'loading'));
 	audioEl.addEventListener('canplay', ()=> setStatus('Ready to play'));
-	audioEl.addEventListener('playing', ()=> setStatus('Now playing', 'playing'));
-	audioEl.addEventListener('pause', ()=> setStatus('Paused'));
-	audioEl.addEventListener('ended', ()=> setStatus('Song ended'));
+	audioEl.addEventListener('playing', ()=> {
+		setStatus('Now playing', 'playing');
+		updatePlayPauseButton();
+	});
+	audioEl.addEventListener('pause', ()=> {
+		setStatus('Paused');
+		updatePlayPauseButton();
+	});
+	audioEl.addEventListener('ended', ()=> {
+		setStatus('Song ended');
+		updatePlayPauseButton();
+	});
 	audioEl.addEventListener('error', ()=> setStatus('Error loading audio', 'error'));
 
 	// try to autoplay if allowed
 	try{ await audioEl.play(); }catch(e){ setStatus('Click play to start'); }
+	updatePlayPauseButton();
 })();
 </script>
 </body>
