@@ -92,5 +92,54 @@ audio{display:none}
 </div>
 <script src="js/utils.js"></script>
 <script src="js/player.js"></script>
+<script>
+// Reference to the audio element
+const audioEl = document.getElementById('audioPlayer');
+const playPauseBtn = document.getElementById('playPauseBtn');
+const playIcon = document.getElementById('playIcon');
+const pauseIcon = document.getElementById('pauseIcon');
+const statusEl = document.getElementById('status');
+
+// Playlist and current song index
+let playlist = []; // This should be populated with song data
+let currentSongIndex = 0;
+
+// Function to set the status text
+function setStatus(text, cls = '') {
+    statusEl.textContent = text;
+    statusEl.className = 'status' + (cls ? ' ' + cls : '');
+}
+
+// Function to load a song
+function loadSong(song) {
+    document.getElementById('songTitle').textContent = song.title;
+    document.getElementById('artistName').textContent = song.artist;
+    document.getElementById('albumArt').src = song.albumArt;
+    audioEl.src = song.audioUrl;
+}
+
+// Event listener for when the song ends
+audioEl.addEventListener('ended', () => {
+    setStatus('Song ended');
+    playPauseBtn.classList.remove('playing');
+    playIcon.style.display = 'block';
+    pauseIcon.style.display = 'none';
+
+    // Check if there is a next song in the playlist
+    if (playlist.length > 1) {
+        playNextSong();
+    } else {
+        // Stop playback if there's only one song
+        console.log('Playback stopped. No more songs in the playlist.');
+    }
+});
+
+// Function to play the next song in the playlist
+function playNextSong() {
+    currentSongIndex = (currentSongIndex + 1) % playlist.length;
+    loadSong(playlist[currentSongIndex]);
+    audioEl.play();
+}
+</script>
 </body>
 </html>
