@@ -901,6 +901,36 @@
       "album_art_url": ""
     },
     {
+      "song_id": "b9d0229b",
+      "album": "เพลงประกอบงานเขียน 19 ชิ้น",
+      "title": "พรแผ่นดิน",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงประกอบงานเขียน 19 ชิ้น/พรแผ่นดิน.m4a",
+      "html_filename": "b9d0229b.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "0c4ab42a",
+      "album": "เพลงประกอบงานเขียน 19 ชิ้น",
+      "title": "รุ้งพระจันทร์",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงประกอบงานเขียน 19 ชิ้น/รุ้งพระจันทร์.m4a",
+      "html_filename": "0c4ab42a.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "c0ec9d8c",
+      "album": "เพลงประกอบงานเขียน 19 ชิ้น",
+      "title": "โลกหมุนเวียน",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงประกอบงานเขียน 19 ชิ้น/โลกหมุนเวียน.m4a",
+      "html_filename": "c0ec9d8c.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
       "song_id": "24980990",
       "album": "กาญจน์ลดา มฤคพิทักษ์ - กาญจน์ลดา 1",
       "title": "ไม่ใกล้ไม่ไกล",
