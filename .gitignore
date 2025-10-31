@@ -41,3 +41,4 @@ Thumbs.db
 
 # Keep the docs folder but ignore temp files
 docs/.DS_Store
+mp3/
