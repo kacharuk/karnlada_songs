@@ -2529,6 +2529,756 @@
       "html_filename": "e4b23b5d.html",
       "is_external": false,
       "album_art_url": ""
+    },
+    {
+      "song_id": "fc46195f",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "ความฝันอันสูงสุด",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/ความฝันอันสูงสุด.mp3",
+      "html_filename": "fc46195f.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "77d87193",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "ชะตาชีวิต",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/ชะตาชีวิต.mp3",
+      "html_filename": "77d87193.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "946883eb",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "ดวงใจกับความรัก",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/ดวงใจกับความรัก.mp3",
+      "html_filename": "946883eb.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "e0132d5d",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "พรปีใหม่",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/พรปีใหม่.mp3",
+      "html_filename": "e0132d5d.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "285a31dd",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "ยามเย็น",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/ยามเย็น.mp3",
+      "html_filename": "285a31dd.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "8f68885b",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "ลมหนาว",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/ลมหนาว.mp3",
+      "html_filename": "8f68885b.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "4067b380",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "สายฝน",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/สายฝน.mp3",
+      "html_filename": "4067b380.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "85ff2db2",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "อาทิตย์อับแสง",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/อาทิตย์อับแสง.mp3",
+      "html_filename": "85ff2db2.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "6230768c",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "แผ่นดินของเรา",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/แผ่นดินของเรา.mp3",
+      "html_filename": "6230768c.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "6e7c195c",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "แสงเดือน",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/แสงเดือน.mp3",
+      "html_filename": "6e7c195c.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "35302491",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "แสงเทียน",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/แสงเทียน.mp3",
+      "html_filename": "35302491.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "f451fdbf",
+      "album": "เพลงพระราชนิพนธ์",
+      "title": "ใกล้รุ่ง",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงพระราชนิพนธ์/ใกล้รุ่ง.mp3",
+      "html_filename": "f451fdbf.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "aa162d43",
+      "album": "เพลงร้องคู่",
+      "title": "กระต่ายโง่ ",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/กระต่ายโง่ .mp3",
+      "html_filename": "aa162d43.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "b1f8dfcf",
+      "album": "เพลงร้องคู่",
+      "title": "กระท่อมไพรวัลย์",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/กระท่อมไพรวัลย์.mp3",
+      "html_filename": "b1f8dfcf.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "8967a97f",
+      "album": "เพลงร้องคู่",
+      "title": "กุหลาบหอม-ขึ้นพลับพลา ",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/กุหลาบหอม-ขึ้นพลับพลา .mp3",
+      "html_filename": "8967a97f.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "0afe49e5",
+      "album": "เพลงร้องคู่",
+      "title": "ข้องจิต",
+      "artist": "เนื้อยาว",
+      "audio_url": "audio/เพลงร้องคู่/ข้องจิต  - เนื้อยาว.mp3",
+      "html_filename": "0afe49e5.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "ceb914be",
+      "album": "เพลงร้องคู่",
+      "title": "ข้ามันลูกทุ่ง",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ข้ามันลูกทุ่ง.mp3",
+      "html_filename": "ceb914be.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "752747aa",
+      "album": "เพลงร้องคู่",
+      "title": "ครวญถึงเจ้า",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ครวญถึงเจ้า.mp3",
+      "html_filename": "752747aa.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "86f3d9bc",
+      "album": "เพลงร้องคู่",
+      "title": "คุณไม่รักทำไมไม่บอก",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/คุณไม่รักทำไมไม่บอก.mp3",
+      "html_filename": "86f3d9bc.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "dbb1cdf6",
+      "album": "เพลงร้องคู่",
+      "title": "คู่เสน่หา",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/คู่เสน่หา.mp3",
+      "html_filename": "dbb1cdf6.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "c9e90061",
+      "album": "เพลงร้องคู่",
+      "title": "จนจริงไม่จนรัก",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/จนจริงไม่จนรัก.mp3",
+      "html_filename": "c9e90061.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "d777601b",
+      "album": "เพลงร้องคู่",
+      "title": "จันทร์จูบฟ้า",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/จันทร์จูบฟ้า.mp3",
+      "html_filename": "d777601b.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "3877cc8b",
+      "album": "เพลงร้องคู่",
+      "title": "ชะตาฟ้า",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ชะตาฟ้า.mp3",
+      "html_filename": "3877cc8b.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "3ce91f83",
+      "album": "เพลงร้องคู่",
+      "title": "ชะรอยบุญ ",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ชะรอยบุญ .mp3",
+      "html_filename": "3ce91f83.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "74494433",
+      "album": "เพลงร้องคู่",
+      "title": "ดอกไม้จะบาน",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ดอกไม้จะบาน.mp3",
+      "html_filename": "74494433.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "9fce0c90",
+      "album": "เพลงร้องคู่",
+      "title": "ดาวประดับใจ",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ดาวประดับใจ.mp3",
+      "html_filename": "9fce0c90.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "dfabbc87",
+      "album": "เพลงร้องคู่",
+      "title": "ทะเลบ้า วินัย",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ทะเลบ้า วินัย.mp3",
+      "html_filename": "dfabbc87.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "9792602f",
+      "album": "เพลงร้องคู่",
+      "title": "ทุยฝันร้าย C83",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ทุยฝันร้าย C83.mp3",
+      "html_filename": "9792602f.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "0ba765ec",
+      "album": "เพลงร้องคู่",
+      "title": "ทุยฝันร้าย",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ทุยฝันร้าย.mp3",
+      "html_filename": "0ba765ec.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "cc695330",
+      "album": "เพลงร้องคู่",
+      "title": "นกสีชมพู-ย้อนสั้น",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/นกสีชมพู-ย้อนสั้น.mp3",
+      "html_filename": "cc695330.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "42ef60ef",
+      "album": "เพลงร้องคู่",
+      "title": "บนลานลั่นทม",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/บนลานลั่นทม.mp3",
+      "html_filename": "42ef60ef.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "bc5bb491",
+      "album": "เพลงร้องคู่",
+      "title": "บ้านเรือนเคียงกัน",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/บ้านเรือนเคียงกัน.mp3",
+      "html_filename": "bc5bb491.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "e920785b",
+      "album": "เพลงร้องคู่",
+      "title": "ปาริชาต สุนทราภรณ์",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ปาริชาต สุนทราภรณ์.mp3",
+      "html_filename": "e920785b.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "798f2a21",
+      "album": "เพลงร้องคู่",
+      "title": "ป่านฉะนี้",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ป่านฉะนี้.mp3",
+      "html_filename": "798f2a21.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "92cfb014",
+      "album": "เพลงร้องคู่",
+      "title": "ฝากใจฝัน(ร้องคู่)",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ฝากใจฝัน(ร้องคู่).mp3",
+      "html_filename": "92cfb014.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "d6c816cc",
+      "album": "เพลงร้องคู่",
+      "title": "พายเรือพลอดรัก",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/พายเรือพลอดรัก.mp3",
+      "html_filename": "d6c816cc.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "042388b5",
+      "album": "เพลงร้องคู่",
+      "title": "มนต์รักดอกคำใต้",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/มนต์รักดอกคำใต้.mp3",
+      "html_filename": "042388b5.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "606ece21",
+      "album": "เพลงร้องคู่",
+      "title": "มนต์รักอสูร",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/มนต์รักอสูร.mp3",
+      "html_filename": "606ece21.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "a8ac97d2",
+      "album": "เพลงร้องคู่",
+      "title": "มนต์รักเรียกหา",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/มนต์รักเรียกหา.mp3",
+      "html_filename": "a8ac97d2.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "d69c94d8",
+      "album": "เพลงร้องคู่",
+      "title": "มนต์เทวี(ร้องคู่)",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/มนต์เทวี(ร้องคู่).mp3",
+      "html_filename": "d69c94d8.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "1ce5da31",
+      "album": "เพลงร้องคู่",
+      "title": "มนต์เทวี",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/มนต์เทวี.mp3",
+      "html_filename": "1ce5da31.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "23e76a06",
+      "album": "เพลงร้องคู่",
+      "title": "ม่านมงคล",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ม่านมงคล.mp3",
+      "html_filename": "23e76a06.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "47f68a11",
+      "album": "เพลงร้องคู่",
+      "title": "ยอดเทพี-2",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ยอดเทพี-2.mp3",
+      "html_filename": "47f68a11.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "26d8f8d3",
+      "album": "เพลงร้องคู่",
+      "title": "ยอดเทพี",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ยอดเทพี.mp3",
+      "html_filename": "26d8f8d3.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "02e959db",
+      "album": "เพลงร้องคู่",
+      "title": "ระทมในลั่นทม",
+      "artist": "รวงทอง",
+      "audio_url": "audio/เพลงร้องคู่/ระทมในลั่นทม - รวงทอง.mp3",
+      "html_filename": "02e959db.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "065e97f1",
+      "album": "เพลงร้องคู่",
+      "title": "รักจริงไหม",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/รักจริงไหม.mp3",
+      "html_filename": "065e97f1.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "4cd8992b",
+      "album": "เพลงร้องคู่",
+      "title": "รักเธอเสมอ",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/รักเธอเสมอ.mp3",
+      "html_filename": "4cd8992b.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "506eb779",
+      "album": "เพลงร้องคู่",
+      "title": "ราตรี",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ราตรี.mp3",
+      "html_filename": "506eb779.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "e652b5c0",
+      "album": "เพลงร้องคู่",
+      "title": "ราตรีประดับดาว-2",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ราตรีประดับดาว-2.mp3",
+      "html_filename": "e652b5c0.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "636f993b",
+      "album": "เพลงร้องคู่",
+      "title": "ราตรีประดับดาว",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ราตรีประดับดาว.mp3",
+      "html_filename": "636f993b.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "177d3145",
+      "album": "เพลงร้องคู่",
+      "title": "ราตรีสิ้นดาว",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ราตรีสิ้นดาว.mp3",
+      "html_filename": "177d3145.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "a9fddaf8",
+      "album": "เพลงร้องคู่",
+      "title": "ลองรัก",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ลองรัก.mp3",
+      "html_filename": "a9fddaf8.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "5c19368e",
+      "album": "เพลงร้องคู่",
+      "title": "สนต้องลม",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/สนต้องลม.mp3",
+      "html_filename": "5c19368e.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "17f0c241",
+      "album": "เพลงร้องคู่",
+      "title": "สมมุติว่าเขารัก",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/สมมุติว่าเขารัก.mp3",
+      "html_filename": "17f0c241.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "332cee02",
+      "album": "เพลงร้องคู่",
+      "title": "สายลมเหนือ",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/สายลมเหนือ.mp3",
+      "html_filename": "332cee02.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "8b95ebb0",
+      "album": "เพลงร้องคู่",
+      "title": "สายัณห์รัญจวน",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/สายัณห์รัญจวน.mp3",
+      "html_filename": "8b95ebb0.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "b236b481",
+      "album": "เพลงร้องคู่",
+      "title": "สุริยะจันทร์",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/สุริยะจันทร์.mp3",
+      "html_filename": "b236b481.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "81953f8f",
+      "album": "เพลงร้องคู่",
+      "title": "หนึ่งมิตรชิดใกล้",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/หนึ่งมิตรชิดใกล้.mp3",
+      "html_filename": "81953f8f.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "320932d2",
+      "album": "เพลงร้องคู่",
+      "title": "หนึ่งในร้อย",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/หนึ่งในร้อย.mp3",
+      "html_filename": "320932d2.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "fcaa1b61",
+      "album": "เพลงร้องคู่",
+      "title": "หยาดรุ้ง",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/หยาดรุ้ง.mp3",
+      "html_filename": "fcaa1b61.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "dfb528f3",
+      "album": "เพลงร้องคู่",
+      "title": "หวานรัก(ร้องคู่)",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/หวานรัก(ร้องคู่).mp3",
+      "html_filename": "dfb528f3.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "37cce48f",
+      "album": "เพลงร้องคู่",
+      "title": "อธิฐานรัก",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/อธิฐานรัก.mp3",
+      "html_filename": "37cce48f.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "1fff0290",
+      "album": "เพลงร้องคู่",
+      "title": "อยากฟังซ้ำ",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/อยากฟังซ้ำ.mp3",
+      "html_filename": "1fff0290.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "6300ef1c",
+      "album": "เพลงร้องคู่",
+      "title": "เคียงเรียม",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/เคียงเรียม.mp3",
+      "html_filename": "6300ef1c.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "df7bb170",
+      "album": "เพลงร้องคู่",
+      "title": "เซียมซีเสี่ยงรัก",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/เซียมซีเสี่ยงรัก.mp3",
+      "html_filename": "df7bb170.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "bdb73ca0",
+      "album": "เพลงร้องคู่",
+      "title": "เพลินเพลงแมมโบ้",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/เพลินเพลงแมมโบ้.mp3",
+      "html_filename": "bdb73ca0.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "4550831d",
+      "album": "เพลงร้องคู่",
+      "title": "เพียงคำเดียว",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/เพียงคำเดียว.mp3",
+      "html_filename": "4550831d.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "9889174e",
+      "album": "เพลงร้องคู่",
+      "title": "เพ้อ",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/เพ้อ.mp3",
+      "html_filename": "9889174e.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "f9742be4",
+      "album": "เพลงร้องคู่",
+      "title": "แม่ยอดรัก-พ่อยอดรัก",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/แม่ยอดรัก-พ่อยอดรัก.mp3",
+      "html_filename": "f9742be4.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "03561fdd",
+      "album": "เพลงร้องคู่",
+      "title": "โอ้ยอดรัก",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/โอ้ยอดรัก.mp3",
+      "html_filename": "03561fdd.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "ddaa76e1",
+      "album": "เพลงร้องคู่",
+      "title": "ใต้ แสง เทียน",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ใต้ แสง เทียน.mp3",
+      "html_filename": "ddaa76e1.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "d312a456",
+      "album": "เพลงร้องคู่",
+      "title": "ใต้เงาเทียน ทนงศักดิ์-นง",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ใต้เงาเทียน ทนงศักดิ์-นง.mp3",
+      "html_filename": "d312a456.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "d4805e27",
+      "album": "เพลงร้องคู่",
+      "title": "ในโลกแห่งความฝัน",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ในโลกแห่งความฝัน.mp3",
+      "html_filename": "d4805e27.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "ea7e83de",
+      "album": "เพลงร้องคู่",
+      "title": "ใบไม้ร่วง",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ใบไม้ร่วง.mp3",
+      "html_filename": "ea7e83de.html",
+      "is_external": false,
+      "album_art_url": ""
+    },
+    {
+      "song_id": "593d3014",
+      "album": "เพลงร้องคู่",
+      "title": "ລາວດວງເດືອນ",
+      "artist": "กาญจน์ลดา มฤคพิทักษ์",
+      "audio_url": "audio/เพลงร้องคู่/ລາວດວງເດືອນ.mp3",
+      "html_filename": "593d3014.html",
+      "is_external": false,
+      "album_art_url": ""
     }
   ]
 }
