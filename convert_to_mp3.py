@@ -44,8 +44,8 @@ def convert_to_mp3(input_path, output_path, bitrate='128k'):
 
 def process_audio_files():
     """Process all audio files under docs/audio"""
-    source_dir = Path('./m4a')
-    target_dir = Path('./m4a/mp3')
+    source_dir = Path('./output')
+    target_dir = Path('./output/mp3')
     
     # Create output directory if it doesn't exist
     target_dir.mkdir(parents=True, exist_ok=True)
