@@ -102,7 +102,7 @@ for url in urls:
             print(f"No audio source found for {url}")
             raise ValueError("playurl missing")
 
-        audio_title = data["detail"]["song_name"].replace("/", "-")
+        audio_title = data["detail"]["song_name"].replace("/", "-").replace(":", "-")
         audio_path = unique_filename(os.path.join(OUTPUT_DIR, audio_title), ".m4a")
         mp3_path = unique_filename(os.path.join(MP3_DIR, audio_title), ".mp3")
 
