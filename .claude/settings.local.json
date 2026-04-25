@@ -26,7 +26,10 @@
       "Bash(for f in auto_fix_links.py deploy.py generate_players.py list_onedrive_files.py run_all.py update_songs.py)",
       "Bash(do echo \"=== $f ===\")",
       "Bash(for f in HOW_TO_USE.md QUICKSTART.md REBUILD_INSTRUCTIONS.md SETUP_COMPLETE.md)",
-      "Bash(head:*)"
+      "Bash(head:*)",
+      "Read(//output/**)",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(python3 -)"
     ],
     "deny": [],
     "ask": []
