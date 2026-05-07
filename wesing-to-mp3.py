@@ -75,9 +75,27 @@ MP3_DIR = os.path.join(OUTPUT_DIR, "mp3")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(MP3_DIR, exist_ok=True)
 
-# read URL list
-with open("list.txt", "r") as f:
-    urls = [line.strip() for line in f if line.strip()]
+# helper to extract first URL from a line
+def extract_url(line):
+    """Return the first http(s) URL found in line, or None."""
+    m = re.search(r'https?://[^\s\)\]\>,"]+', line)
+    if not m:
+        return None
+    url = m.group(0).rstrip('.,;:)")\'')
+    return url
+
+# read URL list and extract URLs from each line (skip non-URL lines)
+with open("list.txt", "r", encoding="utf-8") as f:
+    urls = []
+    for raw in f:
+        line = raw.strip()
+        if not line:
+            continue
+        url = extract_url(line)
+        if url:
+            urls.append(url)
+        else:
+            print(f"Skipping line without URL: {line}")
 
 counter = 0
 
