@@ -7,6 +7,8 @@ import subprocess
 import json
 import re
 import shutil
+from requests.adapters import HTTPAdapter
+from urllib3.util import Retry
 
 # --- utility functions -----------------------------------------------------
 
@@ -22,6 +24,30 @@ def unique_filename(base, ext):
         candidate = f"{base}-{counter}{ext}"
         counter += 1
     return candidate
+
+
+def sanitize_filename(name, replacement='-'):
+    """Return a filename-safe version of *name* for Windows/Unix.
+
+    Replaces characters illegal in Windows filenames and collapses runs
+    of replacement characters. Strips trailing dots/spaces and limits
+    empty names.
+    """
+    if not isinstance(name, str):
+        name = str(name)
+    name = name.strip()
+    # remove newlines and control chars
+    name = re.sub(r'[\x00-\x1f]+', '', name)
+    # replace characters illegal on Windows: <>:"/\\|?*
+    name = re.sub(r'[<>:\"/\\|?*]+', replacement, name)
+    # collapse multiple replacements into one
+    name = re.sub(re.escape(replacement) + r'+', replacement, name)
+    # remove trailing dots and spaces which are invalid on Windows
+    name = name.rstrip(' .')
+    if not name:
+        name = 'unnamed'
+    # limit length to avoid long paths (keep filename reasonable)
+    return name[:200]
 
 # ----- ffmpeg helpers borrowed from convert_to_mp3.py ---------------------
 
@@ -99,9 +125,26 @@ with open("list.txt", "r", encoding="utf-8") as f:
 
 counter = 0
 
+# configure a requests Session with retries and sensible timeouts
+session = requests.Session()
+retry_strategy = Retry(
+    total=3,
+    backoff_factor=1,
+    status_forcelist=[429, 500, 502, 503, 504],
+    allowed_methods=["HEAD", "GET", "OPTIONS"]
+)
+adapter = HTTPAdapter(max_retries=retry_strategy)
+session.mount("http://", adapter)
+session.mount("https://", adapter)
+
 for url in urls:
     counter += 1
-    response = requests.get(url)
+    try:
+        response = session.get(url, timeout=10)
+        response.raise_for_status()
+    except requests.RequestException as e:
+        print(f"Failed to fetch {url}: {e}")
+        continue
     soup = BeautifulSoup(response.text, "html.parser")
 
     script_tag = soup.find("script", text=lambda t: t and "window.__DATA__" in t)
@@ -120,7 +163,8 @@ for url in urls:
             print(f"No audio source found for {url}")
             raise ValueError("playurl missing")
 
-        audio_title = data["detail"]["song_name"].replace("/", "-").replace(":", "-")
+        raw_title = data["detail"].get("song_name", "unnamed")
+        audio_title = sanitize_filename(raw_title)
         audio_path = unique_filename(os.path.join(OUTPUT_DIR, audio_title), ".m4a")
         mp3_path = unique_filename(os.path.join(MP3_DIR, audio_title), ".mp3")
 
@@ -130,9 +174,14 @@ for url in urls:
 
     # download
     print(f"{counter},{url},{audio_path}")
-    audio_data = requests.get(audio_src)
+    try:
+        audio_resp = session.get(audio_src, timeout=20)
+        audio_resp.raise_for_status()
+    except requests.RequestException as e:
+        print(f"Failed to download audio for {url}: {e}")
+        continue
     with open(audio_path, "wb") as af:
-        af.write(audio_data.content)
+        af.write(audio_resp.content)
 
     # convert or copy
     if audio_path.lower().endswith('.mp3') and is_mp3(audio_path):
